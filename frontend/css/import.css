@@ -12747,6 +12747,10 @@ header {
 .whytobuy p {
   color: #fff; }
 
+.whytobuy img {
+  filter: none;
+  -webkit-filter: none; }
+
 .custom-input {
   border: transparent;
   background-image: url(../img/border1.png);

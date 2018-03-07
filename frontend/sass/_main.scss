@@ -897,6 +897,10 @@ header {
     p {
         color: #fff;
     }
+    img {
+        filter: none;
+        -webkit-filter: none;
+    }
 }
 
 .custom-input {
