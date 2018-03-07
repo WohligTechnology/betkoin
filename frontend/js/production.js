@@ -67574,6 +67574,16 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             url: "/whitepaper",
             templateUrl: tempateURL,
             controller: 'WhitepaperCtrl'
+        })
+        .state('partner', {
+            url: "/partner",
+            templateUrl: tempateURL,
+            controller: 'PartnerCtrl'
+        })
+        .state('contactus', {
+            url: "/contactus",
+            templateUrl: tempateURL,
+            controller: 'ContactusCtrl'
         });
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
@@ -67782,11 +67792,17 @@ myApp.factory('NavigationService', function () {
             subnav: []
         },
         {
-            name: "Token Structure",
+            name: "Partner With Us",
             classis: "active",
-            anchor: "tokenstructure",
+            anchor: "partner",
             subnav: []
         },
+        // {
+        //     name: "Token Structure",
+        //     classis: "active",
+        //     anchor: "tokenstructure",
+        //     subnav: []
+        // },
         {
             name: "White Paper",
             classis: "active",
@@ -67798,6 +67814,12 @@ myApp.factory('NavigationService', function () {
             name: "FAQ",
             classis: "active",
             anchor: "faq",
+            subnav: []
+        },
+        {
+            name: "Contact Us",
+            classis: "active",
+            anchor: "contactus",
             subnav: []
         }
 
@@ -67875,7 +67897,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
     })
     .controller('FaqCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/faq.html");
-        TemplateService.title = "Faq"; // This is the Title of the Website
+        TemplateService.title = "FAQ"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
     })
 
@@ -67900,6 +67922,18 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
     .controller('WhitepaperCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/whitepaper.html");
         TemplateService.title = "White Paper"; // This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+    })
+
+    .controller('PartnerCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("content/partner.html");
+        TemplateService.title = "Partner With Us"; // This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+    })
+
+    .controller('ContactusCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("content/contactus.html");
+        TemplateService.title = "Contact Us"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
     })
 

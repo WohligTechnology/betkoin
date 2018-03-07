@@ -27,12 +27,12 @@ myApp.factory('NavigationService', function () {
             anchor: "partner",
             subnav: []
         },
-        {
-            name: "Token Structure",
-            classis: "active",
-            anchor: "tokenstructure",
-            subnav: []
-        },
+        // {
+        //     name: "Token Structure",
+        //     classis: "active",
+        //     anchor: "tokenstructure",
+        //     subnav: []
+        // },
         {
             name: "White Paper",
             classis: "active",
@@ -52,7 +52,7 @@ myApp.factory('NavigationService', function () {
             anchor: "contactus",
             subnav: []
         }
-        
+
     ];
 
     return {
