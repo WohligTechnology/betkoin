@@ -54,6 +54,16 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             url: "/whitepaper",
             templateUrl: tempateURL,
             controller: 'WhitepaperCtrl'
+        })
+        .state('partner', {
+            url: "/partner",
+            templateUrl: tempateURL,
+            controller: 'PartnerCtrl'
+        })
+        .state('contactus', {
+            url: "/contactus",
+            templateUrl: tempateURL,
+            controller: 'ContactusCtrl'
         });
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);

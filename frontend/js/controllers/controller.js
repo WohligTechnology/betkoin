@@ -48,7 +48,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
     })
     .controller('FaqCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/faq.html");
-        TemplateService.title = "Faq"; // This is the Title of the Website
+        TemplateService.title = "FAQ"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
     })
 
@@ -73,6 +73,18 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
     .controller('WhitepaperCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
         $scope.template = TemplateService.getHTML("content/whitepaper.html");
         TemplateService.title = "White Paper"; // This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+    })
+
+    .controller('PartnerCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("content/partner.html");
+        TemplateService.title = "Partner With Us"; // This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+    })
+
+    .controller('ContactusCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+        $scope.template = TemplateService.getHTML("content/contactus.html");
+        TemplateService.title = "Contact Us"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
     })
 
