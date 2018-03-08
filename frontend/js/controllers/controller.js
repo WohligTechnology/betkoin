@@ -3,15 +3,96 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         TemplateService.title = "Home"; //This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
 
-        $scope.mySlides = [
-            'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-            'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
-            'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
-            'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
+        $scope.mySlides = [{
+                img: 'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
+                title: 'TeenPatti'
+            },
+            {
+                img: '../img/game1.jpg',
+                title: 'Poker'
+            },
+            {
+                img: 'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
+                title: 'Roulette'
+            },
+            {
+                img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
+                title: 'Craps'
+            },
+            {
+                img: 'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
+                title: 'Blackjack'
+            },
+            {
+                img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
+                title: 'Baccarat'
+            },
+
         ];
+
+        $scope.mySlides2 = [{
+                img: 'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
+                title: 'TeenPatti'
+            },
+            {
+                img: '../img/game1.jpg',
+                title: 'Poker'
+            },
+            {
+                img: 'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
+                title: 'Roulette'
+            },
+            {
+                img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
+                title: 'Craps'
+            },
+            {
+                img: 'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
+                title: 'Blackjack'
+            },
+            {
+                img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
+                title: 'Baccarat'
+            },
+
+        ];
+
+        $timeout(function () {
+            var mySwiper = new Swiper('.swiper-container', {
+                slidesPerView: 5,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }
+            })
+
+        }, 100)
+
+        $timeout(function () {
+            var mySwiper = new Swiper('.swiper-container1', {
+                slidesPerView: 5,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }
+            })
+
+        }, 100)
+
         var abc = _.times(100, function (n) {
             return n;
         });
+
 
         var i = 0;
         $scope.buttonClick = function () {
