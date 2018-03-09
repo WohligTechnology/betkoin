@@ -4,59 +4,134 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.navigation = NavigationService.getNavigation();
 
         $scope.mySlides = [{
-                img: 'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
+                img: 'img/game4.jpg',
                 title: 'TeenPatti'
             },
             {
-                img: '../img/game1.jpg',
-                title: 'Poker'
-            },
-            {
-                img: 'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-                title: 'Roulette'
+                img: 'img/game1.jpg',
+                title: 'Ultimate Texas Holdem'
             },
             {
                 img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
-                title: 'Craps'
+                title: 'Roulette'
             },
+            // {
+            //     img: 'https://cdn.decent.bet/img/backgrounds/craps.jpg',
+            //     title: 'Craps'
+            // },
             {
-                img: 'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
+                img: 'img/blackjack.jpg',
                 title: 'Blackjack'
             },
             {
-                img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
+                img: 'img/Baccarat.jpg',
                 title: 'Baccarat'
             },
+            // {
+            //     img: '../img/Casinowar.jpg',
+            //     title: 'Casino war'
+            // },
+            // {
+            //     img: '../img/Bigsixwheel.jpg',
+            //     title: 'Big six wheel'
+            // },
+            // {
+            //     img: '../img/7cardstud.jpg',
+            //     title: '7 card stud'
+            // },
+            // {
+            //     img: '../img/Slots.jpg',
+            //     title: 'Slots'
+            // },
+            // {
+            //     img: '../img/Bingo.jpg',
+            //     title: 'Bingo'
+            // },
+            // {
+            //     img: '../img/LotteryBetting.jpg',
+            //     title: 'Lottery Betting'
+            // },
+            // {
+            //     img: '../img/Dicegames.jpg',
+            //     title: 'Dice games'
+            // },
+            // {
+            //     img: '../img/Rummy.jpg',
+            //     title: 'Rummy'
+            // },
+            // {
+            //     img: '../img/Pinball.jpg',
+            //     title: 'Pinball'
+            // },
+            // {
+            //     img: '../img/Paigow.jpg',
+            //     title: 'Pai gow'
+            // },
+            {
+                img: 'img/TexasHold.jpg',
+                title: 'Texas Holdem Bonus Poker'
+            },
+            {
+                img: 'img/casino.jpg',
+                title: 'Casino Holdem'
+            },
+            {
+                img: 'img/threecardpoker.jpg',
+                title: 'Three Card Poker'
+            },
+            {
+                img: 'img/7cardstud.jpg',
+                title: 'Caribbean Stud Poker'
+            },
+            {
+                img: 'img/dreamcatcher.png',
+                title: 'Dreamcatcher'
+            }
+            // {
+            //     img: '../img/Keno.jpg',
+            //     title: 'Keno'
+            // }
 
         ];
 
         $scope.mySlides2 = [{
-                img: 'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-                title: 'TeenPatti'
+                img: 'img/Cricket.jpg',
+                title: 'Cricket'
             },
             {
-                img: '../img/game1.jpg',
-                title: 'Poker'
+                img: 'img/Football.jpg',
+                title: 'Football'
             },
             {
-                img: 'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-                title: 'Roulette'
+                img: 'img/Tennis.jpg',
+                title: 'Tennis'
             },
             {
-                img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
-                title: 'Craps'
+                img: 'img/GreyhoundRacing.jpg',
+                title: 'Greyhound Racing'
             },
             {
-                img: 'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-                title: 'Blackjack'
-            },
-            {
-                img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
-                title: 'Baccarat'
-            },
-
+                img: 'img/HorseRacing.jpg',
+                title: 'Horse Racing'
+            }
         ];
 
+        $scope.createswiper = function () {
+            console.log("inside createswiper fn")
+            $timeout(function () {
+                var mySwiper1 = new Swiper('.swiper-container1', {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+
+                })
+
+                console.log("inside timeout swiper1");
+            }, 50);
+        }
         $timeout(function () {
             var mySwiper = new Swiper('.swiper-container', {
                 slidesPerView: 5,
@@ -70,24 +145,8 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                     prevEl: '.swiper-button-prev',
                 }
             })
-
-        }, 100)
-
-        $timeout(function () {
-            var mySwiper = new Swiper('.swiper-container1', {
-                slidesPerView: 5,
-                spaceBetween: 30,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                }
-            })
-
-        }, 100)
+            console.log("inside timeout");
+        }, 1000);
 
         var abc = _.times(100, function (n) {
             return n;
@@ -140,6 +199,35 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         setTimeout(function () {
             new WOW().init();
         }, 0);
+
+        $scope.mySlides2 = [{
+                img: '../img/game4.jpg',
+                title: 'TeenPatti'
+            },
+            {
+                img: '../img/game1.jpg',
+                title: 'Poker'
+            },
+            {
+                img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
+                title: 'Roulette'
+            },
+            {
+                img: 'https://cdn.decent.bet/img/backgrounds/craps.jpg',
+                title: 'Craps'
+            },
+            {
+                img: '../img/blackjack.jpg',
+                title: 'Blackjack'
+            },
+            {
+                img: '../img/Baccarat.jpg',
+                title: 'Baccarat'
+            },
+
+        ];
+
+
     })
 
     .controller('TokenstructureCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {

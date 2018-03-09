@@ -1,14 +1,30 @@
-<!-- <footer>
+<footer class="custom-footer">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <p>Copyright &copy; {{template.year}}. All Right Resvered.</p>
+        <nav class="navbar footer-nav text-uppercase">
+            <div class="row">
+                <!-- <div class="navbar-header col-md-1 col-md-offset-2 col-xs-12">
+                    <a class="navbar-brand pad0" ui-sref="home">
+                        <img class="footer-logo" src="img/coin.png" alt="logo">
+                    </a>
+                </div> -->
+                <div class="col-md-12 col-md-offset-2 col-xs-12">
+                    <div ng-include="template.menu" class="template menu"></div>
+                </div>
             </div>
-            <div class="col-sm-6">
+        </nav>
+        <div class="row">
+            <div class="col-sm-5 col-xs-12">
+                <p>Copyright &copy; {{template.year}}. All Rights Resvered.</p>
+            </div>
+            <div class="col-sm-2 col-xs-12">
+                <img class="logo" src="img/logo1.png" alt="logo">
+            </div>
+            <div class="col-sm-5 col-xs-12">
                 <div class="pull-right">
-                    <p>Developed by <a href="http://www.wohlig.com" target="_blank">Wohlig Technology</a>.</p>
+                    <p>Developed & Designed by
+                        <a href="http://www.wohlig.com" target="_blank">Wohlig Transformations Pvt. Ltd</a>.</p>
                 </div>
             </div>
         </div>
     </div>
-</footer> -->
+</footer>

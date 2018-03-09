@@ -52,9 +52,10 @@
                 <img class="wdh" src="img/newglobe.gif">
             </div>
             <div class="globe-text">
-                <p class="title">
-                    <strong>BetKoin&nbsp;-&nbsp;</strong>A new Era !</p>
-                <p class="subtitle heading-yellow">Gamble beyond, Inspire a generation.</p>
+                <p class="title text-left">
+                    <strong>BetKoin&nbsp;</strong>
+                </p>
+                <p class="subtitle text-left heading-yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gambling world at your doorstep!</p>
             </div>
 
         </div>
@@ -75,12 +76,12 @@
                     <p>Betkoin is the first crypto to actually have a concept and a business plan. It's a huge transformation
                         in the gambling and betting world. The widespread adoption of cryptocurrency in gambling is no more
                         a pipe dream. With Betkoin, its a reality now. This crypto is your ATM for any type of betting, be
-                        it on casino games like Teen Patti, Poker or sportsbook like Horse racing, Cricket, football etc.
+                        it for casino games like Teen Patti, Poker or sportsbook like Horse racing, Cricket, football etc.
                         Betkoin is based on blockchain technology. Transactions are permanent with 0% chance of fraud.</p>
                     <br>
 
                     <h3 class="heading-yellow">Why to invest in Betkoin</h3>
-                    <p>In 2016, the total gambling gross yield worldwide was projected to reach 450 billion U.S. dollars, this
+                    <p>In 2016, the total gambling gross yield worldwide was projected to reach 450 billion U.S. dollars. This
                         was forecasted to rise to 495 billion U.S. dollars by 2019. These stats clearly state what collection
                         is made from betting and that there will be continuously demand for Betkoin and so the price will
                         keep rising. Hence, it will be a steady and continuous growth.</p>
@@ -104,7 +105,7 @@
                 <div class="col-md-6 col-xs-12 ">
                     <div class="row">
                         <div class="col-md-2">
-                            <img class="icon wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s" src="img/why1.png ">
+                            <img class="icon wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s" src="img/pb1.png ">
                         </div>
                         <div class="col-md-9">
                             <p class="title wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">Transparency</p>
@@ -120,7 +121,7 @@
                 <div class="col-md-6 col-xs-12 ">
                     <div class="row ">
                         <div class="col-md-2 ">
-                            <img class="icon wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s" src="img/why2.png ">
+                            <img class="icon wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s" src="img/pb2.png ">
                         </div>
                         <div class="col-md-9 ">
                             <p class="title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">Highest security technology</p>
@@ -136,18 +137,18 @@
                 <div class="col-md-6 col-xs-12 ">
                     <div class="row ">
                         <div class="col-md-2 ">
-                            <img class="icon wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s" src="img/why3.png ">
+                            <img class="icon wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s" src="img/pb3.png ">
                         </div>
                         <div class="col-md-9 ">
                             <p class="title wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">Accessibility</p>
                             <p class="info text-left ">
                                 <p class="info wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
                                     Since
-                                    <span class="logo-text">BetKoin</span> is not bound by the exchange rates, interest rates, transactions charges
-                                    or other charges of any country; therefore it can be used at an international level without
-                                    experiencing any problems. This, in turn, saves lots of time as well as money which is
-                                    otherwise spent in transferring money from one country to the other. Betkoin operates
-                                    at the universal level and hence makes transactions quite easy.
+                                    <span class="logo-text">BetKoin</span> is almost non-existent by the exchange rates, interest rates, transactions
+                                    charges or other charges of any country; therefore it can be used at an international
+                                    level without experiencing any problems. This, in turn, saves lots of time as well as
+                                    money which is otherwise spent in transferring money from one country to the other. Betkoin
+                                    operates at the universal level and hence makes transactions quite easy.
                                 </p>
                             </p>
                         </div>
@@ -156,7 +157,7 @@
                 <div class="col-md-6 col-xs-12 ">
                     <div class="row ">
                         <div class="col-md-2 ">
-                            <img class="icon wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s" src="img/why4.png ">
+                            <img class="icon wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s" src="img/pb4.png ">
                         </div>
                         <div class="col-md-9 ">
                             <p class="title wow fadeInLeftt" data-wow-duration="1s" data-wow-delay="0.4s">Highest speed with lowest cost</p>
@@ -183,34 +184,46 @@
             <div class="row">
                 <uib-tabset type="pills" justified="true" class="games-tabs">
                     <uib-tab heading="CASINO">
-                        <div class="swiper-container">
+                        <div class="relative">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide games-card" style="background-image:url({{s.img}});" ng-repeat="s in mySlides">
+                                        <div class="offer-game">
+                                            <h5 class="text-center">{{s.title}}</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+                    </uib-tab>
+                    <uib-tab heading="SPORTS BOOK" ng-click="createswiper()">
+                        <div class="swiper-container1">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide game-card" style="background-image:url({{s.img}});" ng-repeat="s in mySlides">
-                                    <div class="offer-game slots ">
+                                <div class="swiper-slide games-card" style="background-image:url({{s.img}});" ng-repeat="s in mySlides2">
+                                    <div class="offer-game">
                                         <h5 class="text-center">{{s.title}}</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-pagination"></div>
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
-                            <div class="swiper-scrollbar"></div>
+
                         </div>
-                    </uib-tab>
-                    <uib-tab heading="SPORTS BOOK">
-                        <div class="swiper-container1">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide1 game-card" style="background-image:url({{x.img}});" ng-repeat="x in mySlides2">
-                                    <div class="offer-game slots ">
-                                        <h5 class="text-center">{{x.title}}</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-scrollbar"></div>
-                        </div>
+                        <!-- <swiper class="swiper-container1" autoplay="5000" effect="slide" slides-per-view="3" loop="true">
+                            <slides>
+                                <slide ng-repeat="s in mySlides">
+                                    <img ng-src="{{s.img}}" class="img-full" noloading="true">
+                                </slide>
+                            </slides>
+                            <prev></prev>
+                            <next></next>
+                            <pagination></pagination>
+                        </swiper> -->
                     </uib-tab>
                 </uib-tabset>
 
