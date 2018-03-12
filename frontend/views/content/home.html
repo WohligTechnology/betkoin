@@ -30,7 +30,7 @@
     </div>
 </div> -->
 
-<div classs="row">
+<div class="">
     <!-- Social Media -->
     <div class="socialmedia">
         <div class="wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
@@ -38,9 +38,14 @@
                 <img src="img/facebook.png">
             </a>
         </div>
-        <div class="wow flipInX" data-wow-duration="1s" data-wow-delay="1.5s">
+        <div class="wow flipInX" data-wow-duration="1s" data-wow-delay="1.4s">
             <a href="#">
                 <img src="img/twitter.png">
+            </a>
+        </div>
+        <div class="wow flipInX" data-wow-duration="1s" data-wow-delay="1.8s">
+            <a href="#">
+                <img src="img/instagram.png">
             </a>
         </div>
     </div>
@@ -55,7 +60,8 @@
                 <p class="title text-left">
                     <strong>BetKoin&nbsp;</strong>
                 </p>
-                <p class="subtitle text-left heading-yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gambling world at your doorstep!</p>
+                <p class="subtitle text-right heading-yellow">Gambling world at your doorstep!
+                    <br>Targetting 495 Billion USD Gambling Industry</p>
             </div>
 
         </div>
@@ -64,7 +70,7 @@
     <!-- Section Why Betkoin -->
     <div class="whytobuy">
         <div class="text-center text-uppercase heading-yellow wow pulse" data-wow-duration="1s">
-            <h3>Why BetKoin</h3>
+            <h1>Why BetKoin</h1>
             <hr>
         </div>
         <div class="container mt-4 pt-4">
@@ -78,27 +84,36 @@
                         a pipe dream. With Betkoin, its a reality now. This crypto is your ATM for any type of betting, be
                         it for casino games like Teen Patti, Poker or sportsbook like Horse racing, Cricket, football etc.
                         Betkoin is based on blockchain technology. Transactions are permanent with 0% chance of fraud.</p>
-                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <h3 class="heading-yellow">Why to invest in Betkoin</h3>
+
+    <!-- Section Why to Invest in Betkoin -->
+    <div class="whytobuy">
+        <div class="text-center text-uppercase heading-yellow wow pulse" data-wow-duration="1s">
+            <h1>Why to invest in Betkoin</h1>
+            <hr>
+        </div>
+        <div class="container mt-4 pt-4">
+            <div class="row">
+                <div class="text-center">
                     <p>In 2016, the total gambling gross yield worldwide was projected to reach 450 billion U.S. dollars. This
                         was forecasted to rise to 495 billion U.S. dollars by 2019. These stats clearly state what collection
                         is made from betting and that there will be continuously demand for Betkoin and so the price will
                         keep rising. Hence, it will be a steady and continuous growth.</p>
-                    </p>
                 </div>
             </div>
-
         </div>
-
     </div>
 
 
-    <!-- Section Why -->
+    <!-- Section Platform Benefits -->
     <div class="why ">
         <div class="container ">
             <div class="text-center text-uppercase heading-yellow wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.2s">
-                <h3>platform benefits</h3>
+                <h1>platform benefits</h1>
                 <hr>
             </div>
             <div class="row points ">
@@ -174,47 +189,56 @@
 
     <!-- Section Games -->
     <div class="games ">
-        <div class=" " style="width: 80%; margin: 0% 10%;">
-            <div class="row ">
-                <div class="text-center text-uppercase heading-black wow flipInX" data-wow-duration="1s">
-                    <h3>games on offer</h3>
-                    <hr>
-                </div>
+        <div class="row">
+            <div class="text-center text-uppercase heading-black wow flipInX" data-wow-duration="1s">
+                <h1>games on offer</h1>
+                <hr>
             </div>
-            <div class="row">
-                <uib-tabset type="pills" justified="true" class="games-tabs">
-                    <uib-tab heading="CASINO">
-                        <div class="relative">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide games-card" style="background-image:url({{s.img}});" ng-repeat="s in mySlides">
-                                        <div class="offer-game">
-                                            <h5 class="text-center">{{s.title}}</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <div class="swiper-scrollbar"></div> -->
-                                <!-- <div class="swiper-pagination"></div> -->
-                            </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
+        </div>
 
-                    </uib-tab>
-                    <uib-tab heading="SPORTS BOOK" ng-click="createswiper()">
-                        <div class="swiper-container1">
+
+        <div class="container">
+
+            <!-- <div class="next2">Next1 </div>
+            <div class="prev2">Previous </div> -->
+            <uib-tabset type="pills" justified="true" class="games-tabs">
+                <uib-tab heading="CASINO">
+                    <div class="next">
+                        <img src="img/next.png">
+                    </div>
+                    <div class="prev">
+                        <img src="img/previous.png">
+                    </div>
+                    <div class="relative">
+                        <div class="swiper-container">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide games-card" style="background-image:url({{s.img}});" ng-repeat="s in mySlides2">
+                                <div class="swiper-slide games-card" style="background-image:url({{s.img}});" ng-repeat="s in mySlides">
                                     <div class="offer-game">
                                         <h5 class="text-center">{{s.title}}</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-
+                            <!-- <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div> -->
                         </div>
-                        <!-- <swiper class="swiper-container1" autoplay="5000" effect="slide" slides-per-view="3" loop="true">
+                    </div>
+                </uib-tab>
+                <uib-tab heading="SPORTS BOOK" ng-click="createswiper()">
+                    <!-- <div class="next2">Next2 </div>
+                    <div class="prev2">Previous2 </div> -->
+                    <div class="swiper-container1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide games-card" style="background-image:url({{s.img}});" ng-repeat="s in mySlides2">
+                                <div class="offer-game">
+                                    <h5 class="text-center">{{s.title}}</h5>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div> -->
+                        </div>
+
+                    </div>
+                    <!-- <swiper class="swiper-container1" autoplay="5000" effect="slide" slides-per-view="3" loop="true">
                             <slides>
                                 <slide ng-repeat="s in mySlides">
                                     <img ng-src="{{s.img}}" class="img-full" noloading="true">
@@ -224,64 +248,18 @@
                             <next></next>
                             <pagination></pagination>
                         </swiper> -->
-                    </uib-tab>
-                </uib-tabset>
+                </uib-tab>
+            </uib-tabset>
 
-            </div>
-
-
-            <div class="row available ">
-                <div class="col-12 col-md-3 hvr-float-shadow ">
-                    <!-- <div class="game-card wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s" style="color: rgb(51, 51, 51); background-color: rgb(29, 35, 47); transition:
-                all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; box-sizing: border-box; -webkit-tap-highlight-color:
-                rgba(0, 0, 0, 0); box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 60px, rgba(0, 0, 0, 0.22) 0px 15px 20px; border-radius:
-                10px; z-index: 1; min-height: 400px; cursor: pointer; ">
-                        <div style="padding-bottom: 0px; ">
-                            <div class="offer-game sports-betting ">
-                                <h5 class="text-center ">POKER</h5>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-                <!-- <div class="col-12 col-md-3 hvr-float-shadow ">
-                    <div class="game-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <div style="padding-bottom: 0px; ">
-                            <div class="offer-game slots ">
-                                <h5 class="text-center ">CASINO</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3 hvr-float-shadow ">
-                    <div class="game-card wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <div style="padding-bottom: 0px; ">
-                            <div class="offer-game craps ">
-                                <h5 class="text-center ">SPORTS BOOK</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="col-12 col-md-3 hvr-float-shadow wow fadeIn ">
-                    <!-- <div class="game-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" style="color: rgb(51, 51, 51); background-color: rgb(29, 35, 47); transition:
-                all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; box-sizing: border-box; font-family: Roboto, sans-serif; -webkit-tap-highlight-color:
-                rgba(0, 0, 0, 0); box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 60px, rgba(0, 0, 0, 0.22) 0px 15px 20px; border-radius:
-                10px; z-index: 1; min-height: 400px; cursor: pointer; ">
-                        <div style="padding-bottom: 0px; ">
-                            <div class="offer-game roulette ">
-                                <h5 class="text-center ">ROULETTE</h5>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
         </div>
+
     </div>
 
     <!-- Section Where To Buy -->
     <div class="wheretobuy">
         <div class="text-center text-uppercase heading-yellow wow pulse" data-wow-duration="1s">
-            <h3>Where to buy BetKoins</h3>
-            <hr>
+            <h1>Where to buy BetKoins</h>
+                <hr>
         </div>
         <div class="mt-4 pt-4 text-center">
             <a href="#" title="Etherdelta" class="d-inline-block mb-4 wow pulse" data-wow-duration="1s" data-wow-delay="0.2s">

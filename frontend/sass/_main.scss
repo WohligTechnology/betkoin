@@ -7,16 +7,26 @@ $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
 $wdh: 100%;
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Lato|Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 /* Bootstrap Variables Goes Here */
 
 @import "other/font-fix";
 body {
-    p {
-        font-size: 16px;
+    h1,
+    h2,
+    h3 {
+        font-family: oswald, Helvetica, Arial, Lucida, sans-serif;
     }
-    font-family: 'Lato',
+    p {
+        font-size: 19px;
+        font-weight: 700;
+    }
+    font-family: open sans,
+    Arial,
     sans-serif;
+    font-size: 19px;
+    -webkit-font-smoothing: antialiased;
     padding-top: 0px;
     &::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
@@ -227,7 +237,9 @@ header {
     top: 43%;
     color: #fff;
     .title {
-        font-size: 4vw;
+        font-family: oswald, Helvetica, Arial, Lucida, sans-serif;
+        font-size: 6vw;
+        letter-spacing: 2.2px;
         background: rgba(0, 0, 0, 0.5);
     }
     @keyframes typing {
@@ -282,7 +294,7 @@ header {
         }
     }
     .subtitle {
-        font-size: 2vw;
+        font-size: 1.7vw;
         white-space: nowrap;
         overflow: hidden; // -webkit-animation: typing 6s steps(50, end), blink-caret 2s step-end infinite;
         // -moz-animation: typing 6s steps(50, end), blink-caret 2s step-end infinite;
@@ -294,7 +306,7 @@ header {
     background-color: #fff;
     height: 2px;
     margin-top: 30px;
-    width: 100px;
+    width: 150px;
 }
 
 .wheretobuy {
@@ -337,7 +349,8 @@ header {
     }
     .title {
         @extend .heading-yellow;
-        font-weight: 700;
+        font-family: oswald, Helvetica, Arial, Lucida, sans-serif;
+        ;
         font-size: 1.4em;
     }
     .info {
@@ -352,6 +365,28 @@ header {
 }
 
 .games {
+    .next {
+        float: right;
+        position: absolute;
+        z-index: 99;
+        right: 5%;
+        padding-top: 10%;
+        cursor: pointer;
+    }
+    .prev {
+        float: left;
+        position: absolute;
+        z-index: 99;
+        left: 3%;
+        padding-top: 10%;
+        cursor: pointer;
+    }
+    .next2 {
+        @extend .next;
+    }
+    .prev2 {
+        @extend .prev;
+    }
     background: #e39f15;
     min-height: 600px;
     padding: 75px 0 !important;
@@ -399,6 +434,7 @@ header {
             width: 100%;
             background: rgba(0, 0, 0, .75);
             padding: 15px 0;
+            font-weight: 700;
         }
     }
     .games-card {
@@ -430,14 +466,20 @@ header {
         .nav-pills>li.active>a,
         .nav-pills>li.active>a:focus,
         .nav-pills>li.active>a:hover {
-            color: #fff;
+            @extend .heading-yellow;
             background: #000;
+            -webkit-box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.75);
+            font-weight: bold;
+            transform: scale(1.1);
         }
         a {
             color: #fff;
             width: 40%;
             margin: 2%;
             background: #000;
+            font-size: 1vw;
         }
         .nav-justified>li,
         .nav-tabs.nav-justified>li {
@@ -717,19 +759,17 @@ header {
         background: #0a0809;
     }
     .about-parallax {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 35%, rgba(0, 0, 0, 0.3)), url("../img/c2.jpg");
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 35%, rgba(0, 0, 0, 0.3)), url("../img/c2.png");
         background-attachment: fixed; // background-position: center;
         background-size: cover;
-        width: 100%; // height: 100vh;
+        width: 100%;
         -webkit-animation: slide 10s linear infinite;
         animation: slide 10s linear infinite;
+        min-height: calc(100vh - 165px);
     }
     .aboutinfo {
         color: #fff;
-        padding: 15% 0%;
-        p {
-            font-size: 1.3em;
-        }
+        padding: 20% 0% 0% 0%;
         img {
             width: $wdh;
         }
@@ -738,8 +778,9 @@ header {
             text-transform: uppercase;
             font-size: 35px;
             letter-spacing: 10px;
-            font-family: 'SVN-Nexa Bold';
             margin-bottom: 50px;
+            font-family: oswald, Helvetica, Arial, Lucida, sans-serif;
+            ;
         }
     }
 }
@@ -861,6 +902,7 @@ header {
         }
         h5 {
             color: #fff;
+            font-size: 19px;
         }
         .divider {
             border-width: 2px;
@@ -873,6 +915,8 @@ header {
                 font-weight: 700;
                 color: #e8b863;
                 text-transform: uppercase;
+                font-family: oswald, Helvetica, Arial, Lucida, sans-serif;
+                ;
             }
             .divider {
                 border-width: 1px;
@@ -934,8 +978,10 @@ header {
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
+    color: #e0b672;
     background-color: transparent;
+    font-weight: bold;
+    transform: scale(1.1);
 }
 
 .socialmedia {
@@ -1181,37 +1227,33 @@ header {
 .partner {
     @extend .tokenstructure;
     .token-parallax {
-        background-image: #000;
         background-attachment: fixed;
         background-repeat: repeat-x;
         background-size: 100% 100%;
         height: auto;
         -webkit-animation: none;
         animation: none;
-        padding: 10% 0%;
-        background: #000;
     }
     .tokeninfo {
         color: #fff;
-        padding: 10% 0% 5%;
+        padding: 20% 0% 0% 0%;
     }
 }
 
 .contactus {
-    @extend .tokenstructure;
-    .token-parallax {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.5)), url(../img/bg4.jpg);
+    @extend .aboutus;
+    .about-parallax {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.5)), url(../img/bg-contact.jpg);
         background-attachment: fixed;
         background-repeat: repeat-x;
         background-size: 100% 100%;
-        height: auto;
         -webkit-animation: none;
         animation: none;
-        padding: 10% 0%;
+        min-height: calc(100vh - 165px);
     }
     .tokeninfo {
         color: #fff;
-        padding: 10% 0% 5%;
+        padding-top: 25%;
     }
     .contactblock {
         border: 2.5px solid;
@@ -1235,4 +1277,31 @@ header {
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
+}
+
+.modal-content {
+    border: 2.5px solid;
+    -o-border-image: linear-gradient(90deg, #ffe088 0%, #b78a00 100%);
+    border-image: -webkit-gradient(linear, left top, right top, from(#ffe088), to(#b78a00));
+    border-image: linear-gradient(90deg, #ffe088 0%, #b78a00 100%);
+    border-image-slice: 2;
+    color: #fff;
+}
+
+.custom-modal {
+    background: #000;
+    font-size: 1vw;
+    .modal-header {
+        border-bottom: 0px solid #e5e5e5;
+    }
+    .close {
+        color: #fff;
+        opacity: 1;
+    }
+    .modal-header {
+        border-bottom: none;
+    }
+    .close {
+        opacity: 1;
+    }
 }

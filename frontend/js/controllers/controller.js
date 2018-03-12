@@ -126,9 +126,13 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                         el: '.swiper-pagination',
                         clickable: true,
                     },
-
+                    navigation: {
+                        // nextEl: '.swiper-button-next',
+                        // prevEl: '.swiper-button-prev',
+                        nextEl: '.next2',
+                        prevEl: '.prev2'
+                    }
                 })
-
                 console.log("inside timeout swiper1");
             }, 50);
         }
@@ -141,12 +145,15 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                     clickable: true,
                 },
                 navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
+                    // nextEl: '.swiper-button-next',
+                    // prevEl: '.swiper-button-prev',
+                    nextEl: '.next',
+                    prevEl: '.prev'
                 }
             })
             console.log("inside timeout");
         }, 1000);
+
 
         var abc = _.times(100, function (n) {
             return n;
