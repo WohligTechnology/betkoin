@@ -75466,6 +75466,9 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                         // prevEl: '.swiper-button-prev',
                         nextEl: '.next2',
                         prevEl: '.prev2'
+                    },
+                    autoplay: {
+                        delay: 1000,
                     }
                 })
                 console.log("inside timeout swiper1");
@@ -75484,10 +75487,35 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                     // prevEl: '.swiper-button-prev',
                     nextEl: '.next',
                     prevEl: '.prev'
+                },
+                autoplay: {
+                    delay: 1500,
+                },
+                keyboard: {
+                    enabled: true,
+                    onlyInViewport: false
+                },
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    }
                 }
             })
             console.log("inside timeout");
-        }, 1000);
+        }, 100);
 
 
         var abc = _.times(100, function (n) {
