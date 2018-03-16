@@ -7,6 +7,7 @@ module.exports = [
   'bower_components/smart-app-banner/smart-app-banner.js',
   "bower_components/moment/min/moment.min.js",
   "bower_components/wow/dist/wow.min.js",
+  "bower_components/fullpage.js/jquery.fullPage.min.js",
 
 
   //Angular Libs
@@ -26,6 +27,7 @@ module.exports = [
   "bower_components/angular-toastr/dist/angular-toastr.tpls.js",
   "bower_components/angular-promise-buttons/dist/angular-promise-buttons.js",
   "bower_components/swiper/dist/js/swiper.js",
+  "bower_components/angular-fullpage.js/angular-fullpage.js",
 
   //App.js
   'frontend/js/app.js',

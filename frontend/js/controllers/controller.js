@@ -2,7 +2,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.template = TemplateService.getHTML("content/home.html");
         TemplateService.title = "Home"; //This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
-
+        location.href = "#zeroPage";
         $scope.mySlides = [{
                 img: 'img/game4.jpg',
                 title: 'TeenPatti'
@@ -197,6 +197,13 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         setTimeout(function () {
             new WOW().init();
         }, 0);
+
+        //fullpage scroll
+        $scope.mainOptions = {
+            sectionsColor: ['#1f282e', '#000', '#1f282e', '#000', '#1f282e'],
+            anchors: ['zeroPage', 'firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+            scrollingSpeed: 1000
+        };
 
 
     })
