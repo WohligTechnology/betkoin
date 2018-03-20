@@ -40,6 +40,7 @@ body {
     p {
         font-size: 19px;
         font-family: DroidSans;
+        -webkit-font-smoothing: antialiased;
     }
     small {
         font-size: 14.5px;
@@ -200,6 +201,8 @@ header {
 
 .section-cover {
     background-image: url("../img/BKN_0004_1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 @-webkit-keyframes slide {
@@ -247,7 +250,7 @@ header {
 }
 
 .globe-container {
-    padding-top: 7%;
+    padding: 10% 0%;
 }
 
 .globe {
@@ -255,35 +258,48 @@ header {
     -moz-box-shadow: 0px 0px 106px 5px rgba(0, 0, 0, 0.75);
     border-radius: 360px;
     box-shadow: 0px 0px 106px 55px rgba(0, 0, 0, 0.75);
-    transform: translate(0%, 30%);
     background: #000;
+    margin-bottom: 18%;
+    background-image: url(/img/globetday.png);
+    background-position-x: center;
+    background-size: 100%;
 }
 
 .globe-text {
     width: 40%;
     right: 11%;
-    top: 10%;
+    top: 45%;
     padding: 0% 2% 1%;
     position: absolute;
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
     .title {
         font-family: Oswald;
+        h1 {
+            font-size: 80pt !important;
+        }
     }
     .subtitle {
         font-family: DroidSans;
+        -webkit-font-smoothing: antialiased;
+        h4 {
+            font-size: 25pt !important;
+        }
     }
 }
 
 .small-hr {
     background-color: #ffd700;
     height: 2px;
-    margin-top: 30px;
     width: 150px;
+    margin: 15px auto 20px;
+    border-top: 1px solid #ffd700;
 }
 
 .wheretobuy {
     background-image: url('../img/BKN_0000_5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     padding: 80px 0;
     hr {
         @extend .small-hr;
@@ -304,8 +320,9 @@ header {
         a {
             img {
                 display: inline-block;
-                max-width: 480px;
+                max-width: 500px;
                 height: auto;
+                padding: 0% 10%;
             }
         }
     }
@@ -313,6 +330,8 @@ header {
 
 .why {
     background-image: url('../img/BKN_0002_3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     padding: 75px 0 !important;
     hr {
         @extend .small-hr;
@@ -345,13 +364,17 @@ header {
 
 .games {
     background-image: url('../img/BKN_0001_4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0 !important;
     .next {
         float: right;
         position: absolute;
         z-index: 99;
-        right: 5%;
+        right: 40px;
         padding-top: 10%;
         cursor: pointer;
+        left: auto;
     }
     .prev {
         float: left;
@@ -401,7 +424,7 @@ header {
     .offer-game {
         position: relative;
         width: 100%;
-        height: 400px;
+        height: 340px;
         border-radius: 10px;
         h5 {
             color: #fff;
@@ -411,6 +434,7 @@ header {
             width: 100%;
             background: rgba(0, 0, 0, .75);
             padding: 15px 0;
+            font-size: 14pt;
         }
     }
     .games-card {
@@ -729,7 +753,7 @@ header {
     }
     .aboutinfo {
         color: #fff;
-        padding: 20% 0% 0% 0%;
+        padding: 15% 0% 0% 0%;
         img {
             width: $wdh;
         }
@@ -847,6 +871,7 @@ header {
         }
         h5 {
             color: #fff;
+            font-size: 19px;
         }
         .divider {
             border-width: 2px;
@@ -859,7 +884,7 @@ header {
                 font-weight: 700;
                 color: #ffd700;
                 text-transform: uppercase;
-                font-family: oswald, Helvetica, Arial, Lucida, sans-serif;
+                font-family: Oswald;
                 ;
             }
             .divider {
@@ -867,7 +892,7 @@ header {
                 border-color: #8e8e8e !important;
             }
             .answer {
-                color: #cecccc;
+                color: #fff;
             }
         }
     }
@@ -897,6 +922,8 @@ header {
     background-color: rgba(19, 24, 32, 0.86);
     border-color: transparent;
     padding: 10px;
+    font-family: Oswald;
+    font-size: 15pt;
     .navbar-toggle {
         border-color: transparent;
         .icon-bar {
@@ -924,7 +951,6 @@ header {
 .navbar-default .navbar-nav>.active>a:focus {
     color: #ffd700;
     background-color: transparent;
-    font-weight: bold;
     transform: scale(1.1);
 }
 
@@ -1012,6 +1038,8 @@ header {
 .whytobuy {
     @extend .wheretobuy;
     background-image: url('../img/BKN_0003_2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     p {
         color: #fff;
     }
@@ -1020,6 +1048,18 @@ header {
         -webkit-filter: none;
         max-width: none;
     }
+    .spacing {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 1% 4% 6% 4%;
+        @extend .mt4;
+        .graph-spacing {
+            padding: 10% 0% 0% 10%;
+        }
+    }
+}
+
+.mt4 {
+    margin-top: 4%;
 }
 
 .custom-input {
@@ -1154,6 +1194,7 @@ header {
 
 .custom-footer {
     padding: 1% 0%;
+    font-family: Oswald;
     .footer-logo {
         max-width: 100%;
     }
@@ -1165,6 +1206,12 @@ header {
     a {
         color: #fff;
         text-decoration: none;
+    }
+    .nav>li>a:hover,
+    .nav>li>a:focus {
+        text-decoration: none;
+        background-color: transparent;
+        color: #ffd700;
     }
 }
 
@@ -1184,7 +1231,7 @@ header {
     }
     .tokeninfo {
         color: #fff;
-        padding: 20% 0% 0% 0%;
+        padding: 5% 0% 0% 0%;
     }
 }
 
@@ -1201,7 +1248,7 @@ header {
     }
     .tokeninfo {
         color: #fff;
-        padding-top: 25%;
+        padding: 6% 0% 2% 0%;   
     }
     .contactblock {
         border: 2.5px solid;
