@@ -94,51 +94,6 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
         ];
 
-        $scope.mySlides2 = [{
-                img: 'img/Cricket.jpg',
-                title: 'Cricket'
-            },
-            {
-                img: 'img/Football.jpg',
-                title: 'Football'
-            },
-            {
-                img: 'img/Tennis.jpg',
-                title: 'Tennis'
-            },
-            {
-                img: 'img/GreyhoundRacing.jpg',
-                title: 'Greyhound Racing'
-            },
-            {
-                img: 'img/HorseRacing.jpg',
-                title: 'Horse Racing'
-            }
-        ];
-
-        $scope.createswiper = function () {
-            console.log("inside createswiper fn")
-            $timeout(function () {
-                var mySwiper1 = new Swiper('.swiper-container1', {
-                    slidesPerView: 5,
-                    spaceBetween: 30,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    navigation: {
-                        // nextEl: '.swiper-button-next',
-                        // prevEl: '.swiper-button-prev',
-                        nextEl: '.next2',
-                        prevEl: '.prev2'
-                    },
-                    autoplay: {
-                        delay: 1000,
-                    }
-                })
-                console.log("inside timeout swiper1");
-            }, 50);
-        }
         $timeout(function () {
             var mySwiper = new Swiper('.swiper-container', {
                 slidesPerView: 5,
@@ -181,6 +136,118 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             })
             console.log("inside timeout");
         }, 100);
+
+        $timeout(function () {
+            var mySwiper = new Swiper('.swiper-container2', {
+                slidesPerView: 5,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    // nextEl: '.swiper-button-next',
+                    // prevEl: '.swiper-button-prev',
+                    nextEl: '.next2',
+                    prevEl: '.prev2'
+                },
+                autoplay: {
+                    delay: 1500,
+                },
+                keyboard: {
+                    enabled: true,
+                    onlyInViewport: false
+                },
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    }
+                }
+            })
+            console.log("inside timeout");
+        }, 100);
+
+        $scope.mySlides2 = [{
+                img: 'img/Cricket.jpg',
+                title: 'Cricket'
+            },
+            {
+                img: 'img/Football.jpg',
+                title: 'Football'
+            },
+            {
+                img: 'img/Tennis.jpg',
+                title: 'Tennis'
+            },
+            {
+                img: 'img/GreyhoundRacing.jpg',
+                title: 'Greyhound Racing'
+            },
+            {
+                img: 'img/HorseRacing.jpg',
+                title: 'Horse Racing'
+            }
+        ];
+
+        $scope.createswiper = function () {
+            console.log("inside createswiper fn")
+            $timeout(function () {
+                var mySwiper1 = new Swiper('.swiper-container1', {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        // nextEl: '.swiper-button-next',
+                        // prevEl: '.swiper-button-prev',
+                        nextEl: '.next2',
+                        prevEl: '.prev2'
+                    },
+                    keyboard: {
+                        enabled: true,
+                        onlyInViewport: false
+                    },
+                    autoplay: {
+                        delay: 1000,
+                    },
+                    breakpoints: {
+                        1024: {
+                            slidesPerView: 4,
+                            spaceBetween: 40,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        320: {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                        }
+                    }
+                })
+                console.log("inside timeout swiper1");
+            }, 50);
+        }
+
 
 
         var abc = _.times(100, function (n) {
@@ -241,35 +308,6 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         setTimeout(function () {
             new WOW().init();
         }, 0);
-
-        $scope.mySlides2 = [{
-                img: '../img/game4.jpg',
-                title: 'TeenPatti'
-            },
-            {
-                img: '../img/game1.jpg',
-                title: 'Poker'
-            },
-            {
-                img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
-                title: 'Roulette'
-            },
-            {
-                img: 'https://cdn.decent.bet/img/backgrounds/craps.jpg',
-                title: 'Craps'
-            },
-            {
-                img: '../img/blackjack.jpg',
-                title: 'Blackjack'
-            },
-            {
-                img: '../img/Baccarat.jpg',
-                title: 'Baccarat'
-            },
-
-        ];
-
-
     })
 
     .controller('TokenstructureCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
