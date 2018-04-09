@@ -7,6 +7,7 @@ $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
 $wdh: 100%;
 $white: #fff;
+$yellow: #f2b45c;
 $Oswald: Oswald;
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 /* Bootstrap Variables Goes Here */
@@ -199,7 +200,7 @@ header {
 }
 
 .heading-yellow {
-    color: #ffd700;
+    color: $yellow;
 }
 
 .heading-white {
@@ -346,7 +347,7 @@ header {
             @extend .heading-white;
         }
         .logo-text {
-            color: #ffd700;
+            color: $yellow;
         }
         .points {
             margin-top: 60px;
@@ -460,7 +461,7 @@ header {
             .nav-pills>li.active>a,
             .nav-pills>li.active>a:focus,
             .nav-pills>li.active>a:hover {
-                background: #ffd700 !important;
+                background: $yellow !important;
                 color: #14171d;
                 -webkit-box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.75);
                 -moz-box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.75);
@@ -468,7 +469,7 @@ header {
                 font-weight: bold;
             }
             a {
-                color: #ffd700;
+                color: $yellow;
                 margin: 2%;
                 background: #14171d;
                 font-size: 1vw;
@@ -527,11 +528,11 @@ header {
 }
 
 .small-hr {
-    background-color: #ffd700;
+    background-color: $yellow;
     height: 2px;
     width: 150px;
     margin: 15px auto 20px;
-    border-top: 1px solid #ffd700;
+    border-top: 1px solid $yellow;
 }
 
 hr {
@@ -666,7 +667,7 @@ hr {
     .custom-pills {
         float: none;
         p {
-            color: #ffd700 !important;
+            color: $yellow !important;
         }
         h5,
         h4 {
@@ -677,7 +678,7 @@ hr {
         padding-top: 22vh;
         font-weight: 700;
         .questions {
-            color: #ffd700;
+            color: $yellow;
             font-style: normal;
             font-weight: 400;
         }
@@ -699,7 +700,7 @@ hr {
     }
     .selected-topic {
         h3 {
-            color: #ffd700;
+            color: $yellow;
             text-transform: uppercase;
         }
         h5 {
@@ -708,14 +709,14 @@ hr {
         }
         .divider {
             border-width: 2px;
-            border-color: #ffd700;
+            border-color: $yellow;
             width: 100%;
         }
         .questions {
             .question {
                 margin-top: 40px;
                 font-weight: 700;
-                color: #ffd700;
+                color: $yellow;
                 text-transform: uppercase;
                 font-family: Oswald;
                 ;
@@ -782,7 +783,7 @@ hr {
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #ffd700;
+    color: $yellow;
     background-color: transparent;
     transform: scale(1.1);
 }
@@ -793,7 +794,7 @@ hr {
     z-index: 99;
     img {
         max-width: 40px;
-        border: 1px solid #ffd700;
+        border: 1px solid $yellow;
         border-radius: 5px;
         margin: 4% 0%;
     }
@@ -957,7 +958,7 @@ hr {
         }
         &:hover,
         focus {
-            color: #ffd700;
+            color: $yellow;
             text-decoration: none;
         }
     }

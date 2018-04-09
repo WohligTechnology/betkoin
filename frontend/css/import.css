@@ -12005,7 +12005,7 @@ header {
   width: 100%; }
 
 .heading-yellow, .home .why .title {
-  color: #ffd700; }
+  color: #f2b45c; }
 
 .heading-white, .home .why .info {
   color: #fff; }
@@ -12114,7 +12114,7 @@ header {
     height: 42px;
     width: 42px; }
   .home .why .logo-text {
-    color: #ffd700; }
+    color: #f2b45c; }
   .home .why .points {
     margin-top: 60px;
     display: -webkit-box;
@@ -12208,13 +12208,13 @@ header {
   .home .solutions .games-tabs .nav-pills > li.active > a:focus,
   .home .games .games-tabs .nav-pills > li.active > a:hover,
   .home .solutions .games-tabs .nav-pills > li.active > a:hover {
-    background: #ffd700 !important;
+    background: #f2b45c !important;
     color: #14171d;
     -webkit-box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 2px 25px 1px rgba(0, 0, 0, 0.75);
     font-weight: bold; }
   .home .games .games-tabs a, .home .solutions .games-tabs a {
-    color: #ffd700;
+    color: #f2b45c;
     margin: 2%;
     background: #14171d;
     font-size: 1vw; }
@@ -12257,11 +12257,11 @@ header {
       padding: 10% 0% 0% 10%; }
 
 .small-hr, hr {
-  background-color: #ffd700;
+  background-color: #f2b45c;
   height: 2px;
   width: 150px;
   margin: 15px auto 20px;
-  border-top: 1px solid #ffd700; }
+  border-top: 1px solid #f2b45c; }
 
 .solutions {
   background: #e39f15;
@@ -12366,7 +12366,7 @@ header {
 .faq .custom-pills {
   float: none; }
   .faq .custom-pills p {
-    color: #ffd700 !important; }
+    color: #f2b45c !important; }
   .faq .custom-pills h5,
   .faq .custom-pills h4 {
     color: #fff !important; }
@@ -12375,7 +12375,7 @@ header {
   padding-top: 22vh;
   font-weight: 700; }
   .faq .header .questions {
-    color: #ffd700;
+    color: #f2b45c;
     font-style: normal;
     font-weight: 400; }
   .faq .header h1 {
@@ -12391,7 +12391,7 @@ header {
   background: transparent; }
 
 .faq .selected-topic h3 {
-  color: #ffd700;
+  color: #f2b45c;
   text-transform: uppercase; }
 
 .faq .selected-topic h5 {
@@ -12400,13 +12400,13 @@ header {
 
 .faq .selected-topic .divider {
   border-width: 2px;
-  border-color: #ffd700;
+  border-color: #f2b45c;
   width: 100%; }
 
 .faq .selected-topic .questions .question {
   margin-top: 40px;
   font-weight: 700;
-  color: #ffd700;
+  color: #f2b45c;
   text-transform: uppercase;
   font-family: Oswald; }
 
@@ -12461,7 +12461,7 @@ header {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #ffd700;
+  color: #f2b45c;
   background-color: transparent;
   -webkit-transform: scale(1.1);
           transform: scale(1.1); }
@@ -12472,7 +12472,7 @@ header {
   z-index: 99; }
   .socialmedia img {
     max-width: 40px;
-    border: 1px solid #ffd700;
+    border: 1px solid #f2b45c;
     border-radius: 5px;
     margin: 4% 0%; }
 
@@ -12650,7 +12650,7 @@ header {
     padding: 0% 1%; }
   .custom-footer nav:hover,
   .custom-footer nav focus {
-    color: #ffd700;
+    color: #f2b45c;
     text-decoration: none; }
 
 .tab-content {
