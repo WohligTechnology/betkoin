@@ -1,4 +1,4 @@
-myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout, $uibModal) {
         $scope.template = TemplateService.getHTML("content/home.html");
         TemplateService.title = "Home"; //This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
@@ -117,15 +117,15 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                 },
                 breakpoints: {
                     1024: {
-                        slidesPerView: 4,
+                        slidesPerView: 3,
                         spaceBetween: 40,
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                         spaceBetween: 30,
                     },
                     640: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                         spaceBetween: 20,
                     },
                     320: {
@@ -160,15 +160,15 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                 },
                 breakpoints: {
                     1024: {
-                        slidesPerView: 4,
+                        slidesPerView: 3,
                         spaceBetween: 40,
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                         spaceBetween: 30,
                     },
                     640: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                         spaceBetween: 20,
                     },
                     320: {
@@ -248,8 +248,6 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             }, 50);
         }
 
-
-
         var abc = _.times(100, function (n) {
             return n;
         });
@@ -272,6 +270,51 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         //     scrollingSpeed: 1000
         // };
 
+        $scope.openCricket = function (){
+            $scope.feedbackInstance = $uibModal.open({
+                animation: true,
+                templateUrl: "views/content/cricket.html",
+                scope: $scope,
+                size: 'md',
+                // backdropClass: 'back-drop'
+            });
+        }
+        $scope.openFootball = function (){
+            $scope.feedbackInstance = $uibModal.open({
+                animation: true,
+                templateUrl: "views/content/football.html",
+                scope: $scope,
+                size: 'md',
+                // backdropClass: 'back-drop'
+            });
+        }
+        $scope.openTennis = function (){
+            $scope.feedbackInstance = $uibModal.open({
+                animation: true,
+                templateUrl: "views/content/tennis.html",
+                scope: $scope,
+                size: 'md',
+                // backdropClass: 'back-drop'
+            });
+        }
+        $scope.openGreyhoundRacing = function (){
+            $scope.feedbackInstance = $uibModal.open({
+                animation: true,
+                templateUrl: "views/content/greyhoundracing.html",
+                scope: $scope,
+                size: 'md',
+                // backdropClass: 'back-drop'
+            });
+        }
+        $scope.openHorseRacing = function (){
+            $scope.feedbackInstance = $uibModal.open({
+                animation: true,
+                templateUrl: "views/content/horseracing.html",
+                scope: $scope,
+                size: 'md',
+                // backdropClass: 'back-drop'
+            });
+        }               
 
     })
 
@@ -325,10 +368,105 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.navigation = NavigationService.getNavigation();
     })
 
-    .controller('PartnerCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+    .controller('PartnerCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal) {
         $scope.template = TemplateService.getHTML("content/partner.html");
         TemplateService.title = "Partner With Us"; // This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
+
+        //Thank You Modal
+        $scope.openThanku = function (){
+            $scope.feedbackInstance = $uibModal.open({
+                animation: true,
+                templateUrl: "views/content/thanku.html",
+                scope: $scope,
+                size: 'md',
+                // backdropClass: 'back-drop'
+            });
+        }
+        
+        $scope.checklen1 = function (data) {
+            $scope.formData = {};
+            $scope.mobilenoerror = "";
+            // $scope.formData.contactno.$error.tel = false;
+            var len1 = data.length;
+            if (len1 < 10) {
+                $scope.mobilenoerror = "Please enter valid Mobile Number";
+                console.log('In Length', len);
+                // $scope.formData.contactno.$error.tel = true;
+            } else if (len1 == 10) {
+                $scope.mobilenoerror = "";
+            }
+        }
+
+        //Form Validation
+      $scope.contactForm = {};
+      $scope.submitForm = function (data) {
+          console.log('dkhicjii', data);
+          if (!data.dob) {
+              $scope.dobError = true;
+              console.log("im im", $scope.showError);
+          }
+          if (!data.pan) {
+              $scope.panError = true;
+              console.log("im im", $scope.showError);
+          }
+          if (!data.aadhar) {
+              $scope.aadharError = true;
+              console.log("im im", $scope.showError);
+          }
+          if (!data.name) {
+              $scope.nameError = true;
+              console.log("im im", $scope.showError);
+          }
+          if (!data.income) {
+              $scope.incomeError = true;
+              console.log("im im", $scope.showError);
+          }
+          if (!data.fname) {
+              $scope.fError = true;
+              console.log("im im", $scope.showError);
+          }
+          if (!data.acholder) {
+              $scope.acholderError = true;
+              console.log("im im", $scope.showError);
+          }
+          if (!data.branch) {
+              $scope.branchError = true;
+              console.log("im im", $scope.showError);
+          }
+          if (!data.ifsc) {
+              $scope.ifscError = true;
+              console.log("im im", $scope.showError);
+          }
+          if (!data.mobileno) {
+              $scope.mobilenoError = true;
+              console.log("im im", $scope.showError);
+          }
+          if (!data.accno) {
+              $scope.accnoError = true;
+              console.log("im im", $scope.showError);
+          }
+          if (!data.email) {
+              $scope.emailError = true;
+              console.log("im im", $scope.showError);
+          }
+          if (!data.contactno) {
+              $scope.contactnoError = true;
+              console.log("im im", $scope.showError);
+          }
+          if (!data.query) {
+              $scope.queryError = true;
+              console.log("im im", $scope.showError);
+          }
+  
+          console.log("This is it");
+          return new Promise(function (callback) {
+              $timeout(function () {
+                  callback();
+              }, 5000);
+          });
+      };
+
     })
 
     .controller('ContactusCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {

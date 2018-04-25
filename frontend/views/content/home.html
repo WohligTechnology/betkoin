@@ -17,16 +17,16 @@
     </div>
 
     <!-- Section Why Betkoin -->
-    <div class="whytobuy section">
-        <div class="text-center text-uppercase heading-yellow wow fadeInDownBig">
+    <div class="whytobuy section" style="padding: 1px 0 75px!important;">
+        <!-- <div class="text-center text-uppercase heading-yellow wow fadeInDownBig">
             <h2>platform benefits</h2>
             <hr>
-        </div>
+        </div> -->
         <div class="container spacing">
             <div class="row">
                 <div class="col-md-6 text-left">
                     <div class="heading-yellow wow fadeInLeftBig" data-wow-delay="0.25s" data-wow-duration="0.8s">
-                        <h3 class="text-center text-uppercase">Why to invest in Betkoin</h3>
+                        <h3 class="text-center text-uppercase">About Betkoin</h3>
                         <hr>
                         <p>Betkoin is the first crypto to actually have a concept and a business plan. It's a huge transformation
                             in the gambling and betting world. The widespread adoption of cryptocurrency in gambling is no
@@ -313,7 +313,7 @@
                             <text transform="matrix(1 0 0 1 336.4434 269.7441)" class="st10 st5 st6">Number of users</text>
                         </g>
                         <g id="Text">
-                            <text transform="matrix(1 0 0 1 203.2695 47.8848)" class="st13 st14 st15 text-uppercase">Statistics</text>
+                            <text transform="matrix(1 0 0 1 203.2695 47.8848)" class="st13 st14 st15 text-uppercase">Forecast</text>
                             <rect x="45.244" y="74.477" class="st16" width="505.196" height="131.023" />
                             <text transform="matrix(1 0 0 1 45.2437 88.917)">
                                 <tspan x="0" y="0" class="st10 st17 st18">1 box </tspan>
@@ -543,12 +543,44 @@
                     <div class="prev2">
                         <img src="img/prev.png">
                     </div> -->
-                    <div class="relative">
+                    <!-- <div class="relative">
                         <div class="swiper-container2">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide games-card" style="background-image:url({{s.img}});" ng-repeat="s in mySlides2">
                                     <div class="offer-game">
                                         <h5 class="text-center">{{s.title}}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="relative">
+                        <div class="swiper-container2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide games-card pointer" style="background-image:url('img/Cricket.jpg');" ng-click="openCricket()">
+                                    <div class="offer-game">
+                                        <h5 class="text-center">Cricket</h5>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide games-card pointer" style="background-image:url('img/Football.jpg');" ng-click="openFootball()">
+                                    <div class="offer-game">
+                                        <h5 class="text-center">Football</h5>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide games-card pointer" style="background-image:url('img/Tennis.jpg');" ng-click="openTennis()">
+                                    <div class="offer-game">
+                                        <h5 class="text-center">Tennis</h5>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide games-card pointer" style="background-image:url('img/GreyhoundRacing.jpg');" ng-click="openGreyhoundRacing()">
+                                    <div class="offer-game">
+                                        <h5 class="text-center">GreyhoundRacing</h5>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide games-card pointer" style="background-image:url('img/HorseRacing.jpg');" ng-click="openHorseRacing()">
+                                    <div class="offer-game">
+                                        <h5 class="text-center">HorseRacing</h5>
                                     </div>
                                 </div>
                             </div>
@@ -562,7 +594,7 @@
     <!-- Section Where To Buy -->
     <div class="wheretobuy section">
         <div class="text-center text-uppercase heading-yellow">
-            <h1>Where to buy BetKoins</h>
+            <h1>Where to buy <span>Bet</span><span>Koins</span></h1>
                 <hr>
         </div>
         <div class="mt4">
