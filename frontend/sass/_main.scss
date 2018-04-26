@@ -1092,6 +1092,7 @@ hr {
         font-family: DroidSans;
         -webkit-font-smoothing: antialiased;
         font-size: 16px;
+        font-weight: 600;
     }
     .modal-header {
         border-bottom: 0 !important;
@@ -1107,6 +1108,6 @@ hr {
     transform: translate(0, 50%);
 }
 
-.pointer{
+.pointer {
     cursor: pointer;
 }

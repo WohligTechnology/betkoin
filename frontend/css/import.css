@@ -12776,7 +12776,8 @@ header {
 .games-modal ul {
   font-family: DroidSans;
   -webkit-font-smoothing: antialiased;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 600; }
 
 .games-modal .modal-header {
   border-bottom: 0 !important; }
