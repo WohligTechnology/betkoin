@@ -1111,3 +1111,48 @@ hr {
 .pointer {
     cursor: pointer;
 }
+
+//scss for login page
+.login-bg {
+    background-image: url(../img/BKN_0004_1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 95vh;
+}
+
+.signup-main {
+    background: rgba(0, 0, 0, 0.45);
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 100px;
+    color: #ccc;
+    padding: 35px 30px;
+    font-family: DroidSans;
+    p {
+        font-size: 14px;
+        font-family: Oswald;
+    }
+    a {
+        color: #ccc;
+        font-size: 12px;
+    }
+    label {
+        font-family: DroidSans;
+    }
+    h5 {
+        color: #f2b45c;
+        font-size: 16px;
+    }
+}
+
+.signup-link {
+    margin-top: 30px;
+    border-top: 1px solid rgba(204, 204, 204, 0.28)
+}
+
+.btn-common {
+    color: black;
+    background: #f2b45c;
+    width: 50%;
+    font-family: Oswald;
+}

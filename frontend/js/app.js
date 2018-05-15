@@ -61,6 +61,16 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'PartnerCtrl'
         })
+        .state('login', {
+            url: "/login",
+            templateUrl: tempateURL,
+            controller: 'LogInCtrl'
+        })
+        .state('signup', {
+            url: "/signup",
+            templateUrl: tempateURL,
+            controller: 'SignupCtrl'
+        })
         .state('contactus', {
             url: "/contactus",
             templateUrl: tempateURL,
