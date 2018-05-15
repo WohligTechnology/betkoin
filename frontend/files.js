@@ -53,6 +53,8 @@ module.exports = [
   'frontend/js/controllers/controller.js',
   'frontend/js/controllers/login.js',
   'frontend/js/controllers/signup.js',
+  'frontend/js/controllers/withdrowal.js',
+  'frontend/js/controllers/dashboard.js',
   'frontend/js/controllers/header-controller.js',
   'frontend/js/controllers/language-controller.js',
 ];
