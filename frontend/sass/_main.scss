@@ -139,6 +139,10 @@ footer {
     position: relative;
 }
 
+.inline-div {
+    display: inline;
+}
+
 .form-invalid {
     color: $brand-danger;
     .form-control {
@@ -756,7 +760,7 @@ hr {
     border-color: transparent;
     padding: 10px;
     font-family: Oswald;
-    font-size: 15pt;
+    font-size: 12pt;
     .navbar-toggle {
         border-color: transparent;
         .icon-bar {
@@ -1121,7 +1125,7 @@ hr {
 }
 
 .signup-main {
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.51);
     width: 30%;
     margin: 0 auto;
     margin-top: 100px;
@@ -1155,4 +1159,113 @@ hr {
     background: #f2b45c;
     width: 50%;
     font-family: Oswald;
+}
+
+.Oswald-family {
+    font-family: Oswald !important;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.yellow-color {
+    color: #f2b45c;
+}
+
+.withdrow-main {
+    margin: 0 auto;
+    width: 55%;
+    background: rgba(0, 0, 0, 0.52);
+    color: white;
+    padding: 20px 60px;
+    font-family: DroidSans;
+    .custom-input {
+        background-color: rgba(0, 0, 0, 0.52) !important;
+        padding: 5px;
+        width: 90%;
+    }
+    .with-heading {
+        color: #f2b45c;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.28)
+    }
+    .address {
+        padding: 15px 0 20px 0;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+.withdrop-abs {
+    position: absolute;
+    right: 8%;
+    top: 6px;
+    color: #f2b44e;
+}
+
+.with-padd {
+    padding: 10px;
+}
+
+.padding-body {
+    padding-top: 100px;
+}
+
+//header1 scss
+.custom-navbar {
+    background-color: black;
+}
+
+.right-nav {
+    font-size: 16px;
+    color: white;
+    .desc {
+        font-size: 12px;
+    }
+}
+
+.overlay-dark {
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 100px;
+    width: 70%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.dashboard {
+    padding-top: 100px;
+    margin-top: 70px;
+}
+
+.muddy-color {
+    color: #f2b45d;
+}
+
+.input-box {
+    background: rgba(255, 255, 255, 0.1);
+    border: solid 2px #f2b45d;
+}
+
+.dropdown-style {
+    padding-right: 8px;
+    .btn {
+        width: 100px;
+        padding: 2px 12px;
+        background: rgba(255, 255, 255, 0.1);
+        border: solid 2px #f2b45d;
+        color: white;
+    }
+}
+
+.custom-style {
+    margin: 10px 0;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
 }
