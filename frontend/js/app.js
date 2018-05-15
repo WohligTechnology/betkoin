@@ -51,6 +51,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
         //     templateUrl: tempateURL,
         //     controller: 'WhitepaperCtrl'
         // })
+        .state('withdrowal', {
+            url: "/withdrowal",
+            templateUrl: tempateURL,
+            controller: 'WithdrowalCtrl'
+            })
         .state('whitepaper', {
             url: "/whitepaper",
             templateUrl: tempateURL,
@@ -75,6 +80,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             url: "/contactus",
             templateUrl: tempateURL,
             controller: 'ContactusCtrl'
+        })
+        .state('dashboard', {
+            url: "/dashboard",
+            templateUrl: tempateURL,
+            controller: 'DashboardCtrl'
         });
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
