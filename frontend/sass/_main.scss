@@ -1213,8 +1213,21 @@ hr {
 }
 
 //header1 scss
+.profile-img {
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+}
+
 .custom-navbar {
     background-color: black;
+}
+
+.nav {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .right-nav {
@@ -1250,7 +1263,7 @@ hr {
 
 .dropdown-style {
     padding-right: 8px;
-    &:nth-child(3){
+    &:nth-child(3) {
         padding-right: 0;
     }
     .btn {
@@ -1260,7 +1273,7 @@ hr {
         border: solid 2px #f2b45d;
         color: white;
     }
-    .caret{
+    .caret {
         margin-left: 35px;
     }
 }
@@ -1268,28 +1281,32 @@ hr {
 .custom-style {
     margin: 10px 0;
     font-size: 12px;
-    color:white;
-    td,th{
+    color: white;
+    td,
+    th {
         border-top: 0 !important;
     }
 }
-.table-striped > tbody > tr:nth-of-type(odd){
-background-color: black;
-}
-.table-striped > tbody > tr:nth-of-type(even){
-background-color: #171717;
-}
-.pagination-style{
-    .pagination{
-        margin: 0;
 
-.prev,.next{
-    background-color: #f2b45d !important;
-    border: 1px solid #f2b45d !important;
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: black;
 }
+
+.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: #171717;
+}
+
+.pagination-style {
+    .pagination {
+        margin: 0;
+        .prev,
+        .next {
+            background-color: #f2b45d !important;
+            border: 1px solid #f2b45d !important;
+        }
     }
-    li{
-        a{
+    li {
+        a {
             text-decoration: none;
             color: black;
             padding: 0px 7px;
@@ -1298,21 +1315,29 @@ background-color: #171717;
         }
     }
 }
-.pagination > li > a:hover,{
+
+.pagination>li>a:hover,
+    {
     z-index: 2;
     color: #f2b45d;
     background-color: #eeeeee;
     border-color: #f2b45d;
 }
-.pagination > li > a:focus {
+
+.pagination>li>a:focus {
     background-color: #f2b45d !important;
     border: 1px solid #f2b45d !important;
     color: black;
 }
+
 .d-block {
-    display: block;
+    display: block !important;
+}
+
+.padd-left {
+    padding-left: 10px;
 }
 
 .d-flex {
-    display: flex;
+    display: flex !important;
 }

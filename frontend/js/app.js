@@ -55,7 +55,12 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             url: "/withdrowal",
             templateUrl: tempateURL,
             controller: 'WithdrowalCtrl'
-            })
+        })
+        .state('deposit', {
+            url: "/deposit",
+            templateUrl: tempateURL,
+            controller: 'DepositCtrl'
+        })
         .state('whitepaper', {
             url: "/whitepaper",
             templateUrl: tempateURL,
