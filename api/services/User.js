@@ -4,7 +4,6 @@ var schema = new Schema({
         required: true,
         excel: true,
     },
-    
     email: {
         type: String,
         validate: validators.isEmail(),
