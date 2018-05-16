@@ -12301,32 +12301,28 @@ header {
       .solutions .blocks .block .title {
         display: block; }
 
-.aboutus, .contactus {
-  overflow-x: hidden; }
-  .aboutus .about-cover, .contactus .about-cover {
-    background: #0a0809; }
-  .aboutus .about-parallax, .contactus .about-parallax {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(35%, rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.3))), url("../img/c2.png");
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 35%, rgba(0, 0, 0, 0.3)), url("../img/c2.png");
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    -webkit-animation: slide 10s linear infinite;
-    animation: slide 10s linear infinite;
-    min-height: calc(100vh - 160px);
-    position: relative; }
-  .aboutus .aboutinfo, .contactus .aboutinfo {
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
-    .aboutus .aboutinfo img, .contactus .aboutinfo img {
-      width: 100%; }
-    .aboutus .aboutinfo h2, .contactus .aboutinfo h2 {
-      display: block;
-      text-transform: uppercase; }
+.aboutus .about-cover, .contactus .about-cover {
+  background: #0a0809; }
+
+.aboutus .about-parallax, .contactus .about-parallax {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(35%, rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.3))), url("../img/c2.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 35%, rgba(0, 0, 0, 0.3)), url("../img/c2.png");
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  -webkit-animation: slide 10s linear infinite;
+  animation: slide 10s linear infinite;
+  height: 90vh;
+  padding-top: 70px;
+  position: relative; }
+
+.aboutus .aboutinfo, .contactus .aboutinfo {
+  color: #fff; }
+  .aboutus .aboutinfo img, .contactus .aboutinfo img {
+    width: auto; }
+  .aboutus .aboutinfo h2, .contactus .aboutinfo h2 {
+    display: block;
+    text-transform: uppercase; }
 
 .tokenstructure, .partner {
   overflow-x: hidden; }
@@ -12476,6 +12472,13 @@ header {
             transition-duration: 0.5s; }
     .custom-navbar .navbar-nav li a:hover {
       color: #fff; }
+  .custom-navbar .navbar-nav li:last-child > a {
+    padding: 15px 0;
+    position: relative; }
+    .custom-navbar .navbar-nav li:last-child > a:before {
+      content: "/";
+      position: absolute;
+      left: -10px; }
   .custom-navbar .navbar-nav {
     float: right; }
 
@@ -12631,7 +12634,9 @@ header {
   border-image-slice: 2;
   color: #fff;
   width: 100%;
-  margin: auto; }
+  padding-bottom: 25px;
+  margin: auto;
+  margin-bottom: 30px; }
 
 .custom-submit {
   margin: 3% 0% 6% 0%;
@@ -12687,7 +12692,7 @@ header {
 
 .partner .tokeninfo {
   color: #fff;
-  padding: 5% 0% 0% 0%; }
+  padding: 5% 10% 0% 10%; }
 
 .partner a {
   color: #fff;
@@ -12830,6 +12835,12 @@ header {
   background: #f2b45c;
   width: 50%;
   font-family: Oswald; }
+
+.submit-btn {
+  color: black;
+  background: #f2b45c;
+  font-family: Oswald;
+  margin-bottom: 20px; }
 
 .Oswald-family {
   font-family: Oswald !important; }

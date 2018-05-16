@@ -51,7 +51,8 @@
                                 </div>
                                 <div class="col-md-6 col-xs-12">
                                     <div class="form-group">
-                                        <input type="number" name="age" ng-model="data.age" class="form-control custom-input" id="age" placeholder="Mobile Number" min="10" maxlength="10" required>
+                                        <input type="number" name="age" ng-model="data.age" class="form-control custom-input" id="age" placeholder="Mobile Number"
+                                            min="10" maxlength="10" required>
                                         <div class="pull-right" ng-repeat="(field,value) in formData.age.$error" ng-show="formData.age.$touched">
                                             <span class="label label-danger" ng-if="field=='required' && value">Please Enter Mobile Number</span>
                                             <span class="label label-danger" ng-if="field=='min' && value">Age should be greater than 18</span>
@@ -63,7 +64,8 @@
                             <div class="row">
                                 <div class="col-md-12 col-xs-12">
                                     <div class="form-group">
-                                        <textarea name="query" ng-model="data.query" id="query" cols="30" rows="10" class="form-control custom-input custom-tarea" required placeholder="Leave a message"></textarea>
+                                        <textarea name="query" ng-model="data.query" id="query" cols="30" rows="10" class="form-control custom-input custom-tarea"
+                                            required placeholder="Leave a message"></textarea>
                                         <div class="pull-right" ng-repeat="(field,value) in formData.query.$error" ng-show="formData.query.$touched">
                                             <span class="label label-danger" ng-if="field=='required' && value">Please Leave a message</span>
                                         </div>
@@ -71,12 +73,12 @@
                                 </div>
                             </div>
                             <div class="row text-center">
-                                <button ng-click="submitForm()" class="btn btn-default" ng-disabled="formData.$invalid" promise-btn>Submit</button>
+                                <button ng-click="submitForm()" class="btn submit-btn " ng-disabled="formData.$invalid" promise-btn>Submit</button>
                             </div>
                             <div class="text-center block-tel">
-                                <br>
+
                                 <h3>Contact On the Following Numbers</h3>
-                                <br>
+
                                 <div class="row">
                                     <div class="col-md-6 col-sm-4">
                                         <div class="text-right">
@@ -90,6 +92,7 @@
                                             <h4 style="display: inline-flex;">123456789</h4>
                                         </a>
                                     </div>
+
                                 </div>
                             </div>
                         </form>

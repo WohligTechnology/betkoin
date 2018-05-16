@@ -570,7 +570,7 @@ hr {
 }
 
 .aboutus {
-    overflow-x: hidden;
+    // overflow-x: hidden;
     .about-cover {
         background: #0a0809;
     }
@@ -581,22 +581,18 @@ hr {
         width: 100%;
         -webkit-animation: slide 10s linear infinite;
         animation: slide 10s linear infinite;
-        min-height: calc(100vh - 160px);
+        height: 90vh;
+        padding-top: 70px;
         position: relative;
     }
     .aboutinfo {
         color: #fff;
-        top: 50%;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%, -50%);
         img {
-            width: $wdh;
+            width: auto;
         }
         h2 {
             display: block;
             text-transform: uppercase;
-            ;
         }
     }
 }
@@ -776,6 +772,15 @@ hr {
                     color: #fff;
                 }
             }
+            &:last-child>a {
+                padding: 15px 0;
+                position: relative;
+                &:before {
+                    content: "/";
+                    position: absolute;
+                    left: -10px;
+                }
+            }
         }
     }
     .navbar-nav {
@@ -912,7 +917,9 @@ hr {
     border-image-slice: 2;
     color: #fff;
     width: 100%;
+    padding-bottom: 25px;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 .custom-submit {
@@ -984,7 +991,7 @@ hr {
     }
     .tokeninfo {
         color: #fff;
-        padding: 5% 0% 0% 0%;
+        padding: 5% 10% 0% 10%;
     }
     a {
         color: #fff;
@@ -1159,6 +1166,13 @@ hr {
     background: #f2b45c;
     width: 50%;
     font-family: Oswald;
+}
+
+.submit-btn {
+    color: black;
+    background: #f2b45c;
+    font-family: Oswald;
+    margin-bottom: 20px;
 }
 
 .Oswald-family {
