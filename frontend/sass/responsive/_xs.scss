@@ -1,0 +1,17 @@
+ @media (max-width: $screen-xs-max) {
+     // Mobile
+     .aboutus {
+         .about-parallax {
+             height: 170vh;
+         }
+     }
+     .tokenstructure {
+         .token-parallax {
+             height: 160vh;
+         }
+     }
+     p,
+     a {
+         font-size: 11px;
+     }
+ }

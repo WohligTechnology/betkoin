@@ -1,0 +1,90 @@
+<div class="login-bg dashboard">
+    <diV class="overlay-dark">
+        <form>
+            <input type="text" class="input-box" placeholder="Search">
+            <div class="pull-right d-flex">
+                <div class="dropdown dropdown-style">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="true">
+                              Both
+                              <span class="caret muddy-color"></span>
+                            </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown dropdown-style">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="true">
+                                  From
+                                  <span class="caret muddy-color"></span>
+                                </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown dropdown-style">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="true">
+                                      To
+                                      <span class="caret muddy-color"></span>
+                                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+        <table class="table table-responsive table-striped custom-style">
+            <tr>
+                <th class="text-center">#</th>
+                <th>Transaction Date</th>
+                <th>User Name</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Give</th>
+                <th>Status</th>
+            </tr>
+            <tr ng-repeat="data in TableData">
+                <td align="center">{{data.srno}}</td>
+                <td>{{data.datetime}}</td>
+                <td>{{data.username}}</td>
+                <td>{{data.desc}}</td>
+                <td>{{data.amount}}</td>
+                <td class="muddy-color">{{data.give}}</td>
+                <td>{{data.status}}</td>
+            </tr>
+        </table>
+        <nav aria-label="Page navigation" class="pagination-style">
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous" class="prev">
+                      <span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next" class="next">
+                      <span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </diV>
+</div>
