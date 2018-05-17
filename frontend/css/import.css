@@ -11981,6 +11981,9 @@ footer {
 .inline-div {
   display: inline; }
 
+.d-inline {
+  display: inline-block; }
+
 .form-invalid {
   color: #fc483f; }
   .form-invalid .form-control {
@@ -12489,7 +12492,7 @@ header {
     float: right; }
 
 .platform {
-  padding: 0 20px; }
+  padding: 0 45px; }
 
 .home-header li:last-child > a {
   padding: 15px 0;
@@ -12716,14 +12719,13 @@ header {
   text-decoration: none; }
 
 .contactus .about-parallax {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(5%, rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.5))), url(../img/bg-contact.jpg);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.5)), url(../img/bg-contact.jpg);
+  background-image: url(../img/bg-contact.jpg);
   background-attachment: fixed;
   background-repeat: repeat-x;
   background-size: 100% 100%;
   -webkit-animation: none;
   animation: none;
-  min-height: calc(100vh - 165px); }
+  height: 90vh; }
 
 .contactus .contactinfo {
   top: 50%;
@@ -12734,16 +12736,20 @@ header {
   color: #fff; }
 
 .contactus .contactblock {
-  border: 2.5px solid;
-  -o-border-image: linear-gradient(90deg, #ffe088 0%, #b78a00 100%);
-     border-image: -webkit-gradient(linear, left top, right top, from(#ffe088), to(#b78a00));
-     border-image: linear-gradient(90deg, #ffe088 0%, #b78a00 100%);
-  border-image-slice: 2;
   height: 150px;
+  padding: 20px;
   color: #fff; }
   .contactus .contactblock a {
     color: #fff;
     text-decoration: none; }
+  .contactus .contactblock h4 {
+    padding: 0 10px; }
+  .contactus .contactblock .pl-50 {
+    padding-left: 58px; }
+
+.contact-img {
+  width: 45px;
+  height: 45px; }
 
 .row-eq-height {
   display: -webkit-box;
@@ -12858,6 +12864,9 @@ header {
   background: #f2b45c;
   font-family: Oswald;
   margin-bottom: 20px; }
+
+.get-king {
+  padding: 10px; }
 
 .Oswald-family {
   font-family: Oswald !important; }

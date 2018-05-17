@@ -144,6 +144,10 @@ footer {
     display: inline;
 }
 
+.d-inline {
+    display: inline-block;
+}
+
 .form-invalid {
     color: $brand-danger;
     .form-control {
@@ -789,7 +793,7 @@ hr {
 }
 
 .platform {
-    padding: 0 20px;
+    padding: 0 45px;
 }
 
 .home-header li {
@@ -1018,13 +1022,13 @@ hr {
 .contactus {
     @extend .aboutus;
     .about-parallax {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.5)), url(../img/bg-contact.jpg);
+        background-image: url(../img/bg-contact.jpg);
         background-attachment: fixed;
         background-repeat: repeat-x;
         background-size: 100% 100%;
         -webkit-animation: none;
         animation: none;
-        min-height: calc(100vh - 165px);
+        height: 90vh;
     }
     .contactinfo {
         top: 50%;
@@ -1034,16 +1038,28 @@ hr {
         color: #fff;
     }
     .contactblock {
-        border: 2.5px solid;
-        border-image: linear-gradient(90deg, #ffe088 0%, #b78a00 100%);
-        border-image-slice: 2;
+        // border: 2.5px solid;
+        // border-image: linear-gradient(90deg, #ffe088 0%, #b78a00 100%);
+        // border-image-slice: 2;
         height: 150px;
+        padding: 20px;
         color: #fff;
         a {
             color: #fff;
             text-decoration: none;
         }
+        h4 {
+            padding: 0 10px;
+        }
+        .pl-50 {
+            padding-left: 58px;
+        }
     }
+}
+
+.contact-img {
+    width: 45px;
+    height: 45px;
 }
 
 .row-eq-height {
@@ -1189,6 +1205,10 @@ hr {
     background: #f2b45c;
     font-family: Oswald;
     margin-bottom: 20px;
+}
+
+.get-king {
+    padding: 10px;
 }
 
 .Oswald-family {
