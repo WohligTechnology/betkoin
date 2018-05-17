@@ -12855,23 +12855,23 @@ header {
 .yellow-color {
   color: #f2b45c; }
 
-.withdrow-main {
+.withdraw-main {
   margin: 0 auto;
   width: 55%;
   background: rgba(0, 0, 0, 0.52);
   color: white;
   padding: 20px 60px;
   font-family: DroidSans; }
-  .withdrow-main .custom-input {
+  .withdraw-main .custom-input {
     background-color: rgba(0, 0, 0, 0.52) !important;
     padding: 5px;
     width: 90%; }
-  .withdrow-main .with-heading {
+  .withdraw-main .with-heading {
     color: #f2b45c;
     border-bottom: 1px solid rgba(204, 204, 204, 0.28); }
-  .withdrow-main .address {
+  .withdraw-main .address {
     padding: 15px 0 20px 0; }
-  .withdrow-main p {
+  .withdraw-main p {
     font-size: 16px; }
 
 .withdrop-abs {
