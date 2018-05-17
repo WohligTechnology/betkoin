@@ -12456,6 +12456,9 @@ header {
 .logo {
   max-width: 150px; }
 
+.note {
+  padding: 10px 0; }
+
 .custom-navbar {
   background-color: rgba(19, 24, 32, 0.86);
   border-color: transparent;
@@ -12472,15 +12475,16 @@ header {
             transition-duration: 0.5s; }
     .custom-navbar .navbar-nav li a:hover {
       color: #fff; }
-  .custom-navbar .navbar-nav li:last-child > a {
-    padding: 15px 0;
-    position: relative; }
-    .custom-navbar .navbar-nav li:last-child > a:before {
-      content: "/";
-      position: absolute;
-      left: -10px; }
   .custom-navbar .navbar-nav {
     float: right; }
+
+.home-header li:last-child > a {
+  padding: 15px 0;
+  position: relative; }
+  .home-header li:last-child > a:before {
+    content: "/";
+    position: absolute;
+    left: -10px; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #f2b45c;
@@ -12804,7 +12808,7 @@ header {
   background-image: url(../img/BKN_0004_1.jpg);
   background-size: cover;
   background-attachment: fixed;
-  height: 95vh; }
+  height: 105vh; }
 
 .signup-main {
   background: rgba(0, 0, 0, 0.51);
@@ -12851,23 +12855,27 @@ header {
 .yellow-color {
   color: #f2b45c; }
 
-.withdrow-main {
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  margin: -15px 0px; }
+
+.withdraw-main {
   margin: 0 auto;
   width: 55%;
   background: rgba(0, 0, 0, 0.52);
   color: white;
   padding: 20px 60px;
   font-family: DroidSans; }
-  .withdrow-main .custom-input {
+  .withdraw-main .custom-input {
     background-color: rgba(0, 0, 0, 0.52) !important;
     padding: 5px;
     width: 90%; }
-  .withdrow-main .with-heading {
+  .withdraw-main .with-heading {
     color: #f2b45c;
     border-bottom: 1px solid rgba(204, 204, 204, 0.28); }
-  .withdrow-main .address {
+  .withdraw-main .address {
     padding: 15px 0 20px 0; }
-  .withdrow-main p {
+  .withdraw-main p {
     font-size: 16px; }
 
 .withdrop-abs {
@@ -12880,7 +12888,8 @@ header {
   padding: 10px; }
 
 .padding-body {
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 30px; }
 
 .profile-img img {
   width: 50px;

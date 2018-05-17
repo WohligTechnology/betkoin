@@ -751,6 +751,10 @@ hr {
     max-width: 150px;
 }
 
+.note {
+    padding: 10px 0;
+}
+
 .custom-navbar {
     background-color: rgba(19, 24, 32, 0.86);
     border-color: transparent;
@@ -772,19 +776,22 @@ hr {
                     color: #fff;
                 }
             }
-            &:last-child>a {
-                padding: 15px 0;
-                position: relative;
-                &:before {
-                    content: "/";
-                    position: absolute;
-                    left: -10px;
-                }
-            }
         }
     }
     .navbar-nav {
         float: right;
+    }
+}
+
+.home-header li {
+    &:last-child>a {
+        padding: 15px 0;
+        position: relative;
+        &:before {
+            content: "/";
+            position: absolute;
+            left: -10px;
+        }
     }
 }
 
@@ -1128,7 +1135,7 @@ hr {
     background-image: url(../img/BKN_0004_1.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 95vh;
+    height: 105vh;
 }
 
 .signup-main {
@@ -1187,7 +1194,12 @@ hr {
     color: #f2b45c;
 }
 
-.withdrow-main {
+.bg-overlay {
+    background: rgba(0, 0, 0, 0.55);
+    margin: -15px 0px;
+}
+
+.withdraw-main {
     margin: 0 auto;
     width: 55%;
     background: rgba(0, 0, 0, 0.52);
@@ -1224,6 +1236,7 @@ hr {
 
 .padding-body {
     padding-top: 100px;
+    padding-bottom: 30px;
 }
 
 //header1 scss
