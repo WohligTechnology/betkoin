@@ -56,6 +56,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'WithdrowalCtrl'
         })
+        .state('get-started', {
+            url: "/get-started",
+            templateUrl: tempateURL,
+            controller: 'GetstartedCtrl'
+        })
         .state('deposit', {
             url: "/deposit",
             templateUrl: tempateURL,

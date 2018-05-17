@@ -24,20 +24,21 @@ $Oswald: Oswald;
 }
 
 body {
+    line-height: 24px;
     h1 {
-        font-size: 50.512px;
+        font-size: 50px;
         font-family: $Oswald;
     }
     h2 {
-        font-size: 45.011px;
+        font-size: 38px;
         font-family: $Oswald;
     }
     h3 {
-        font-size: 33.763px;
+        font-size: 28px;
         font-family: $Oswald;
     }
     h4 {
-        font-size: 25.327px;
+        font-size: 22px;
         font-family: $Oswald;
     }
     h5 {
@@ -66,7 +67,7 @@ body {
 }
 
 p {
-    font-size: 19px;
+    font-size: 16px;
     font-family: DroidSans;
     -webkit-font-smoothing: antialiased;
 }
@@ -349,6 +350,7 @@ header {
         }
         .info {
             @extend .heading-white;
+            padding-bottom: 20px;
         }
         .logo-text {
             color: $yellow;
@@ -361,7 +363,7 @@ header {
             margin: 0px 15px !important;
             background: rgba(0, 0, 0, 0.5);
             img {
-                margin-top: 10px;
+                margin-top: 20px;
             }
         }
     }
@@ -581,12 +583,14 @@ hr {
         width: 100%;
         -webkit-animation: slide 10s linear infinite;
         animation: slide 10s linear infinite;
-        height: 90vh;
-        padding-top: 70px;
+        height: auto;
+        padding: 70px 0;
         position: relative;
     }
     .aboutinfo {
         color: #fff;
+        display: flex;
+        align-items: center;
         img {
             width: auto;
         }
@@ -759,8 +763,9 @@ hr {
     background-color: rgba(19, 24, 32, 0.86);
     border-color: transparent;
     padding: 10px;
-    font-family: Oswald;
-    font-size: 12pt;
+    font-family: DroidSans;
+    font-weight: 600;
+    font-size: 16px;
     .navbar-toggle {
         border-color: transparent;
         .icon-bar {
@@ -781,6 +786,10 @@ hr {
     .navbar-nav {
         float: right;
     }
+}
+
+.platform {
+    padding: 0 20px;
 }
 
 .home-header li {
@@ -1194,9 +1203,13 @@ hr {
     color: #f2b45c;
 }
 
-.bg-overlay {
+.bg-platform {
     background: rgba(0, 0, 0, 0.55);
     margin: -15px 0px;
+}
+
+.bg-overlay {
+    background: rgba(0, 0, 0, 0.55);
 }
 
 .withdraw-main {

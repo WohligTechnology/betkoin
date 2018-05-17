@@ -56,6 +56,7 @@ module.exports = [
   'frontend/js/controllers/withdrowal.js',
   'frontend/js/controllers/dashboard.js',
   'frontend/js/controllers/deposit.js',
+  'frontend/js/controllers/get-started.js',
   'frontend/js/controllers/header-controller.js',
   'frontend/js/controllers/language-controller.js',
 ];

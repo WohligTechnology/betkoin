@@ -22,11 +22,18 @@ myApp.factory('NavigationService', function () {
             subnav: []
         },
         {
+            name: "Get Started",
+            classis: "active",
+            anchor: "get-started",
+            subnav: []
+        },
+        {
             name: "Partner With Us",
             classis: "active",
             anchor: "partner",
             subnav: []
         },
+
         // {
         //     name: "Token Structure",
         //     classis: "active",
