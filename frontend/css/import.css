@@ -12456,6 +12456,9 @@ header {
 .logo {
   max-width: 150px; }
 
+.note {
+  padding: 10px 0; }
+
 .custom-navbar {
   background-color: rgba(19, 24, 32, 0.86);
   border-color: transparent;
@@ -12472,15 +12475,16 @@ header {
             transition-duration: 0.5s; }
     .custom-navbar .navbar-nav li a:hover {
       color: #fff; }
-  .custom-navbar .navbar-nav li:last-child > a {
-    padding: 15px 0;
-    position: relative; }
-    .custom-navbar .navbar-nav li:last-child > a:before {
-      content: "/";
-      position: absolute;
-      left: -10px; }
   .custom-navbar .navbar-nav {
     float: right; }
+
+.home-header li:last-child > a {
+  padding: 15px 0;
+  position: relative; }
+  .home-header li:last-child > a:before {
+    content: "/";
+    position: absolute;
+    left: -10px; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #f2b45c;
@@ -12804,7 +12808,7 @@ header {
   background-image: url(../img/BKN_0004_1.jpg);
   background-size: cover;
   background-attachment: fixed;
-  height: 95vh; }
+  height: 105vh; }
 
 .signup-main {
   background: rgba(0, 0, 0, 0.51);
@@ -12880,7 +12884,8 @@ header {
   padding: 10px; }
 
 .padding-body {
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 30px; }
 
 .profile-img img {
   width: 50px;
