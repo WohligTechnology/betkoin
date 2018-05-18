@@ -12217,7 +12217,7 @@ header {
       font-size: 14pt; }
   .home .games .games-card, .home .solutions .games-card {
     background-size: cover;
-    background-position: 60% 30%;
+    background-position: 48% 30%;
     color: #333333;
     background-color: #1d232f;
     -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
@@ -12229,6 +12229,7 @@ header {
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 60px, rgba(0, 0, 0, 0.22) 0px 15px 20px;
     border-radius: 10px;
     z-index: 1;
+    cursor: pointer;
     min-height: 400px; }
   .home .games .games-tabs .nav-pills > li.active > a, .home .solutions .games-tabs .nav-pills > li.active > a,
   .home .games .games-tabs .nav-pills > li.active > a:focus,
@@ -12311,8 +12312,8 @@ header {
   background: #0a0809; }
 
 .aboutus .about-parallax, .contactus .about-parallax {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(35%, rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.3))), url("../img/c2.png");
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 35%, rgba(0, 0, 0, 0.3)), url("../img/c2.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(35%, rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.3))), url("../img/about.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 35%, rgba(0, 0, 0, 0.3)), url("../img/about.png");
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
@@ -12489,18 +12490,23 @@ header {
     .custom-navbar .navbar-nav li a:hover {
       color: #fff; }
   .custom-navbar .navbar-nav {
-    float: right; }
+    float: left;
+    margin-left: 50px; }
 
 .platform {
   padding: 0 45px; }
 
-.home-header li:last-child > a {
-  padding: 15px 0;
-  position: relative; }
-  .home-header li:last-child > a:before {
-    content: "/";
-    position: absolute;
-    left: -10px; }
+.home-header li {
+  background: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#dfae56), to(#dfae56), color-stop(0.6, #fcd48f));
+  margin: 7px 5px;
+  font-size: 12px; }
+  .home-header li a {
+    padding: 5px 12px;
+    color: black !important; }
+    .home-header li a:hover {
+      color: #fff !important; }
+  .home-header li:last-child > a {
+    position: relative; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #f2b45c;
@@ -12816,6 +12822,11 @@ header {
     opacity: 1 !important;
     color: #fff !important; }
 
+.casino-bg {
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important; }
+
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 50%); }
@@ -12860,10 +12871,13 @@ header {
   font-family: Oswald; }
 
 .submit-btn {
+  font-size: 15px;
   color: black;
-  background: #f2b45c;
-  font-family: Oswald;
-  margin-bottom: 20px; }
+  font-family: DroidSans;
+  background: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#dfae56), color-stop(0.6, #fcd48f), to(#dfae56)); }
+  .submit-btn:hover, .submit-btn:active {
+    color: black;
+    text-decoration: none; }
 
 .get-king {
   padding: 10px; }
@@ -12883,6 +12897,13 @@ header {
 
 .bg-overlay {
   background: rgba(0, 0, 0, 0.55); }
+
+.gambling-section {
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px; }
+  .gambling-section h4 {
+    padding: 0 10px; }
 
 .withdraw-main {
   margin: 0 auto;
@@ -13019,6 +13040,133 @@ header {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important; }
+
+.st0 {
+  opacity: 0.5;
+  fill: #202A33; }
+
+.st1 {
+  opacity: 0.5;
+  fill: #1C232A; }
+
+.st2 {
+  fill: none;
+  stroke: #415B6F;
+  stroke-miterlimit: 10; }
+
+.st3 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-miterlimit: 10; }
+
+.st4 {
+  fill: #FFD700; }
+
+.st5 {
+  font-family: Oswald; }
+
+.st6 {
+  font-size: 14px; }
+
+.st7 {
+  fill: #2BCEE1; }
+
+.st8 {
+  fill: none;
+  stroke: #2BCEE1;
+  stroke-width: 2;
+  stroke-miterlimit: 10; }
+
+.st9 {
+  fill: none;
+  stroke: #FFD700;
+  stroke-width: 2;
+  stroke-miterlimit: 10; }
+
+.st10 {
+  fill: #FFFFFF; }
+
+.st11 {
+  opacity: 0.8;
+  fill: none;
+  stroke: #FFD700;
+  stroke-width: 3;
+  stroke-miterlimit: 10; }
+
+.st12 {
+  opacity: 0.8;
+  fill: none;
+  stroke: #2BCEE1;
+  stroke-width: 3;
+  stroke-miterlimit: 10; }
+
+.st13 {
+  fill: #E8B863; }
+
+.st14 {
+  font-family: Oswald; }
+
+.st15 {
+  font-size: 36px; }
+
+.st16 {
+  fill: none; }
+
+.st17 {
+  font-family: 'DroidSans'; }
+
+.st18 {
+  font-size: 16px; }
+
+.st19 {
+  fill: #1A1A1A;
+  stroke: #2BCEE1;
+  stroke-miterlimit: 10; }
+
+.st20 {
+  fill: #1A1A1A;
+  stroke: #FFD700;
+  stroke-miterlimit: 10; }
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 13s linear forwards;
+          animation: dash 13s linear forwards; }
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000; }
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000; }
+  100% {
+    stroke-dashoffset: 0; } }
+
+.opa {
+  -webkit-animation: opac 1s linear forwards;
+          animation: opac 1s linear forwards;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+  fill-opacity: 0; }
+
+@-webkit-keyframes opac {
+  0% {
+    fill-opacity: 0; }
+  100% {
+    fill-opacity: 1; } }
+
+@keyframes opac {
+  0% {
+    fill-opacity: 0; }
+  100% {
+    fill-opacity: 1; } }
+
+.st4:hover #y1 {
+  opacity: 0; }
 
 #fancybox-loading,
 .fancybox-close,

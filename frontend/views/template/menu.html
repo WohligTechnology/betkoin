@@ -1,4 +1,4 @@
-<ul class="nav navbar-nav home-header">
+<ul class="nav navbar-nav ">
   <li ng-repeat="menu in navigation" ui-sref-active="active">
     <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor">{{menu.name}}</a>
     <a ui-sref="{{menu.newtab}}" ng-if="menu.newtab">{{menu.name}}</a>
@@ -10,5 +10,13 @@
         <a herf="{{submenu.link}}" ng-if="submenu.link">{{submenu.name}}</a>
       </li>
     </ul> -->
+  </li>
+</ul>
+<ul class="nav navbar-nav navbar-right home-header">
+  <li>
+    <a ui-sref="login">Login</a>
+  </li>
+  <li>
+    <a ui-sref="signup">Signup</a>
   </li>
 </ul>

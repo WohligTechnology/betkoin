@@ -59,18 +59,18 @@ myApp.factory('NavigationService', function () {
             anchor: "contactus",
             subnav: []
         },
-        {
-            name: "Login",
-            classis: "active",
-            anchor: "login",
-            subnav: []
-        },
-        {
-            name: "Signup",
-            classis: "active",
-            anchor: "signup",
-            subnav: []
-        }
+        // {
+        //     name: "Login",
+        //     classis: "active",
+        //     anchor: "login",
+        //     subnav: []
+        // },
+        // {
+        //     name: "Signup",
+        //     classis: "active",
+        //     anchor: "signup",
+        //     subnav: []
+        // }
 
     ];
 

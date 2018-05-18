@@ -4,30 +4,123 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         TemplateService.header1 = ""; //This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
         // location.href = "#zeroPage";
+        $scope.gameData = [{
+                img: 'img/game4.jpg',
+                title: 'TeenPatti',
+                description: " Love to play Teen Patti games? Download the game on Kings App on your smartphone. You can play multiplayer Teenpatti games with real players from all across the world and have unlimited fun! You can also create your own private table to play amongst your own set of friends! "
+            },
+            {
+                img: 'img/p1.jpg',
+                title: 'Texas Holdem Poker',
+                description: " Join the world’s most popular Poker game with more tables, more tournaments, and more people to challenge than ever before. It’s Texas Hold ‘Em Poker the way YOU want to play! You can also create your own private table to play amongst your own set of friends! "
+            },
+            {
+                img: 'img/r1.jpg',
+                title: 'Roulette',
+                description: "Now experience the excitement and thrill of playing roulette in the real Las Vegas casino surroundings on your phones. Also, the player will get commission on the turnover achieved on the roulette table by them.  "
+            }, {
+                img: 'img/Baccarat.jpg',
+                title: 'Live Baccarat',
+                description: "Baccarat is one of the most popular card games that is played across the world in all casinos. This game has been featured in many TV shows, and in numerous movies such as James Bond where the game is seen being played by suave and sophisticated gentlemen in exclusive casinos. Our app gives you the opportunity to experience the thrills of playing free baccarat games from the comfort of your own home"
+            }, {
+                img: 'img/blackjack.jpg',
+                title: 'Live Blackjack',
+                description: "Win BIG at your next casino trip by playing this Blackjack app, with the best casino-style experience. Hey Blackjack Fans! We’ve made some updates and optimized the gameplay to make sure you have the best blackjack experience around!"
+            }, {
+                img: 'img/money.png',
+                title: 'Live Money Wheel',
+                description: "These wheels will definitely take casino players to where they want to go where wheels equate to a money-making scenic route. Win casino money in wheel bonus rounds in arcade games, slot games, table games and more. Watching the wheels go by is much more action packed than it used to be."
+            }, {
+                img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
+                title: 'Live Roulette',
+                description: "Now experience the excitement and thrill of playing roulette in the real Las Vegas casino surroundings on your phone. "
+            }, {
+                img: 'img/game1.jpg',
+                title: 'Live Ultimate Texas Holdem',
+                description: "Ultimate Poker, with its speed and simplicity, is designed both for the expert looking for a clean Texas Hold'em No Limit experience, and for new comers looking for a simple poker app to pick up the world's most popular card game."
+            },
+            {
+                img: 'img/exteme.png',
+                title: 'Live Extreme Texas Holdem ',
+                description: "You are bored to play a poker game everyday, aren’t you? EXTREME POKER is Great New Game depend on the poker rules.Play the most amazing multi-decision Hold'em game in the world! "
+            },
+            {
+                img: 'img/casino.jpg',
+                title: 'Live Casino Holdem',
+                description: "its An exciting variation of the much-loved five-card Texas Hold’em poker game, Live Casino Hold’em. Available as standard and dedicated tables for players on desktop and tablet, it’s the perfect way to attract poker enthusiasts to your Live Casino and to keep them entertained. "
+            },
+            {
+                img: 'img/triplecard.png',
+                title: 'Live Three Card Poker',
+                description: "Three Card Poker is the most popular specialty table game of all times, you can experience it live too! it's one of the easiest games around, making it the absolutely perfect choice!"
+            },
+            {
+                img: 'img/threecardpoker.jpg',
+                title: 'Live Triple Card Poker ',
+                description: "Live Tripple Card Poker offers all of the excitement of a standard poker game in a live gaming format against the dealer. If you’re interested in winning big, Live Three Card Poker is the must-play attraction.Play triple card poker head-to-head against the dealer! "
+            },
+            {
+                img: 'img/7cardstud.jpg',
+                title: 'Live Caribbean Stud',
+                description: "come see why this has always been one of the most popular poker variations!<br>1. beat the dealer by having a better hand.<br>2. win up to 1000: 1 on the optional 5 + 1 bonus bet "
+            },
+        ]
         $scope.mySlides = [{
                 img: 'img/game4.jpg',
                 title: 'TeenPatti'
             },
             {
+                img: 'img/p1.jpg',
+                title: 'Texas Holdem Poker',
+                description: ""
+            }, {
+                img: 'img/r1.jpg',
+                title: 'Roulette',
+                description: " "
+            }, {
+                img: 'img/Baccarat.jpg',
+                title: 'Live Baccarat'
+            }, {
+                img: 'img/blackjack.jpg',
+                title: 'Live Blackjack'
+            }, {
+                img: 'img/money.png',
+                title: 'Live Money Wheel'
+            }, {
+                img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
+                title: 'Live Roulette'
+            }, {
                 img: 'img/game1.jpg',
-                title: 'Ultimate Texas Holdem'
+                title: 'Live Ultimate Texas Holdem'
             },
             {
-                img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
-                title: 'Roulette'
+                img: 'img/exteme.png',
+                title: 'Live Extreme Texas Holdem '
             },
+            {
+                img: 'img/casino.jpg',
+                title: 'Live Casino Holdem'
+            },
+
+            {
+                img: 'img/threecardpoker.jpg',
+                title: 'Live Three Card Poker'
+            },
+            {
+                img: 'img/triplecard.png',
+                title: 'Live Triple Card Poker '
+            },
+            {
+                img: 'img/7cardstud.jpg',
+                title: 'Live Caribbean Stud'
+            },
+
+
             // {
             //     img: 'https://cdn.decent.bet/img/backgrounds/craps.jpg',
             //     title: 'Craps'
             // },
-            {
-                img: 'img/blackjack.jpg',
-                title: 'Blackjack'
-            },
-            {
-                img: 'img/Baccarat.jpg',
-                title: 'Baccarat'
-            },
+
             // {
             //     img: '../img/Casinowar.jpg',
             //     title: 'Casino war'
@@ -68,26 +161,14 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             //     img: '../img/Paigow.jpg',
             //     title: 'Pai gow'
             // },
-            {
-                img: 'img/TexasHold.jpg',
-                title: 'Texas Holdem Bonus Poker'
-            },
-            {
-                img: 'img/casino.jpg',
-                title: 'Casino Holdem'
-            },
-            {
-                img: 'img/threecardpoker.jpg',
-                title: 'Three Card Poker'
-            },
-            {
-                img: 'img/7cardstud.jpg',
-                title: 'Caribbean Stud Poker'
-            },
-            {
-                img: 'img/dreamcatcher.png',
-                title: 'Dreamcatcher'
-            }
+            // {
+            //     img: 'img/TexasHold.jpg',
+            //     title: 'Texas Holdem Bonus Poker'
+            // },
+            // {
+            //     img: 'img/dreamcatcher.png',
+            //     title: 'Dreamcatcher'
+            // }
             // {
             //     img: '../img/Keno.jpg',
             //     title: 'Keno'
@@ -181,6 +262,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             console.log("inside timeout");
         }, 100);
 
+
         $scope.mySlides2 = [{
                 img: 'img/Cricket.jpg',
                 title: 'Cricket'
@@ -270,7 +352,16 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         //     anchors: ['zeroPage', 'firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
         //     scrollingSpeed: 1000
         // };
-
+        $scope.openCasino = function (s) {
+            $scope.modalName = s;
+            $scope.feedbackInstance = $uibModal.open({
+                animation: true,
+                templateUrl: "views/content/modal/common-casino.html",
+                scope: $scope,
+                size: 'md',
+                // backdropClass: 'back-drop'
+            });
+        }
         $scope.openCricket = function () {
             $scope.feedbackInstance = $uibModal.open({
                 animation: true,

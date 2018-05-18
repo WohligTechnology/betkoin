@@ -1,0 +1,19 @@
+<div class="games-modal casino-bg" style="background: url({{modalName.img}});">
+    <div style="background:rgba(0, 0, 0, 0.72);">
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="$dismiss();clearData()" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body" id="modal-body">
+            <div ng-repeat="game in gameData track by $index">
+                <div ng-if="game.title==modalName.title">
+                    <h1 class="text-center">{{game.title}}</h1>
+                    <hr>
+                    <p class="text-center" ng-bind-html="game.description">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
