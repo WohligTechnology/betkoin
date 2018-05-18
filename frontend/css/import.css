@@ -11881,18 +11881,19 @@ button.close {
   src: url("../fonts/DroidSans.ttf"); }
 
 body {
+  line-height: 24px;
   padding-top: 0px; }
   body h1 {
-    font-size: 50.512px;
+    font-size: 50px;
     font-family: Oswald; }
   body h2 {
-    font-size: 45.011px;
+    font-size: 38px;
     font-family: Oswald; }
   body h3 {
-    font-size: 33.763px;
+    font-size: 28px;
     font-family: Oswald; }
   body h4 {
-    font-size: 25.327px;
+    font-size: 22px;
     font-family: Oswald; }
   body h5 {
     font-family: Oswald; }
@@ -11913,7 +11914,7 @@ body {
     border: 1px solid #0D0B0D; }
 
 p {
-  font-size: 19px;
+  font-size: 16px;
   font-family: DroidSans;
   -webkit-font-smoothing: antialiased; }
 
@@ -11979,6 +11980,9 @@ footer {
 
 .inline-div {
   display: inline; }
+
+.d-inline {
+  display: inline-block; }
 
 .form-invalid {
   color: #fc483f; }
@@ -12135,6 +12139,8 @@ header {
   .home .why .icon {
     height: 42px;
     width: 42px; }
+  .home .why .info {
+    padding-bottom: 20px; }
   .home .why .logo-text {
     color: #f2b45c; }
   .home .why .points {
@@ -12146,7 +12152,7 @@ header {
     margin: 0px 15px !important;
     background: rgba(0, 0, 0, 0.5); }
     .home .why .mar15 img {
-      margin-top: 10px; }
+      margin-top: 20px; }
 
 .home .games, .home .solutions {
   background-image: url("../img/BKN_0001_4.jpg");
@@ -12312,12 +12318,18 @@ header {
   width: 100%;
   -webkit-animation: slide 10s linear infinite;
   animation: slide 10s linear infinite;
-  height: 90vh;
-  padding-top: 70px;
+  height: auto;
+  padding: 70px 0;
   position: relative; }
 
 .aboutus .aboutinfo, .contactus .aboutinfo {
-  color: #fff; }
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .aboutus .aboutinfo img, .contactus .aboutinfo img {
     width: auto; }
   .aboutus .aboutinfo h2, .contactus .aboutinfo h2 {
@@ -12463,8 +12475,9 @@ header {
   background-color: rgba(19, 24, 32, 0.86);
   border-color: transparent;
   padding: 10px;
-  font-family: Oswald;
-  font-size: 12pt; }
+  font-family: DroidSans;
+  font-weight: 600;
+  font-size: 16px; }
   .custom-navbar .navbar-toggle {
     border-color: transparent; }
     .custom-navbar .navbar-toggle .icon-bar {
@@ -12477,6 +12490,9 @@ header {
       color: #fff; }
   .custom-navbar .navbar-nav {
     float: right; }
+
+.platform {
+  padding: 0 45px; }
 
 .home-header li:last-child > a {
   padding: 15px 0;
@@ -12703,14 +12719,13 @@ header {
   text-decoration: none; }
 
 .contactus .about-parallax {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(5%, rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.5))), url(../img/bg-contact.jpg);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.5)), url(../img/bg-contact.jpg);
+  background-image: url(../img/bg-contact.jpg);
   background-attachment: fixed;
   background-repeat: repeat-x;
   background-size: 100% 100%;
   -webkit-animation: none;
   animation: none;
-  min-height: calc(100vh - 165px); }
+  height: 90vh; }
 
 .contactus .contactinfo {
   top: 50%;
@@ -12721,16 +12736,20 @@ header {
   color: #fff; }
 
 .contactus .contactblock {
-  border: 2.5px solid;
-  -o-border-image: linear-gradient(90deg, #ffe088 0%, #b78a00 100%);
-     border-image: -webkit-gradient(linear, left top, right top, from(#ffe088), to(#b78a00));
-     border-image: linear-gradient(90deg, #ffe088 0%, #b78a00 100%);
-  border-image-slice: 2;
   height: 150px;
+  padding: 20px;
   color: #fff; }
   .contactus .contactblock a {
     color: #fff;
     text-decoration: none; }
+  .contactus .contactblock h4 {
+    padding: 0 10px; }
+  .contactus .contactblock .pl-50 {
+    padding-left: 58px; }
+
+.contact-img {
+  width: 45px;
+  height: 45px; }
 
 .row-eq-height {
   display: -webkit-box;
@@ -12846,6 +12865,9 @@ header {
   font-family: Oswald;
   margin-bottom: 20px; }
 
+.get-king {
+  padding: 10px; }
+
 .Oswald-family {
   font-family: Oswald !important; }
 
@@ -12855,9 +12877,12 @@ header {
 .yellow-color {
   color: #f2b45c; }
 
-.bg-overlay {
+.bg-platform {
   background: rgba(0, 0, 0, 0.55);
   margin: -15px 0px; }
+
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.55); }
 
 .withdraw-main {
   margin: 0 auto;

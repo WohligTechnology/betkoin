@@ -1,8 +1,8 @@
 myApp.factory('NavigationService', function () {
     var navigation = [{
-            name: "Home",
-            classis: "active",
-            anchor: "home",
+            // name: "Home",
+            // classis: "active",
+            // anchor: "home",
             // subnav: [{
             //     name: "Subnav1",
             //     classis: "active",
@@ -22,11 +22,18 @@ myApp.factory('NavigationService', function () {
             subnav: []
         },
         {
+            name: "Get Started",
+            classis: "active",
+            anchor: "get-started",
+            subnav: []
+        },
+        {
             name: "Partner With Us",
             classis: "active",
             anchor: "partner",
             subnav: []
         },
+
         // {
         //     name: "Token Structure",
         //     classis: "active",
