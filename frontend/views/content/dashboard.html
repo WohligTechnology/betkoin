@@ -52,19 +52,15 @@
                 <th class="text-center">#</th>
                 <th>Transaction Date</th>
                 <th>User Name</th>
-                <th>Description</th>
                 <th>Amount</th>
-                <th>Give</th>
                 <th>Status</th>
             </tr>
-            <tr ng-repeat="data in TableData">
-                <td align="center">{{data.srno}}</td>
-                <td>{{data.datetime}}</td>
-                <td>{{data.username}}</td>
-                <td>{{data.desc}}</td>
+            <tr ng-repeat="data in coinTxData track by $index">
+                <td align="center">{{$index+1}}</td>
+                <td>{{data.createdAt|date}}</td>
+                <td>{{data.toUser.username}}</td>
                 <td>{{data.amount}}</td>
-                <td class="muddy-color">{{data.give}}</td>
-                <td>{{data.status}}</td>
+                <td>Done</td>
             </tr>
         </table>
         <nav aria-label="Page navigation" class="pagination-style">

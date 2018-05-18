@@ -10,11 +10,11 @@
                 <form>
                     <div class="form-group">
                         <label for="email"> Email Id:</label>
-                        <input type="email" class="form-control custom-input" id="email" placeholder="email" name="email">
+                        <input type="text" class="form-control custom-input" ng-model="userData.username" id="email" placeholder="email" name="email">
                     </div>
                     <div class="form-group">
                         <label for="pwd"> Password:</label>
-                        <input type="password" class="form-control custom-input" id="pwd" placeholder="password" name="pswd">
+                        <input type="password" class="form-control custom-input" ng-model="userData.password"  id="pwd" placeholder="password" name="pswd">
                     </div>
                     <div class="form-group form-check">
                         <label class="form-check-label">
@@ -26,7 +26,7 @@
                     </div>
 
                     <div class="text-center">
-                        <button type="submit" class="btn btn-common">Create an Account</button>
+                        <button type="submit" ng-click="signUpFun(userData)" class="btn btn-common">Create an Account</button>
                     </div>
 
                 </form>
