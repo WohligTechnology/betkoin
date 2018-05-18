@@ -36,6 +36,13 @@ myApp.factory('apiService', function ($http, $q, $timeout) {
               $state.go("login");
             }
           },
+          getCoinTx: function (formData, callback) {
+            $http.post(adminurl + 'CoinTransaction/getCoinTx', formData).then(function (data) {
+                data = data.data;
+                callback(data);
+              });
+
+        },
 
     };
 });

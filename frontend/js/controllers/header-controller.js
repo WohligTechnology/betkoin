@@ -24,6 +24,8 @@ myApp.controller('headernewCtrl', function ($scope,$state, apiService, TemplateS
                 $scope.accessLevel = $scope.singlePlayerData.accessLevel;
                 $scope.userType = $scope.singlePlayerData.userType;
                 $scope.balance = $scope.singlePlayerData.creditLimit + $scope.singlePlayerData.balanceUp;
+                $.jStorage.set('walletAddress', $scope.singlePlayerData.walletDetails.address);
+                console.log("$scope.walletAddress", $.jStorage.get('walletAddress'));
             } else if ("No Member Found") {
                 $.jStorage.flush();
                 $state.go('login');

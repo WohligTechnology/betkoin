@@ -32,7 +32,7 @@
                     <p>Enter Your Wallete Address</p>
                     <div class="row">
                         <div class="col-md-12 text-right">
-                            <input type="text" placeholder="Enter Your Wallete Address" class="custom-input w-100">
+                            <input type="text" placeholder="Enter Your Wallete Address" ng-model="walletAddress" class="custom-input w-100">
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                 <div class="text-center">
                     <div class="t">
                         <a href="http://www.pageqrcode.com" target="_blank">
-                            <img src="http://image.pageqrcode.com/qr?color=000000&size=4" alt="QR Code" />
+                            <img src={{QRcode}} alt="QR Code" />
                         </a>
                     </div>
                 </div>
