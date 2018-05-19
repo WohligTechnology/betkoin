@@ -1,8 +1,7 @@
  @media (max-width: $screen-sm-max) {
      // Tablet
      .navbar-nav {
-         text-align: center;
-         float: none !important;
+         text-align: center; //  float: none !important;
      }
      .custom-navbar {
          .navbar-toggle {
@@ -19,5 +18,52 @@
      .navbar-default .navbar-nav>.active>a:focus {
          color: #fff;
          background-color: #f2b45c;
+     } //scss for header
+     .main-home-header.nav>li>a {
+         padding: 5px 10px;
+         margin-top: 10px;
+     }
+     .custom-navbar .navbar-nav {
+         margin-left: 0;
+         float: left;
+     }
+     .custom-navbar .navbar-nav li a {
+         font-size: 12px;
+     }
+     footer {
+         small {
+             font-size: 11px;
+         }
+         .logo {
+             max-width: 100px;
+         }
+     } //scss for home page
+     .home .globe-container {
+         left: 20%;
+     }
+     .home .globe {
+         width: 300px;
+     }
+     .home .globe-text .title h1 {
+         font-size: 40pt !important;
+     }
+     .home .whytobuy .spacing .graph-spacing {
+         padding: 5% 0% 0% 0%;
+     } //scss for about us page
+     .aboutus .aboutinfo img,
+     .contactus .aboutinfo img {
+         width: 200px;
+     } //scss for get strated page
+     .mob-margin {
+         margin-bottom: 50px;
+     } //scss for partner page
+     .partner .tokeninfo {
+         padding: 10% 10% 0% 10%;
+     } //scss for faq
+     .faq .header {
+         padding-top: 7vh;
+     }
+     .faq .header h1 {
+         font-size: 30px;
      }
  }

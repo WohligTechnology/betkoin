@@ -13215,21 +13215,97 @@ header {
 
 @media (max-width: 991px) {
   .navbar-nav {
-    text-align: center;
-    float: none !important; }
+    text-align: center; }
   .custom-navbar .navbar-toggle:focus {
     background-color: transparent !important; }
   .custom-navbar .navbar-toggle:hover {
     background-color: transparent !important; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
-    background-color: #f2b45c; } }
+    background-color: #f2b45c; }
+  .main-home-header.nav > li > a {
+    padding: 5px 10px;
+    margin-top: 10px; }
+  .custom-navbar .navbar-nav {
+    margin-left: 0;
+    float: left; }
+  .custom-navbar .navbar-nav li a {
+    font-size: 12px; }
+  footer small {
+    font-size: 11px; }
+  footer .logo {
+    max-width: 100px; }
+  .home .globe-container {
+    left: 20%; }
+  .home .globe {
+    width: 300px; }
+  .home .globe-text .title h1 {
+    font-size: 40pt !important; }
+  .home .whytobuy .spacing .graph-spacing {
+    padding: 5% 0% 0% 0%; }
+  .aboutus .aboutinfo img, .contactus .aboutinfo img,
+  .contactus .aboutinfo img {
+    width: 200px; }
+  .mob-margin {
+    margin-bottom: 50px; }
+  .partner .tokeninfo {
+    padding: 10% 10% 0% 10%; }
+  .faq .header {
+    padding-top: 7vh; }
+  .faq .header h1 {
+    font-size: 30px; } }
 
 @media (max-width: 767px) {
+  body h2 {
+    font-size: 25px; }
+  body h3 {
+    font-size: 18px; }
+  body h4 {
+    font-size: 16px; }
   .aboutus .about-parallax, .contactus .about-parallax {
     height: 170vh; }
   .tokenstructure .token-parallax, .partner .token-parallax {
     height: 160vh; }
   p,
   a {
-    font-size: 11px; } }
+    font-size: 11px; }
+  .logo {
+    max-width: 120px; }
+  .custom-navbar .navbar-nav {
+    float: none; }
+  .home .section-cover {
+    height: 85vh; }
+  .home .wheretobuy .icons a img {
+    max-width: 300px; }
+  .home .globe {
+    width: 100%; }
+  .home .globe-container {
+    left: 50%;
+    top: 30%; }
+  .home .globe-text {
+    position: absolute;
+    top: 70%;
+    background: rgba(0, 0, 0, 0.51);
+    right: -25%;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    color: #fff;
+    width: 140%;
+    padding: 20px; }
+  .home .globe-text .title {
+    text-align: center; }
+  .aboutus .aboutinfo, .contactus .aboutinfo,
+  .contactus .aboutinfo {
+    display: block; }
+  .aboutinfo h3 {
+    text-align: center; }
+  .aboutinfo img {
+    margin-left: 20%; }
+  .aboutus .about-parallax, .contactus .about-parallax {
+    height: auto; }
+  .get-king text-right {
+    text-align: center !important; }
+  .partner .tokeninfo {
+    padding: 15% 10% 0% 10%; }
+  .contactus .about-parallax {
+    height: 100vh; } }
