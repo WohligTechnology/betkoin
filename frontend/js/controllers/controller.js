@@ -21,7 +21,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             }, {
                 img: 'img/Baccarat.jpg',
                 title: 'Live Baccarat',
-                description: "Baccarat is one of the most popular card games that is played across the world in all casinos. This game has been featured in many TV shows, and in numerous movies such as James Bond where the game is seen being played by suave and sophisticated gentlemen in exclusive casinos. Our app gives you the opportunity to experience the thrills of playing free baccarat games from the comfort of your own home"
+                description: "Baccarat is one of the most popular card games that is played across the world in all casinos. This game has been featured in many TV shows, and in numerous movies such as James Bond where the game is seen being played by suave and sophisticated gentlemen in exclusive casinos. Our app gives you the opportunity to experience the thrills of playing  baccarat games from the comfort of your own home"
             }, {
                 img: 'img/blackjack.jpg',
                 title: 'Live Blackjack',
@@ -33,7 +33,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             }, {
                 img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
                 title: 'Live Roulette',
-                description: "Now experience the excitement and thrill of playing roulette in the real Las Vegas casino surroundings on your phone. "
+                description: "Roulette Live captures the sprint of a truly awesome week-end in Vegas!  Invite your friends to the most social table game on the market.Spin the wheel, feel the tension and watch the fireworks if you win big!"
             }, {
                 img: 'img/game1.jpg',
                 title: 'Live Ultimate Texas Holdem',
@@ -62,7 +62,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             {
                 img: 'img/7cardstud.jpg',
                 title: 'Live Caribbean Stud',
-                description: "come see why this has always been one of the most popular poker variations!<br>1. beat the dealer by having a better hand.<br>2. win up to 1000: 1 on the optional 5 + 1 bonus bet "
+                description: "Come see why this has always been one of the most popular poker variations!<br>1. beat the dealer by having a better hand.<br>2. win up to 1000: 1 on the optional 5 + 1 bonus bet "
             },
         ]
         $scope.mySlides = [{

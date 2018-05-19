@@ -12467,7 +12467,8 @@ header {
     transform: scale(1.1); }
 
 .logo {
-  max-width: 150px; }
+  max-width: 150px;
+  opacity: 1; }
 
 .note {
   padding: 10px 0; }
@@ -12499,7 +12500,7 @@ header {
 .home-header li {
   background: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#dfae56), to(#dfae56), color-stop(0.6, #fcd48f));
   margin: 7px 5px;
-  font-size: 12px; }
+  font-size: 16px; }
   .home-header li a {
     padding: 5px 12px;
     color: black !important; }
