@@ -1,4 +1,4 @@
-myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationService,apiService, $timeout, toastr, $http) {
+myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationService, apiService, $timeout, toastr, $http) {
     $scope.template = TemplateService.getHTML("content/dashboard.html");
     TemplateService.title = "Dashboard"; //This is the Title of the Website $scope.navigation
     $scope.navigation = NavigationService.getNavigation(); // This is the Title of the Website $scope.navigation= NavigationService.getNavigation();
@@ -51,17 +51,32 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
         "give": "Bitcoin Wallet",
         "status": "Done"
     }];
-    
+
     $scope.getCoinTxData = function () {
-        var userData={};
-        userData._id= $.jStorage.get('memberId');
-        apiService.getCoinTx(userData,function (data) {
-            console.log("$scope.coinTxData",data.data);
+        var userData = {};
+        userData._id = $.jStorage.get('memberId');
+        apiService.getCoinTx(userData, function (data) {
+            console.log("$scope.coinTxData", data.data);
             if (data.value) {
                 $scope.coinTxData = data.data.results;
             }
         })
     };
     $scope.getCoinTxData();
-    
+
+    //for pagination
+    $scope.totalItems = 64;
+    $scope.currentPage = 4;
+
+    $scope.setPage = function (pageNo) {
+        $scope.currentPage = pageNo;
+    };
+
+    $scope.pageChanged = function () {
+        $log.log('Page changed to: ' + $scope.currentPage);
+    };
+
+    $scope.maxSize = 5;
+    $scope.bigTotalItems = 175;
+    $scope.bigCurrentPage = 1;
 })
