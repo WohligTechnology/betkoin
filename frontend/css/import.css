@@ -11913,6 +11913,9 @@ body {
     background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#ffb22d), to(#dfae56), color-stop(0.6, #fcd48f));
     border: 1px solid #0D0B0D; }
 
+.color-white {
+  color: white; }
+
 p {
   font-size: 16px;
   font-family: DroidSans;
@@ -12032,6 +12035,8 @@ header {
 
 .heading-yellow, .home .why .title {
   color: #f2b45c; }
+  .heading-yellow:hover, .home .why .title:hover {
+    color: #f2b45c !important; }
 
 .heading-white, .home .why .info {
   color: #fff; }
@@ -12204,7 +12209,7 @@ header {
   .home .games .offer-game, .home .solutions .offer-game {
     position: relative;
     width: 100%;
-    height: 340px;
+    height: 400px;
     border-radius: 10px; }
     .home .games .offer-game h5, .home .solutions .offer-game h5 {
       color: #fff;
@@ -12402,12 +12407,14 @@ header {
     color: #fff !important; }
 
 .faq .header {
-  padding-top: 22vh;
+  padding-top: 12vh;
   font-weight: 700; }
   .faq .header .questions {
-    color: #f2b45c;
+    color: #f2b45c !important;
     font-style: normal;
     font-weight: 400; }
+  .faq .header h2 {
+    color: #fff; }
   .faq .header h1 {
     color: #fff;
     text-align: center;
@@ -12719,7 +12726,7 @@ header {
 
 .partner .tokeninfo {
   color: #fff;
-  padding: 5% 10% 0% 10%; }
+  padding: 7% 10% 0% 10%; }
 
 .partner a {
   color: #fff;
@@ -12735,7 +12742,7 @@ header {
   height: 90vh; }
 
 .contactus .contactinfo {
-  top: 50%;
+  top: 60%;
   left: 50%;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -12743,8 +12750,8 @@ header {
   color: #fff; }
 
 .contactus .contactblock {
-  height: 150px;
-  padding: 20px;
+  height: 180px;
+  padding: 35px;
   color: #fff; }
   .contactus .contactblock a {
     color: #fff;
@@ -13168,6 +13175,32 @@ header {
 
 .st4:hover #y1 {
   opacity: 0; }
+
+.swiper-overlay {
+  display: none;
+  padding: 0 10px; }
+  .swiper-overlay ul {
+    text-align: left; }
+
+.offer-game:hover .swiper-overlay {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.d-table {
+  display: table;
+  width: 100%;
+  height: 100%; }
+
+.d-cell {
+  display: table-cell;
+  vertical-align: middle; }
 
 #fancybox-loading,
 .fancybox-close,

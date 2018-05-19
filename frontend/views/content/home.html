@@ -29,27 +29,40 @@
                     <div class="heading-yellow wow fadeInLeftBig" data-wow-delay="0.25s" data-wow-duration="0.8s">
                         <h3 class="text-center text-uppercase">About Betkoin</h3>
                         <hr>
-                        <p>Betkoin is the first crypto to actually have a concept and a business plan. It's a huge transformation
-                            in the gambling and betting world. The widespread adoption of cryptocurrency in gambling is no
-                            more a pipe dream. With Betkoin, its a reality now. This crypto is your ATM for any type of betting,
-                            be it for casino games like Teen Patti, Poker etc. or sportsbook like Horse racing, Cricket,
-                            football etc. Betkoin is based on blockchain technology. Transactions are permanent with 0% chance
-                            of fraud.
+                        <p> The rapid rise in the number of crypto currencies has attracted a growing interest in the community.
+                            With more than 1000 different crypto currencies available and more being developed everyday,
+                            the crypto currency market is really booming. Potentially, the launch of BetKoin offers a solution
+                            that allows online gambling to accept payments in crypto currency. Betkoin is a form of digital
+                            online money using blockchain technology that can be easily transferred all around the world
+                            in a blink of an eye with nearly non-existent transaction fees with market leading security &
+                            privacy.
                             <br>
                             <br>
                         </p>
+
                     </div>
                     <div class="heading-yellow wow fadeInLeftBig" data-wow-delay="0.45s" data-wow-duration="0.8s">
                         <h3 class="text-center text-uppercase">Why to invest in Betkoin</h3>
                         <hr>
                         <div class="mt-4 pt-4">
                             <div class="text-left">
-                                <p>The total gambling worth is forecasted to rise to 36 billion pounds by 2019. These stats
-                                    clearly state what collection is made from betting and gambling business around the world.
-                                    With so many users using Betkoin worldwide and with its acceptance, Betkoin will be seen
-                                    growing globally. The value will certainly rise high, and the profits made will be invested
-                                    to expand our coin and eventually our business worldwide and generate more and more collection.
+                                <p>Gross gambling worth is forecasted to go up to 36 billion pounds by 2019, thus clearly stating
+                                    the noteworthy collection made from the betting and gambling business around the world.
+                                    We plan to utlilize the profits made for the development of our products as well as giving
+                                    benefits for our investors for a happy betkoin family. With the introduction of a cryto
+                                    currency in this huge business sector the usage will increase undoubtedly. With growing
+                                    global acceptance of Betkoin for being easy to use and being safe as well as being anonymous
+                                    it’s value will maximise, thus positively affecting our business worldwide. U can convert
+                                    it into other crypto currency at any point of time and its totally non traceable. Hence
+                                    the huge acceptance hence higher the profits. It is quite distinctly a profitable cycle
+                                    that people should definitely invest in for best results. Also u can invest and start
+                                    your own gambling business. For more details check out
+                                    <a ui-sref="partner" class="heading-yellow">Partner With Us</a>
+                                    <br>
+                                    <br>
                                 </p>
+
+
                             </div>
                         </div>
                     </div>
@@ -259,6 +272,10 @@
                         </g>
                     </svg>
                 </div>
+
+            </div>
+            <div class="text-center">
+                <a role="button" class="submit-btn get-king" ui-sref="aboutus">Know More</a>
             </div>
         </div>
     </div>
@@ -299,7 +316,8 @@
                                 <h3 class="title">Highest speed with lowest cost</h3>
                                 <p class="info text-left">
                                     Instant, on-demand settlement.
-                                    <br> Low operational and liquidity costs of all the nodes in the system.
+                                    <br> Low operational and liquidity costs of all the nodes in the system.Transactions around
+                                    any part of the world will get conformed within 5 to 10 minutes.
                                 </p>
                             </div>
                         </div>
@@ -368,76 +386,46 @@
                     <div class="prev">
                         <img src="img/prev.png">
                     </div>
-                    <div class="relative">
-                        <div class="swiper-container">
+                    <div class="relative home-swiper-overlay">
+                        <div class="swiper-container ">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide games-card" style="background-image:url({{s.img}});" ng-repeat="s in mySlides" ng-click="openCasino(s)">
+                                <div class="swiper-slide games-card" style="background-image:url({{s.img}});" ng-repeat="s in gameData">
                                     <div class="offer-game">
                                         <h5 class="text-center">{{s.title}}</h5>
+                                        <div class="swiper-overlay">
+                                            <div class="d-table">
+                                                <div class="d-cell text-center">
+                                                    <h4 class="text-center heading-yellow">{{s.title}}</h4>
+                                                    <hr>
+                                                    <p class="text-center" ng-bind-html="s.description">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </uib-tab>
             </uib-tabset>
             <uib-tabset type="pills" justified="true" class="games-tabs">
                 <uib-tab index="1" heading="SPORTS BOOK" ng-click="createswiper()">
-                    <!-- <div class="next2">Next2 </div>
-                    <div class="prev2">Previous2 </div>
-                    <div class="swiper-container1">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide games-card" style="background-image:url({{s.img}});" ng-repeat="s in mySlides2">
-                                <div class="offer-game">
-                                    <h5 class="text-center">{{s.title}}</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="next2">
-                        <img src="img/next.png">
-                    </div>
-                    <div class="prev2">
-                        <img src="img/prev.png">
-                    </div> -->
-                    <!-- <div class="relative">
-                        <div class="swiper-container2">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide games-card" style="background-image:url({{s.img}});" ng-repeat="s in mySlides2">
-                                    <div class="offer-game">
-                                        <h5 class="text-center">{{s.title}}</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
                     <div class="relative">
                         <div class="swiper-container2">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide games-card pointer" style="background-image:url('img/Cricket.jpg');" ng-click="openCricket()">
+                                <div class="swiper-slide games-card pointer" style="background-image:url({{s.img}});" ng-repeat="s in sportData">
                                     <div class="offer-game">
-                                        <h5 class="text-center">Cricket</h5>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide games-card pointer" style="background-image:url('img/Football.jpg');" ng-click="openFootball()">
-                                    <div class="offer-game">
-                                        <h5 class="text-center">Football</h5>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide games-card pointer" style="background-image:url('img/Tennis.jpg');" ng-click="openTennis()">
-                                    <div class="offer-game">
-                                        <h5 class="text-center">Tennis</h5>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide games-card pointer" style="background-image:url('img/GreyhoundRacing.jpg');" ng-click="openGreyhoundRacing()">
-                                    <div class="offer-game">
-                                        <h5 class="text-center">GreyhoundRacing</h5>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide games-card pointer" style="background-image:url('img/HorseRacing.jpg');" ng-click="openHorseRacing()">
-                                    <div class="offer-game">
-                                        <h5 class="text-center">HorseRacing</h5>
+                                        <h5 class="text-center">{{s.title}}</h5>
+                                        <div class="swiper-overlay">
+                                            <div class="d-table">
+                                                <div class="d-cell text-center">
+                                                    <h4 class="text-center heading-yellow">{{s.title}}</h4>
+                                                    <hr>
+                                                    <p class="text-center" ng-bind-html="s.description">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
