@@ -21,7 +21,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             }, {
                 img: 'img/Baccarat.jpg',
                 title: 'Live Baccarat',
-                description: "Baccarat is one of the most popular card games that is played across the world in all casinos. This game has been featured in many TV shows, and in numerous movies such as James Bond where the game is seen being played by suave and sophisticated gentlemen in exclusive casinos. Our app gives you the opportunity to experience the thrills of playing  baccarat games from the comfort of your own home"
+                description: "Baccarat is one of the most popular card games that is played across the world in all casinos. Our app gives you the opportunity to experience the thrills of playing  baccarat games from the comfort of your own home."
             }, {
                 img: 'img/blackjack.jpg',
                 title: 'Live Blackjack',
@@ -47,7 +47,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             {
                 img: 'img/casino.jpg',
                 title: 'Live Casino Holdem',
-                description: "its An exciting variation of the much-loved five-card Texas Hold’em poker game, Live Casino Hold’em. Available as standard and dedicated tables for players on desktop and tablet, it’s the perfect way to attract poker enthusiasts to your Live Casino and to keep them entertained. "
+                description: "Its An exciting variation of the much-loved five-card Texas Hold’em poker game, Live Casino Hold’em. Available as standard and dedicated tables for players on desktop and tablet, it’s the perfect way to attract poker enthusiasts to your Live Casino and to keep them entertained. "
             },
             {
                 img: 'img/triplecard.png',
@@ -74,7 +74,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             {
                 img: 'img/Football.jpg',
                 title: 'Football',
-                description: "Sports betting is a billion dollar industry, and football is the most popular sports in the world to bet on.  We offer great value and great odds to bet on!For Football,such kinds of Bet Markets are available: "
+                description: "Sports betting is a billion dollar industry, and football is the most popular sports in the world to bet on.  We offer great value and great odds to bet on!For Football,such kinds of Bet Markets are available: <ul> <li> Match Odds </li> </ul> "
             },
             {
                 img: 'img/Tennis.jpg',
@@ -83,7 +83,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             }, {
                 img: 'img/GreyhoundRacing.jpg',
                 title: 'Greyhound Racing',
-                description: "You’ll LOVE Greyhound Betting from Kings App. An app that offers everything you need to enjoy the sport to the  full."
+                description: "You’ll love Greyhound Betting from Kings App. An app that offers everything you need to enjoy the sport to the  full."
             }, {
                 img: 'img/HorseRacing.jpg',
                 title: 'Horse Racing',
@@ -92,7 +92,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         ]
         $timeout(function () {
             var mySwiper = new Swiper('.swiper-container', {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 30,
                 pagination: {
                     el: '.swiper-pagination',
@@ -135,7 +135,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
         $timeout(function () {
             var mySwiper = new Swiper('.swiper-container2', {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 30,
                 pagination: {
                     el: '.swiper-pagination',
@@ -203,7 +203,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             console.log("inside createswiper fn")
             $timeout(function () {
                 var mySwiper1 = new Swiper('.swiper-container1', {
-                    slidesPerView: 5,
+                    slidesPerView: 4,
                     spaceBetween: 30,
                     pagination: {
                         el: '.swiper-pagination',

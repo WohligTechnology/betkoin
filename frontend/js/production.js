@@ -76986,7 +76986,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             controller: 'ContactusCtrl'
         })
         .state('dashboard', {
-            url: "/dashboard",
+            url: "/dashboard/{page:.*}",
             templateUrl: tempateURL,
             controller: 'DashboardCtrl'
         });
@@ -77302,6 +77302,13 @@ myApp.factory('apiService', function ($http, $q, $timeout) {
               });
 
         },
+        partnerWith: function (formData, callback) {
+            $http.post(adminurl + 'PartnerWithUs/save', formData).then(function (data) {
+                data = data.data;
+                callback(data);
+            });
+
+        },
 
     };
 });
@@ -77328,7 +77335,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             }, {
                 img: 'img/Baccarat.jpg',
                 title: 'Live Baccarat',
-                description: "Baccarat is one of the most popular card games that is played across the world in all casinos. This game has been featured in many TV shows, and in numerous movies such as James Bond where the game is seen being played by suave and sophisticated gentlemen in exclusive casinos. Our app gives you the opportunity to experience the thrills of playing free baccarat games from the comfort of your own home"
+                description: "Baccarat is one of the most popular card games that is played across the world in all casinos. This game has been featured in many TV shows, and in numerous movies such as James Bond where the game is seen being played by suave and sophisticated gentlemen in exclusive casinos. Our app gives you the opportunity to experience the thrills of playing  baccarat games from the comfort of your own home"
             }, {
                 img: 'img/blackjack.jpg',
                 title: 'Live Blackjack',
@@ -77340,7 +77347,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             }, {
                 img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
                 title: 'Live Roulette',
-                description: "Now experience the excitement and thrill of playing roulette in the real Las Vegas casino surroundings on your phone. "
+                description: "Roulette Live captures the sprint of a truly awesome week-end in Vegas!  Invite your friends to the most social table game on the market.Spin the wheel, feel the tension and watch the fireworks if you win big!"
             }, {
                 img: 'img/game1.jpg',
                 title: 'Live Ultimate Texas Holdem',
@@ -77369,123 +77376,37 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             {
                 img: 'img/7cardstud.jpg',
                 title: 'Live Caribbean Stud',
-                description: "come see why this has always been one of the most popular poker variations!<br>1. beat the dealer by having a better hand.<br>2. win up to 1000: 1 on the optional 5 + 1 bonus bet "
+                description: "Come see why this has always been one of the most popular poker variations!<br>1. beat the dealer by having a better hand.<br>2. win up to 1000: 1 on the optional 5 + 1 bonus bet "
             },
         ]
-        $scope.mySlides = [{
-                img: 'img/game4.jpg',
-                title: 'TeenPatti'
+
+        $scope.sportData = [{
+                img: 'img/Cricket.jpg',
+                title: 'Cricket',
+                description: " Bet as the action unfolds! We offer a multitude of different betting options across a huge number of matches and tournaments in cricket!.<ul> <li> Completed Match </li> <li> Tied Match </li> <li> 20 / 50 Over Runs </li> </ul> "
             },
             {
-                img: 'img/p1.jpg',
-                title: 'Texas Holdem Poker',
-                description: ""
-            }, {
-                img: 'img/r1.jpg',
-                title: 'Roulette',
-                description: " "
-            }, {
-                img: 'img/Baccarat.jpg',
-                title: 'Live Baccarat'
-            }, {
-                img: 'img/blackjack.jpg',
-                title: 'Live Blackjack'
-            }, {
-                img: 'img/money.png',
-                title: 'Live Money Wheel'
-            }, {
-                img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
-                title: 'Live Roulette'
-            }, {
-                img: 'img/game1.jpg',
-                title: 'Live Ultimate Texas Holdem'
+                img: 'img/Football.jpg',
+                title: 'Football',
+                description: "Sports betting is a billion dollar industry, and football is the most popular sports in the world to bet on.  We offer great value and great odds to bet on!For Football,such kinds of Bet Markets are available: "
             },
             {
-                img: 'img/exteme.png',
-                title: 'Live Extreme Texas Holdem '
-            },
-            {
-                img: 'img/casino.jpg',
-                title: 'Live Casino Holdem'
-            },
-
-            {
-                img: 'img/threecardpoker.jpg',
-                title: 'Live Three Card Poker'
-            },
-            {
-                img: 'img/triplecard.png',
-                title: 'Live Triple Card Poker '
-            },
-            {
-                img: 'img/7cardstud.jpg',
-                title: 'Live Caribbean Stud'
-            },
-
-
-            // {
-            //     img: 'https://cdn.decent.bet/img/backgrounds/craps.jpg',
-            //     title: 'Craps'
-            // },
-
-            // {
-            //     img: '../img/Casinowar.jpg',
-            //     title: 'Casino war'
-            // },
-            // {
-            //     img: '../img/Bigsixwheel.jpg',
-            //     title: 'Big six wheel'
-            // },
-            // {
-            //     img: '../img/7cardstud.jpg',
-            //     title: '7 card stud'
-            // },
-            // {
-            //     img: '../img/Slots.jpg',
-            //     title: 'Slots'
-            // },
-            // {
-            //     img: '../img/Bingo.jpg',
-            //     title: 'Bingo'
-            // },
-            // {
-            //     img: '../img/LotteryBetting.jpg',
-            //     title: 'Lottery Betting'
-            // },
-            // {
-            //     img: '../img/Dicegames.jpg',
-            //     title: 'Dice games'
-            // },
-            // {
-            //     img: '../img/Rummy.jpg',
-            //     title: 'Rummy'
-            // },
-            // {
-            //     img: '../img/Pinball.jpg',
-            //     title: 'Pinball'
-            // },
-            // {
-            //     img: '../img/Paigow.jpg',
-            //     title: 'Pai gow'
-            // },
-            // {
-            //     img: 'img/TexasHold.jpg',
-            //     title: 'Texas Holdem Bonus Poker'
-            // },
-            // {
-            //     img: 'img/dreamcatcher.png',
-            //     title: 'Dreamcatcher'
-            // }
-            // {
-            //     img: '../img/Keno.jpg',
-            //     title: 'Keno'
-            // }
-
-        ];
-
+                img: 'img/Tennis.jpg',
+                title: 'Tennis',
+                description: "Kings App enables you to bet in-play on the majority of matches, with the tennis odds changing to reflect the current state of the match.You can get a large number of special and exotic markets on most tournaments as well.For Tennis, such kinds of Bet Markets are available: <ul> <li> Match Odds </li> </ul> "
+            }, {
+                img: 'img/GreyhoundRacing.jpg',
+                title: 'Greyhound Racing',
+                description: "You’ll LOVE Greyhound Betting from Kings App. An app that offers everything you need to enjoy the sport to the  full."
+            }, {
+                img: 'img/HorseRacing.jpg',
+                title: 'Horse Racing',
+                description: " Experience the excitement of live horse racing and race replays on your device, wherever you are. Never miss a race again - it’ s like having a racing program in the palm of your hand!"
+            }
+        ]
         $timeout(function () {
             var mySwiper = new Swiper('.swiper-container', {
-                slidesPerView: 5,
+                slidesPerView: 3,
                 spaceBetween: 30,
                 pagination: {
                     el: '.swiper-pagination',
@@ -77528,7 +77449,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
         $timeout(function () {
             var mySwiper = new Swiper('.swiper-container2', {
-                slidesPerView: 5,
+                slidesPerView: 3,
                 spaceBetween: 30,
                 pagination: {
                     el: '.swiper-pagination',
@@ -77771,7 +77692,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.navigation = NavigationService.getNavigation();
     })
 
-    .controller('PartnerCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal) {
+    .controller('PartnerCtrl', function ($scope, TemplateService, NavigationService, $timeout, apiService, toastr, $http, $uibModal) {
         $scope.template = TemplateService.getHTML("content/partner.html");
         TemplateService.title = "Partner With Us";
         TemplateService.header1 = ""; // This is the Title of the Website
@@ -77804,70 +77725,17 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
         //Form Validation
         $scope.contactForm = {};
+        $scope.partnerData = {};
         $scope.submitForm = function (data) {
             console.log('dkhicjii', data);
-            if (!data.dob) {
-                $scope.dobError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.pan) {
-                $scope.panError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.aadhar) {
-                $scope.aadharError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.name) {
-                $scope.nameError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.income) {
-                $scope.incomeError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.fname) {
-                $scope.fError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.acholder) {
-                $scope.acholderError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.branch) {
-                $scope.branchError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.ifsc) {
-                $scope.ifscError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.mobileno) {
-                $scope.mobilenoError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.accno) {
-                $scope.accnoError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.email) {
-                $scope.emailError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.contactno) {
-                $scope.contactnoError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.query) {
-                $scope.queryError = true;
-                console.log("im im", $scope.showError);
-            }
+            apiService.partnerWith(data, function (data) {
+                console.log("signUp data", data);
+                if (data.value) {
+                    $scope.openThanku();
+                    $scope.partnerData = {};
 
-            console.log("This is it");
-            return new Promise(function (callback) {
-                $timeout(function () {
-                    callback();
-                }, 5000);
+                }
+
             });
         };
 
@@ -77945,7 +77813,7 @@ myApp.controller('WithdrowalCtrl', function ($scope, TemplateService, Navigation
     TemplateService.title = "Withdrowal"; //This is the Title of the Website $scope.navigation
     $scope.navigation = NavigationService.getNavigation(); // This is the Title of the Website $scope.navigation= NavigationService.getNavigation();
 })
-myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationService,apiService, $timeout, toastr, $http) {
+myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationService, $stateParams,$state, apiService, $timeout, toastr, $http) {
     $scope.template = TemplateService.getHTML("content/dashboard.html");
     TemplateService.title = "Dashboard"; //This is the Title of the Website $scope.navigation
     $scope.navigation = NavigationService.getNavigation(); // This is the Title of the Website $scope.navigation= NavigationService.getNavigation();
@@ -77998,19 +77866,86 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
         "give": "Bitcoin Wallet",
         "status": "Done"
     }];
-    
+
     $scope.getCoinTxData = function () {
-        var userData={};
-        userData._id= $.jStorage.get('memberId');
-        apiService.getCoinTx(userData,function (data) {
-            console.log("$scope.coinTxData",data.data);
-            if (data.value) {
-                $scope.coinTxData = data.data.results;
+
+    };
+    $scope.getCoinTxData();
+
+    $scope.playerData = function () {
+        apiService.sendAccessToken(function (data) {
+            if (data.data.value) {
+                $scope.singlePlayerData = data.data.data;
+                var userData = {};
+                userData._id = $scope.singlePlayerData._id;
+                apiService.getCoinTx(userData, function (data) {
+                    console.log("$scope.coinTxData", data.data);
+                    if (data.value) {
+                        $scope.coinTxData = data.data.results;
+                    }
+                })
+            } else if ("No Member Found") {
+                $.jStorage.flush();
+                $state.go('login');
             }
         })
     };
-    $scope.getCoinTxData();
-    
+    $scope.playerData();
+    //for pagination
+    // $scope.totalItems = 64;
+    // $scope.currentPage = 4;
+
+    // $scope.setPage = function (pageNo) {
+    //     $scope.currentPage = pageNo;
+    // };
+
+    // $scope.maxSize = 5;
+    // $scope.bigTotalItems = 175;
+    // $scope.bigCurrentPage = 1;
+
+
+
+    if ($stateParams.page && !isNaN(parseInt($stateParams.page))) {
+        $scope.currentPage = $stateParams.page;
+    } else {
+        $scope.currentPage = 1;
+    }
+
+
+    $scope.pageChanged = function (page) {
+        $state.go('dashboard', {
+            page: page
+        });
+    };
+
+    $scope.getAllItems = function () {
+        apiService.sendAccessToken(function (data) {
+            if (data.data.value) {
+                $scope.singlePlayerData = data.data.data;
+                $scope.totalItems = undefined;
+                var userData = {};
+                userData.page = $scope.currentPage
+                userData._id = $scope.singlePlayerData._id;
+
+                apiService.getCoinTx(userData, function (data) {
+                    console.log("$scope.coinTxData", data.data);
+                    if (data.value) {
+                        $scope.coinTxData = data.data.results;
+                        $scope.totalItems = data.data.total;
+                        $scope.maxRow = data.data.options.count;
+                    }
+                })
+            } else if ("No Member Found") {
+                $.jStorage.flush();
+                $state.go('login');
+            }
+        })
+
+
+
+
+    };
+    $scope.getAllItems();
 })
 myApp.controller('DepositCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
     $scope.template = TemplateService.getHTML("content/deposit.html");
