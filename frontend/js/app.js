@@ -92,7 +92,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             controller: 'ContactusCtrl'
         })
         .state('dashboard', {
-            url: "/dashboard",
+            url: "/dashboard/{page:.*}",
             templateUrl: tempateURL,
             controller: 'DashboardCtrl'
         });
