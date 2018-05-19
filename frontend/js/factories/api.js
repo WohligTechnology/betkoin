@@ -43,6 +43,13 @@ myApp.factory('apiService', function ($http, $q, $timeout) {
               });
 
         },
+        partnerWith: function (formData, callback) {
+            $http.post(adminurl + 'PartnerWithUs/save', formData).then(function (data) {
+                data = data.data;
+                callback(data);
+            });
+
+        },
 
     };
 });

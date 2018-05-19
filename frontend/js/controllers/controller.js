@@ -378,7 +378,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.navigation = NavigationService.getNavigation();
     })
 
-    .controller('PartnerCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal) {
+    .controller('PartnerCtrl', function ($scope, TemplateService, NavigationService, $timeout, apiService, toastr, $http, $uibModal) {
         $scope.template = TemplateService.getHTML("content/partner.html");
         TemplateService.title = "Partner With Us";
         TemplateService.header1 = ""; // This is the Title of the Website
@@ -411,70 +411,17 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
         //Form Validation
         $scope.contactForm = {};
+        $scope.partnerData = {};
         $scope.submitForm = function (data) {
             console.log('dkhicjii', data);
-            if (!data.dob) {
-                $scope.dobError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.pan) {
-                $scope.panError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.aadhar) {
-                $scope.aadharError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.name) {
-                $scope.nameError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.income) {
-                $scope.incomeError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.fname) {
-                $scope.fError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.acholder) {
-                $scope.acholderError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.branch) {
-                $scope.branchError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.ifsc) {
-                $scope.ifscError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.mobileno) {
-                $scope.mobilenoError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.accno) {
-                $scope.accnoError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.email) {
-                $scope.emailError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.contactno) {
-                $scope.contactnoError = true;
-                console.log("im im", $scope.showError);
-            }
-            if (!data.query) {
-                $scope.queryError = true;
-                console.log("im im", $scope.showError);
-            }
+            apiService.partnerWith(data, function (data) {
+                console.log("signUp data", data);
+                if (data.value) {
+                    $scope.openThanku();
+                    $scope.partnerData = {};
 
-            console.log("This is it");
-            return new Promise(function (callback) {
-                $timeout(function () {
-                    callback();
-                }, 5000);
+                }
+
             });
         };
 
