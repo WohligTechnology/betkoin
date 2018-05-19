@@ -1,5 +1,16 @@
  @media (max-width: $screen-xs-max) {
      // Mobile
+     body {
+         h2 {
+             font-size: 25px;
+         }
+         h3 {
+             font-size: 18px;
+         }
+         h4 {
+             font-size: 16px;
+         }
+     }
      .aboutus {
          .about-parallax {
              height: 170vh;
@@ -13,5 +24,62 @@
      p,
      a {
          font-size: 11px;
+     } //scss for header
+     .logo {
+         max-width: 120px;
+     }
+     .custom-navbar .navbar-nav {
+         float: none;
+     } //scss for home page
+     .home .section-cover {
+         height: 85vh;
+     }
+     .home .wheretobuy .icons a img {
+         max-width: 300px;
+     }
+     .home .globe {
+         width: 100%;
+     }
+     .home .globe-container {
+         left: 50%;
+         top: 30%;
+     }
+     .home .globe-text {
+         position: absolute;
+         top: 70%;
+         background: rgba(0, 0, 0, 0.51);
+         right: -25%;
+         transform: translate(0%, 0%);
+         color: #fff;
+         width: 140%;
+         padding: 20px;
+     }
+     .home .globe-text .title {
+         text-align: center;
+     } //scss for about us 
+     .aboutus .aboutinfo,
+     .contactus .aboutinfo {
+         display: block;
+     }
+     .aboutinfo {
+         h3 {
+             text-align: center;
+         }
+         img {
+             margin-left: 20%;
+         }
+     }
+     .aboutus .about-parallax,
+         {
+         height: auto;
+     } //scss for get started page
+     .get-king text-right {
+         text-align: center !important;
+     } //scss for partner page
+     .partner .tokeninfo {
+         padding: 15% 10% 0% 10%;
+     }
+     .contactus .about-parallax {
+         height: 100vh;
      }
  }
