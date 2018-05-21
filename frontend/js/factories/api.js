@@ -1,4 +1,4 @@
-myApp.factory('apiService', function ($http, $q, $timeout) {
+myApp.factory('apiService', function ($http, $q, $timeout, $state) {
     return {
 
         // This is a demo Service for POST Method.
@@ -21,26 +21,26 @@ myApp.factory('apiService', function ($http, $q, $timeout) {
             $http.post(adminurl + 'member/playerLogin', formData).then(function (data) {
                 data = data.data;
                 callback(data);
-              });
+            });
 
         },
         sendAccessToken: function (callback) {
             var accessToken = $.jStorage.get("accessToken");
             if (!_.isEmpty(accessToken)) {
-              $http.post(adminurl + 'member/getAccessLevel', {
-                accessToken: accessToken
-              }).then(function (data) {
-                callback(data);
-              });
+                $http.post(adminurl + 'member/getAccessLevel', {
+                    accessToken: accessToken
+                }).then(function (data) {
+                    callback(data);
+                });
             } else {
-              $state.go("login");
+                $state.go("login");
             }
-          },
-          getCoinTx: function (formData, callback) {
+        },
+        getCoinTx: function (formData, callback) {
             $http.post(adminurl + 'CoinTransaction/getCoinTx', formData).then(function (data) {
                 data = data.data;
                 callback(data);
-              });
+            });
 
         },
         partnerWith: function (formData, callback) {
