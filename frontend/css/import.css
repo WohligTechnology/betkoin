@@ -12697,6 +12697,7 @@ header {
   padding: 10px 0; }
 
 .custom-navbar {
+  overflow-x: hidden;
   background-color: rgba(19, 24, 32, 0.86);
   border-color: transparent;
   padding: 10px;
@@ -13522,6 +13523,8 @@ header {
   .faq .header {
     padding-top: 12vh !important; }
   .mt-40 {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  .home .whytobuy .spacing {
+    padding: 1% 5% 6% 4% !important; } }
 
 /*# sourceMappingURL=import.css.map */

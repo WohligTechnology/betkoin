@@ -77326,7 +77326,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             {
                 img: 'img/p1.jpg',
                 title: 'Texas Holdem Poker',
-                description: " Join the world’s most popular Poker game with more tables, more tournaments, and more people to challenge than ever before. It’s Texas Hold ‘Em Poker the way YOU want to play! You can also create your own private table to play amongst your own set of friends! "
+                description: "Join the world’s most popular Poker game with more tables, more tournaments, and more people to challenge than ever before. It’s Texas Hold ‘Em Poker the way you want to play! You can also create your own private table to play amongst your own set of friends! "
             },
             {
                 img: 'img/r1.jpg',
@@ -77335,7 +77335,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             }, {
                 img: 'img/Baccarat.jpg',
                 title: 'Live Baccarat',
-                description: "Baccarat is one of the most popular card games that is played across the world in all casinos. This game has been featured in many TV shows, and in numerous movies such as James Bond where the game is seen being played by suave and sophisticated gentlemen in exclusive casinos. Our app gives you the opportunity to experience the thrills of playing  baccarat games from the comfort of your own home"
+                description: "Baccarat is one of the most popular card games that is played across the world in all casinos. Our app gives you the opportunity to experience the thrills of playing  baccarat games from the comfort of your own home."
             }, {
                 img: 'img/blackjack.jpg',
                 title: 'Live Blackjack',
@@ -77347,7 +77347,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             }, {
                 img: 'https://cdn.decent.bet/img/backgrounds/roulette.jpg',
                 title: 'Live Roulette',
-                description: "Roulette Live captures the sprint of a truly awesome week-end in Vegas!  Invite your friends to the most social table game on the market.Spin the wheel, feel the tension and watch the fireworks if you win big!"
+                description: "Roulette Live captures the sprint of a truly awesome week-end in Vegas!  Invite your friends to the most social table game on the market. Spin the wheel, feel the tension and watch the fireworks if you win big!"
             }, {
                 img: 'img/game1.jpg',
                 title: 'Live Ultimate Texas Holdem',
@@ -77356,39 +77356,39 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             {
                 img: 'img/exteme.png',
                 title: 'Live Extreme Texas Holdem ',
-                description: "You are bored to play a poker game everyday, aren’t you? EXTREME POKER is Great New Game depend on the poker rules.Play the most amazing multi-decision Hold'em game in the world! "
+                description: "You are bored to play a poker game everyday, aren’t you? EXTREME POKER is Great New Game depending on the poker rules. Play the most amazing multi-decision Hold'em game in the world! "
             },
             {
                 img: 'img/casino.jpg',
                 title: 'Live Casino Holdem',
-                description: "its An exciting variation of the much-loved five-card Texas Hold’em poker game, Live Casino Hold’em. Available as standard and dedicated tables for players on desktop and tablet, it’s the perfect way to attract poker enthusiasts to your Live Casino and to keep them entertained. "
+                description: "Its an exciting variation of the much-loved five-card Texas Hold’em poker game, Live Casino Hold’em. Available as standard and dedicated tables for players on desktop and tablet, it’s the perfect way to attract poker enthusiasts to your Live Casino and to keep them entertained. "
             },
             {
                 img: 'img/triplecard.png',
                 title: 'Live Three Card Poker',
-                description: "Three Card Poker is the most popular specialty table game of all times, you can experience it live too! it's one of the easiest games around, making it the absolutely perfect choice!"
+                description: "Three Card Poker is the most popular specialty table game of all times, you can experience it live too! It's one of the easiest games around, making it the absolutely perfect choice!"
             },
             {
                 img: 'img/threecardpoker.jpg',
                 title: 'Live Triple Card Poker ',
-                description: "Live Tripple Card Poker offers all of the excitement of a standard poker game in a live gaming format against the dealer. If you’re interested in winning big, Live Three Card Poker is the must-play attraction.Play triple card poker head-to-head against the dealer! "
+                description: "Live Triple Card Poker offers all of the excitement of a standard poker game in a live gaming format against the dealer. If you’re interested in winning big, Live Three Card Poker is the must-play attraction. Play triple card poker head-to-head against the dealer! "
             },
             {
                 img: 'img/7cardstud.jpg',
                 title: 'Live Caribbean Stud',
-                description: "Come see why this has always been one of the most popular poker variations!<br>1. beat the dealer by having a better hand.<br>2. win up to 1000: 1 on the optional 5 + 1 bonus bet "
+                description: "Come see why this has always been one of the most popular poker variations!<br>1. Beat the dealer by having a better hand.<br>2. Win up to 1000: 1 on the optional 5 + 1 bonus bet "
             },
         ]
 
         $scope.sportData = [{
                 img: 'img/Cricket.jpg',
                 title: 'Cricket',
-                description: " Bet as the action unfolds! We offer a multitude of different betting options across a huge number of matches and tournaments in cricket!.<ul> <li> Completed Match </li> <li> Tied Match </li> <li> 20 / 50 Over Runs </li> </ul> "
+                description: "Bet as the action unfolds! We offer a multitude of different betting options across a huge number of matches and tournaments in cricket!.<ul> <li> Completed Match </li> <li> Tied Match </li> <li> 20 / 50 Over Runs </li> </ul> "
             },
             {
                 img: 'img/Football.jpg',
                 title: 'Football',
-                description: "Sports betting is a billion dollar industry, and football is the most popular sports in the world to bet on.  We offer great value and great odds to bet on!For Football,such kinds of Bet Markets are available: "
+                description: "Sports betting is a billion dollar industry, and football is the most popular sports in the world to bet on.  We offer great value and great odds to bet on! For Football, such kinds of Bet Markets are available: <ul> <li> Match Odds </li> <li> Over/Under Goals </li></ul> "
             },
             {
                 img: 'img/Tennis.jpg',
@@ -77397,7 +77397,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             }, {
                 img: 'img/GreyhoundRacing.jpg',
                 title: 'Greyhound Racing',
-                description: "You’ll LOVE Greyhound Betting from Kings App. An app that offers everything you need to enjoy the sport to the  full."
+                description: "You’ll love Greyhound Betting from Kings App. An app that offers everything you need to enjoy the sport to the  full."
             }, {
                 img: 'img/HorseRacing.jpg',
                 title: 'Horse Racing',
@@ -77406,7 +77406,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         ]
         $timeout(function () {
             var mySwiper = new Swiper('.swiper-container', {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 30,
                 pagination: {
                     el: '.swiper-pagination',
@@ -77419,7 +77419,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                     prevEl: '.prev'
                 },
                 autoplay: {
-                    delay: 1500,
+                    delay: 5500,
                 },
                 keyboard: {
                     enabled: true,
@@ -77445,11 +77445,11 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                 }
             })
             console.log("inside timeout");
-        }, 100);
+        }, 2000);
 
         $timeout(function () {
             var mySwiper = new Swiper('.swiper-container2', {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 30,
                 pagination: {
                     el: '.swiper-pagination',
@@ -77462,7 +77462,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                     prevEl: '.prev2'
                 },
                 autoplay: {
-                    delay: 1500,
+                    delay: 5500,
                 },
                 keyboard: {
                     enabled: true,
@@ -77488,7 +77488,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                 }
             })
             console.log("inside timeout");
-        }, 100);
+        }, 2000);
 
 
         $scope.mySlides2 = [{
@@ -77517,7 +77517,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             console.log("inside createswiper fn")
             $timeout(function () {
                 var mySwiper1 = new Swiper('.swiper-container1', {
-                    slidesPerView: 5,
+                    slidesPerView: 4,
                     spaceBetween: 30,
                     pagination: {
                         el: '.swiper-pagination',
