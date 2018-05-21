@@ -74,7 +74,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             {
                 img: 'img/Football.jpg',
                 title: 'Football',
-                description: "Sports betting is a billion dollar industry, and football is the most popular sports in the world to bet on.  We offer great value and great odds to bet on! For Football, such kinds of Bet Markets are available: <ul> <li> Match Odds </li> </ul> "
+                description: "Sports betting is a billion dollar industry, and football is the most popular sports in the world to bet on.  We offer great value and great odds to bet on! For Football, such kinds of Bet Markets are available: <ul> <li> Match Odds </li> <li> Over/Under Goals </li></ul> "
             },
             {
                 img: 'img/Tennis.jpg',

@@ -1,6 +1,7 @@
  @media (max-width: $screen-xs-max) {
      // Mobile
      body {
+         overflow-x: hidden;
          h2 {
              font-size: 25px;
          }
@@ -39,14 +40,15 @@
      }
      .home .globe {
          width: 100%;
+         margin-bottom: 20px;
      }
      .home .globe-container {
          left: 50%;
-         top: 30%;
+         top: 32%;
      }
      .home .globe-text {
          position: absolute;
-         top: 70%;
+         top: 100%;
          background: rgba(0, 0, 0, 0.51);
          right: -25%;
          transform: translate(0%, 0%);
@@ -80,6 +82,12 @@
          padding: 15% 10% 0% 10%;
      }
      .contactus .about-parallax {
-         height: 100vh;
+         height: auto;
+     } //scss for faq
+     .faq .header {
+         padding-top: 12vh !important;
+     }
+     .mt-40 {
+         margin-top: 40px;
      }
  }

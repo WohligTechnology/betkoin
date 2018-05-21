@@ -24,6 +24,7 @@ $Oswald: Oswald;
 }
 
 body {
+    overflow-x: hidden;
     line-height: 24px;
     h1 {
         font-size: 50px;
@@ -1051,21 +1052,18 @@ hr {
         background-size: 100% 100%;
         -webkit-animation: none;
         animation: none;
-        height: 90vh;
+        height: 110vh;
     }
     .contactinfo {
-        top: 60%;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%, -50%);
         color: #fff;
     }
     .contactblock {
         // border: 2.5px solid;
         // border-image: linear-gradient(90deg, #ffe088 0%, #b78a00 100%);
         // border-image-slice: 2;
-        height: 180px;
-        padding: 35px;
+        height: 150px;
+        padding: 20px;
+        margin-bottom: 10px;
         color: #fff;
         a {
             color: #fff;
@@ -1433,6 +1431,26 @@ hr {
     display: block !important;
 }
 
+.game-list-inline {
+    li {
+        position: relative;
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+    .list-inline>li:before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        top: 45%;
+        left: 0%;
+        height: 5px;
+        z-index: 999999999999999999999;
+        /* color: white; */
+        background-color: white;
+        border-radius: 50px;
+    }
+}
+
 .padd-left {
     padding-left: 10px;
 }
@@ -1619,4 +1637,23 @@ hr {
 .d-cell {
     display: table-cell;
     vertical-align: middle;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.contact-registration {
+    .company-detail {
+        display: block;
+        padding: 10px 0 15px 0;
+        border-top: 1px solid #f2b45c;
+        border-bottom: 1px solid #f2b45c;
+    }
+    td {
+        padding: 5px 8px;
+    }
+    padding: 65px 45px;
+    font-size: 15px;
+    font-family: DroidSans;
 }
