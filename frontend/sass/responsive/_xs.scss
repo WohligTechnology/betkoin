@@ -29,8 +29,14 @@
      .logo {
          max-width: 120px;
      }
+     .socialmedia {
+         top: 70%;
+     }
      .custom-navbar .navbar-nav {
          float: none;
+     }
+     .overflow {
+         overflow-x: hidden !important;
      } //scss for home page
      .home .section-cover {
          height: 85vh;
@@ -98,5 +104,15 @@
      } //scss for signup
      .signup-main {
          width: 100%;
+     } //scss for dashboard
+     .dashboard {
+         .input-box {
+             width: 100%;
+             margin-bottom: 20px;
+         }
+         .pull-right {
+             padding: 10px 35px;
+             float: none !important;
+         }
      }
  }

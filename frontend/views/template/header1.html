@@ -9,20 +9,10 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand  pad0" ui-sref="home">
-                    <img class="logo img-responsive" src="img/logo1.png" alt="logo"> </a>
-                <ul class="nav navbar-nav">
-                    <li ui-sref-active="active">
-                        <a href="#" ui-sref="dashboard({page:1})">Account</a>
-                    </li>
-                    <li ui-sref-active="active">
-                        <a href="#" ui-sref="deposit">Deposit</a>
-                    </li>
-                    <li ui-sref-active="active">
-                        <a href="#" ui-sref="withdrowal">Withdraw</a>
-                    </li>
-                </ul>
+                    <img class="logo img-responsive" src="img/logo1.png" alt="logo">
+                </a>
             </div>
-            <div class="collapse navbar-collapse" id="nav-collapse">
+            <div class="collapse navbar-collapse overflow" id="nav-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="right-nav">
                         <div>Total :
@@ -34,12 +24,39 @@
                     </li>
                     <li class="right-nav">
                         <div class="profile-img d-flex  padd-left">
-                            <img src="img/profile.jpg">
+                            <div class="relative profile">
+                                <img src="img/profile.jpg">
+                                <div class="absolute-list">
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#" ui-sref="account" class="color-black ">Account</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" ui-sref="deposit" class="color-black ">Deposit</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" ui-sref="withdrowal" class="color-black ">Withdraw</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
                             <div class="d-block padd-left">
                                 <div>{{username}}</div>
                                 <small class="desc">{{accessLevel}}</small>
                             </div>
                         </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li ui-sref-active="active">
+                        <a href="#" ui-sref="dashboard({page:1})">Account</a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a href="#" ui-sref="deposit">Deposit</a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a href="#" ui-sref="withdrowal">Withdraw</a>
                     </li>
                 </ul>
             </div>

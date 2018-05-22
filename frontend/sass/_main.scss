@@ -777,7 +777,6 @@ hr {
 }
 
 .custom-navbar {
-    overflow-x: hidden;
     background-color: rgba(19, 24, 32, 0.86);
     border-color: transparent;
     padding: 10px;
@@ -1658,4 +1657,15 @@ hr {
     padding: 65px 45px;
     font-size: 15px;
     font-family: DroidSans;
+}
+
+.color-black {
+    color: black !important;
+}
+
+//scss for header: 1;
+.profile.absolute-list {
+    .dropdown-menu li a {
+        background: white;
+    }
 }
