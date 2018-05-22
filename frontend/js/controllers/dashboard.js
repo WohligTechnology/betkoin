@@ -1,6 +1,7 @@
-myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationService, $stateParams,$state, apiService, $timeout, toastr, $http) {
+myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationService, $stateParams, $state, apiService, $timeout, toastr, $http) {
     $scope.template = TemplateService.getHTML("content/dashboard.html");
-    TemplateService.title = "Dashboard"; //This is the Title of the Website $scope.navigation
+    TemplateService.title = "Dashboard";
+    TemplateService.header1 = ""; //This is the Title of the Website $scope.navigation
     $scope.navigation = NavigationService.getNavigation(); // This is the Title of the Website $scope.navigation= NavigationService.getNavigation();
     $scope.TableData = [{
         "srno": "1",
