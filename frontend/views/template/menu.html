@@ -12,11 +12,39 @@
     </ul> -->
   </li>
 </ul>
-<ul class="nav navbar-nav navbar-right home-header">
-  <li>
-    <a ui-sref="login">Login</a>
-  </li>
-  <li>
-    <a ui-sref="signup">Signup</a>
-  </li>
-</ul>
+<div class="" ng-controller="headerCtrl">
+  <ul class="nav navbar-nav navbar-right home-header">
+    <li class="right-nav" id="footleft">
+      <div class="profile-img d-flex  padd-left">
+        <div class="relative profile">
+          <div class="" id="link" ng-click="test()">
+            <img src=" img/profile.jpg " class="pointer">
+          </div>
+          <ul class="profile-dropdown" id="subscribe-pop" ng-if="working">
+            <li>
+              <a href="# " ui-sref="account">Account</a>
+            </li>
+            <li>
+              <a href="# " ui-sref="deposit">Deposit</a>
+            </li>
+            <li>
+              <a href="# " ui-sref="withdrowal">Withdraw</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="d-block padd-left ">
+          <div>{{username}}</div>
+          <small class="desc ">{{accessLevel}}</small>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a ui-sref="login">Login</a>
+    </li>
+    <li>
+      <a ui-sref="signup">Signup</a>
+    </li>
+  </ul>
+</div>

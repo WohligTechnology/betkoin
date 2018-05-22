@@ -1,14 +1,33 @@
 myApp.controller('headerCtrl', function ($scope, TemplateService) {
     $scope.template = TemplateService;
+    $scope.working = false;
     $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
     });
     $.fancybox.close(true);
+
+    $scope.test = function () {
+        $scope.working = true;
+    }
+
+    $('html').click(function () {
+        $scope.working = false;
+        $('#subscribe-pop').css("display", "none");
+    })
+
+    $('#footleft').click(function (e) {
+        e.stopPropagation();
+    });
+
+    $('#link').click(function (e) {
+        $scope.working = true;
+        $('#subscribe-pop').toggle();
+    });
 });
 myApp.controller('headernewCtrl', function ($scope, $state, apiService, TemplateService, $timeout) {
     $scope.template = TemplateService;
     TemplateService.header = "";
-    $scope.working = false;
+
 
     $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
@@ -37,21 +56,4 @@ myApp.controller('headernewCtrl', function ($scope, $state, apiService, Template
     $scope.playerData();
 
 
-    $scope.test = function () {
-        $scope.working = true;
-    }
-
-    $('html').click(function () {
-        $scope.working = false;
-        $('#subscribe-pop').css("display", "none");
-    })
-
-    $('#footleft').click(function (e) {
-        e.stopPropagation();
-    });
-
-    $('#link').click(function (e) {
-        $scope.working = true;
-        $('#subscribe-pop').toggle();
-    });
 });
