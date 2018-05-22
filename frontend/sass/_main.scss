@@ -285,7 +285,7 @@ header {
     }
     .globe-container {
         left: 40%;
-        top: 50%;
+        top: 55%;
         position: absolute;
         transform: translate(-50% -50%);
         transform: translate(-50%, -50%);
@@ -830,6 +830,10 @@ hr {
             // left: -10px;
         }
     }
+}
+
+.relative {
+    position: relative;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -1664,8 +1668,30 @@ hr {
 }
 
 //scss for header: 1;
-.profile.absolute-list {
-    .dropdown-menu li a {
-        background: white;
+.profile-dropdown {
+    li {
+        border-bottom: 1px solid rgb(242, 156, 61);
     }
+    li:last-child {
+        border: none;
+    }
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 1000;
+    min-width: 110px;
+    padding: 5px 0;
+    color: white;
+    margin: 8px -15px 0px;
+    list-style: none;
+    font-size: 14px;
+    background-color: rgba(0,
+    0,
+    0,
+    0.68);
+    border: 1px solid rgb(242,
+    156,
+    61);
+    border-radius: 4px;
 }

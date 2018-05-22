@@ -13,6 +13,18 @@
                 </a>
             </div>
             <div class="collapse navbar-collapse overflow" id="nav-collapse">
+
+                <ul class="nav navbar-nav ">
+                    <li ui-sref-active="active ">
+                        <a href="# " ui-sref="dashboard({page:1}) ">Account</a>
+                    </li>
+                    <li ui-sref-active="active ">
+                        <a href="# " ui-sref="deposit ">Deposit</a>
+                    </li>
+                    <li ui-sref-active="active ">
+                        <a href="# " ui-sref="withdrowal ">Withdraw</a>
+                    </li>
+                </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="right-nav">
                         <div>Total :
@@ -22,41 +34,31 @@
                             <span class="muddy-color">5,50,000 INR</span>
                         </div>
                     </li>
-                    <li class="right-nav">
+                    <li class="right-nav" id="footleft">
                         <div class="profile-img d-flex  padd-left">
                             <div class="relative profile">
-                                <img src="img/profile.jpg">
-                                <div class="absolute-list">
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="#" ui-sref="account" class="color-black ">Account</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" ui-sref="deposit" class="color-black ">Deposit</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" ui-sref="withdrowal" class="color-black ">Withdraw</a>
-                                        </li>
-                                    </ul>
+                                <div class="" id="link" ng-click="test()">
+                                    <img src=" img/profile.jpg " class="pointer">
                                 </div>
+                                <ul class="profile-dropdown" id="subscribe-pop" ng-if="working">
+                                    <li>
+                                        <a href="# " ui-sref="account">Account</a>
+                                    </li>
+                                    <li>
+                                        <a href="# " ui-sref="deposit">Deposit</a>
+                                    </li>
+                                    <li>
+                                        <a href="# " ui-sref="withdrowal">Withdraw</a>
+                                    </li>
+                                </ul>
+
                             </div>
 
-                            <div class="d-block padd-left">
+                            <div class="d-block padd-left ">
                                 <div>{{username}}</div>
-                                <small class="desc">{{accessLevel}}</small>
+                                <small class="desc ">{{accessLevel}}</small>
                             </div>
                         </div>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li ui-sref-active="active">
-                        <a href="#" ui-sref="dashboard({page:1})">Account</a>
-                    </li>
-                    <li ui-sref-active="active">
-                        <a href="#" ui-sref="deposit">Deposit</a>
-                    </li>
-                    <li ui-sref-active="active">
-                        <a href="#" ui-sref="withdrowal">Withdraw</a>
                     </li>
                 </ul>
             </div>
