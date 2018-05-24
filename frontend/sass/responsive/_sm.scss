@@ -39,10 +39,14 @@
          }
      } //scss for home page
      .home .globe-container {
-         left: 20%;
+         left: 40%;
+         top: 12%;
      }
      .home .globe {
          width: 300px;
+     }
+     .home .globe-text {
+         width: 350px;
      }
      .home .globe-text .title h1 {
          font-size: 40pt !important;

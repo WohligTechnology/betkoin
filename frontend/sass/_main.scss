@@ -305,9 +305,10 @@ header {
         top: 50%;
         background: rgba(0, 0, 0, 0.51);
         right: 0%;
-        transform: translate(85%, 0%);
+        transform: translate(125%, 0%);
         color: $white;
         width: 500px;
+        padding: 20px;
         .title {
             font-family: Oswald;
             h1 {
@@ -1694,4 +1695,21 @@ hr {
     156,
     61);
     border-radius: 4px;
+}
+
+.navbar-right {
+    li:first-child {
+        margin: 0;
+        background: transparent;
+    }
+    .profile-dropdown {
+        li:first-child {
+            margin: 7px 5px;
+            background: -webkit-gradient(linear, 40% 0%, 75% 84%, from(rgb(223, 174, 86)), color-stop(0.6, rgb(252, 212, 143)), to(rgb(223, 174, 86)));
+        }
+    }
+}
+
+.mb-10 {
+    margin-bottom: -10px;
 }
