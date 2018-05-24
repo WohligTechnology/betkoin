@@ -12108,10 +12108,11 @@ header {
   top: 50%;
   background: rgba(0, 0, 0, 0.51);
   right: 0%;
-  -webkit-transform: translate(85%, 0%);
-          transform: translate(85%, 0%);
+  -webkit-transform: translate(125%, 0%);
+          transform: translate(125%, 0%);
   color: #fff;
-  width: 500px; }
+  width: 500px;
+  padding: 20px; }
   .home .globe-text .title {
     font-family: Oswald; }
     .home .globe-text .title h1 {
@@ -13258,6 +13259,9 @@ header {
   .profile-dropdown li:last-child {
     border: none; }
 
+.mb-10 {
+  margin-bottom: -10px; }
+
 #fancybox-loading,
 .fancybox-close,
 .fancybox-next span,
@@ -13325,9 +13329,12 @@ header {
   footer .logo {
     max-width: 100px; }
   .home .globe-container {
-    left: 20%; }
+    left: 40%;
+    top: 12%; }
   .home .globe {
     width: 300px; }
+  .home .globe-text {
+    width: 350px; }
   .home .globe-text .title h1 {
     font-size: 40pt !important; }
   .home .whytobuy .spacing .graph-spacing {
@@ -13435,4 +13442,6 @@ header {
   .profile-dropdown {
     left: 40%; }
   .profile-img {
-    display: block !important; } }
+    display: block !important; }
+  .mb-10 {
+    margin-top: 50px; } }
