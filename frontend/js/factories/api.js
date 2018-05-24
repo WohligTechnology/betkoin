@@ -32,9 +32,10 @@ myApp.factory('apiService', function ($http, $q, $timeout, $state) {
                 }).then(function (data) {
                     callback(data);
                 });
-            } else {
-                $state.go("login");
             }
+            //  else {
+            //     $state.go("login");
+            // }
         },
         getCoinTx: function (formData, callback) {
             $http.post(adminurl + 'CoinTransaction/getCoinTx', formData).then(function (data) {
