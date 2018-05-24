@@ -1,4 +1,4 @@
-myApp.controller('headerCtrl', function ($scope,apiService, $state, TemplateService) {
+myApp.controller('headerCtrl', function ($scope, apiService, $state, TemplateService) {
     $scope.template = TemplateService;
     $scope.working = false;
     $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
@@ -18,6 +18,8 @@ myApp.controller('headerCtrl', function ($scope,apiService, $state, TemplateServ
                 $scope.userType = $scope.singlePlayerData.userType;
                 $scope.balance = $scope.singlePlayerData.creditLimit + $scope.singlePlayerData.balanceUp;
                 $.jStorage.set('walletAddress', $scope.singlePlayerData.walletDetails.address);
+                $.jStorage.set('username', $scope.singlePlayerData.username);
+                $.jStorage.set('accessLevel', $scope.singlePlayerData.accessLevel);
                 console.log("$scope.walletAddress", $.jStorage.get('walletAddress'));
             } else if ("No Member Found") {
                 $.jStorage.flush();
@@ -25,9 +27,14 @@ myApp.controller('headerCtrl', function ($scope,apiService, $state, TemplateServ
             }
         })
     };
-    $scope.playerData();
+    if (!$.jStorage.get('username')) {
+        $scope.playerData();
+    }else{
+        $scope.username = $.jStorage.get('username');
+        $scope.accessLevel = $.jStorage.get('accessLevel');
+    }
 
-    $scope.logout=function(){
+    $scope.logout = function () {
         $.jStorage.flush();
         $state.go('login');
     }
@@ -59,6 +66,6 @@ myApp.controller('headernewCtrl', function ($scope, $state, apiService, Template
     });
     $.fancybox.close(true);
 
-  
+
 
 });
