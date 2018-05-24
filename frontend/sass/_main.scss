@@ -1242,6 +1242,20 @@ hr {
     }
 }
 
+.login-btn {
+    font-size: 15px;
+    color: black !important;
+    margin: 0 10px;
+    padding: 10px !important;
+    font-family: DroidSans;
+    background: -webkit-gradient(linear, 40% 0%, 75% 84%, from(rgb(223, 174, 86)), color-stop(0.6, rgb(252, 212, 143)), to(rgb(223, 174, 86)));
+    &:hover,
+    &:active {
+        color: black;
+        text-decoration: none;
+    }
+}
+
 .get-king {
     padding: 10px;
 }

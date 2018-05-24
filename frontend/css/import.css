@@ -12888,6 +12888,17 @@ header {
     color: black;
     text-decoration: none; }
 
+.login-btn {
+  font-size: 15px;
+  color: black !important;
+  margin: 0 10px;
+  padding: 10px !important;
+  font-family: DroidSans;
+  background: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#dfae56), color-stop(0.6, #fcd48f), to(#dfae56)); }
+  .login-btn:hover, .login-btn:active {
+    color: black;
+    text-decoration: none; }
+
 .get-king {
   padding: 10px; }
 
