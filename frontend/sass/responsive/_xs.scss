@@ -50,17 +50,23 @@
      }
      .home .globe-container {
          left: 50%;
-         top: 32%;
+         top: 10%;
      }
      .home .globe-text {
          position: absolute;
          top: 100%;
          background: rgba(0, 0, 0, 0.51);
          right: -25%;
-         transform: translate(0%, 0%);
+         transform: translate(120%, 0%);
          color: #fff;
-         width: 140%;
+         width: auto;
          padding: 20px;
+         .title h1 {
+             font-size: 22pt !important;
+         }
+         .subtitle {
+             font-size: 12px;
+         }
      }
      .home .globe-text .title {
          text-align: center;
