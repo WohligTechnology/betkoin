@@ -29,7 +29,7 @@ myApp.controller('headerCtrl', function ($scope, apiService, $state, TemplateSer
     };
     if (!$.jStorage.get('username')) {
         $scope.playerData();
-    }else{
+    } else {
         $scope.username = $.jStorage.get('username');
         $scope.accessLevel = $.jStorage.get('accessLevel');
     }
@@ -55,6 +55,11 @@ myApp.controller('headerCtrl', function ($scope, apiService, $state, TemplateSer
         $scope.working = true;
         $('#subscribe-pop').toggle();
     });
+    $scope.scrollTop = function () {
+        $('html, body').animate({
+            scrollTop: $('body,html').offset().top - 100
+        }, 3000);
+    }
 });
 myApp.controller('headernewCtrl', function ($scope, $state, apiService, TemplateService, $timeout) {
     $scope.template = TemplateService;

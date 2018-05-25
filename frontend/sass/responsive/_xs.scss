@@ -54,10 +54,10 @@
      }
      .home .globe-text {
          position: absolute;
-         top: 100%;
+         top: 0%;
          background: rgba(0, 0, 0, 0.51);
          right: -25%;
-         transform: translate(120%, 0%);
+         transform: translate(120%, -15%);
          color: #fff;
          width: auto;
          padding: 20px;
@@ -129,5 +129,43 @@
      }
      .mb-10 {
          margin-top: 50px;
+     }
+     .game-list-inline li {
+         padding: 5px 125px 5px 15px;
+         font-size: 12px;
+     }
+     .home .why .icon {
+         height: 30px;
+         width: 30px;
+     }
+     .get-king {
+         padding: 4px;
+         font-size: 11px;
+         .text-right {
+             text-align: center !important;
+         }
+     }
+     .home .why .info {
+         font-size: 11px;
+     }
+     .partner .token-parallax {
+         height: 172vh;
+     }
+     .contact-registration {
+         padding: 30px 20px;
+     }
+     .withdraw-main p,
+     .withdraw-main .custom-input,
+     .withdrop-abs {
+         font-size: 12px;
+     }
+     .withdraw-main {
+         padding: 20px;
+     }
+     .profile-dropdown {
+         margin: 45px -15px 0px;
+     }
+     .login-bg {
+         height: 145vh;
      }
  }

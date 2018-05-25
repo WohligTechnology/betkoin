@@ -12377,7 +12377,7 @@ header {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 35%, rgba(0, 0, 0, 0.3)), url("../img/bg1.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   min-height: 100vh; }
 
 .faq .faqinfo {
@@ -13066,8 +13066,6 @@ header {
   top: 45%;
   left: 0%;
   height: 5px;
-  z-index: 999999999999999999999;
-  /* color: white; */
   background-color: white;
   border-radius: 50px; }
 
@@ -13273,6 +13271,21 @@ header {
 .mb-10 {
   margin-bottom: -10px; }
 
+.scrolltotop {
+  background: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#dfae56), color-stop(0.6, #fcd48f), to(#dfae56));
+  border: 1px solid transparent;
+  bottom: 20px;
+  color: black;
+  display: none;
+  font-size: 20px;
+  height: 40px;
+  padding-top: 5px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 40px;
+  z-index: 99; }
+
 #fancybox-loading,
 .fancybox-close,
 .fancybox-next span,
@@ -13409,11 +13422,11 @@ header {
     top: 10%; }
   .home .globe-text {
     position: absolute;
-    top: 100%;
+    top: 0%;
     background: rgba(0, 0, 0, 0.51);
     right: -25%;
-    -webkit-transform: translate(120%, 0%);
-            transform: translate(120%, 0%);
+    -webkit-transform: translate(120%, -15%);
+            transform: translate(120%, -15%);
     color: #fff;
     width: auto;
     padding: 20px; }
@@ -13459,4 +13472,31 @@ header {
   .profile-img {
     display: block !important; }
   .mb-10 {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+  .game-list-inline li {
+    padding: 5px 125px 5px 15px;
+    font-size: 12px; }
+  .home .why .icon {
+    height: 30px;
+    width: 30px; }
+  .get-king {
+    padding: 4px;
+    font-size: 11px; }
+    .get-king .text-right {
+      text-align: center !important; }
+  .home .why .info {
+    font-size: 11px; }
+  .partner .token-parallax {
+    height: 172vh; }
+  .contact-registration {
+    padding: 30px 20px; }
+  .withdraw-main p,
+  .withdraw-main .custom-input,
+  .withdrop-abs {
+    font-size: 12px; }
+  .withdraw-main {
+    padding: 20px; }
+  .profile-dropdown {
+    margin: 45px -15px 0px; }
+  .login-bg {
+    height: 145vh; } }

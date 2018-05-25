@@ -654,7 +654,7 @@ hr {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, .9) 35%, rgba(0, 0, 0, .3)), url("../img/bg1.jpg");
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         min-height: 100vh;
     }
     .faqinfo {
@@ -1464,8 +1464,6 @@ hr {
         top: 45%;
         left: 0%;
         height: 5px;
-        z-index: 999999999999999999999;
-        /* color: white; */
         background-color: white;
         border-radius: 50px;
     }
@@ -1713,4 +1711,20 @@ hr {
 
 .mb-10 {
     margin-bottom: -10px;
+}
+
+.scrolltotop {
+    background: -webkit-gradient(linear, 40% 0%, 75% 84%, from(rgb(223, 174, 86)), color-stop(0.6, rgb(252, 212, 143)), to(rgb(223, 174, 86)));
+    border: 1px solid transparent;
+    bottom: 20px;
+    color: black;
+    display: none;
+    font-size: 20px;
+    height: 40px;
+    padding-top: 5px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 40px;
+    z-index: 99;
 }
