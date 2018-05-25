@@ -77257,7 +77257,7 @@ myApp.factory('NavigationService', function () {
         },
     };
 });
-myApp.factory('apiService', function ($http, $q, $timeout) {
+myApp.factory('apiService', function ($http, $q, $timeout, $state) {
     return {
 
         // This is a demo Service for POST Method.
@@ -77280,26 +77280,27 @@ myApp.factory('apiService', function ($http, $q, $timeout) {
             $http.post(adminurl + 'member/playerLogin', formData).then(function (data) {
                 data = data.data;
                 callback(data);
-              });
+            });
 
         },
         sendAccessToken: function (callback) {
             var accessToken = $.jStorage.get("accessToken");
             if (!_.isEmpty(accessToken)) {
-              $http.post(adminurl + 'member/getAccessLevel', {
-                accessToken: accessToken
-              }).then(function (data) {
-                callback(data);
-              });
-            } else {
-              $state.go("login");
+                $http.post(adminurl + 'member/getAccessLevel', {
+                    accessToken: accessToken
+                }).then(function (data) {
+                    callback(data);
+                });
             }
-          },
-          getCoinTx: function (formData, callback) {
+            //  else {
+            //     $state.go("login");
+            // }
+        },
+        getCoinTx: function (formData, callback) {
             $http.post(adminurl + 'CoinTransaction/getCoinTx', formData).then(function (data) {
                 data = data.data;
                 callback(data);
-              });
+            });
 
         },
         partnerWith: function (formData, callback) {
@@ -77759,6 +77760,15 @@ myApp.controller('LogInCtrl', function ($scope, TemplateService, NavigationServi
     TemplateService.header1 = "";
     TemplateService.title = "Log in"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation(); // This is the Title of the Website $scope.navigation= NavigationService.getNavigation();
+    $scope.showMessageModal = function () {
+      $scope.messageModal.show();
+      $timeout(function () {
+        $scope.closeMessageModal();
+      }, 2000);
+    };
+    $scope.closeMessageModal = function () {
+      $scope.messageModal.hide();
+    };
     $scope.playerLogin = function (data, login) {
         $scope.loginPromise = apiService.playerLogin(data, function (data) {
           console.log("login", data);
@@ -77809,13 +77819,14 @@ myApp.controller('SignupCtrl', function ($scope, TemplateService, NavigationServ
 })
 myApp.controller('WithdrowalCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
     $scope.template = TemplateService.getHTML("content/withdrowal.html");
-    // TemplateService.header1 = "";
+    TemplateService.header1 = "";
     TemplateService.title = "Withdrowal"; //This is the Title of the Website $scope.navigation
     $scope.navigation = NavigationService.getNavigation(); // This is the Title of the Website $scope.navigation= NavigationService.getNavigation();
 })
-myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationService, $stateParams,$state, apiService, $timeout, toastr, $http) {
+myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationService, $stateParams, $state, apiService, $timeout, toastr, $http) {
     $scope.template = TemplateService.getHTML("content/dashboard.html");
-    TemplateService.title = "Dashboard"; //This is the Title of the Website $scope.navigation
+    TemplateService.title = "Dashboard";
+    TemplateService.header1 = ""; //This is the Title of the Website $scope.navigation
     $scope.navigation = NavigationService.getNavigation(); // This is the Title of the Website $scope.navigation= NavigationService.getNavigation();
     $scope.TableData = [{
         "srno": "1",
@@ -77949,10 +77960,11 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
 })
 myApp.controller('DepositCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
     $scope.template = TemplateService.getHTML("content/deposit.html");
-    TemplateService.title = "Deposit"; //This is the Title of the Website $scope.navigation
+    TemplateService.title = "Deposit";
+    TemplateService.header1 = ""; //This is the Title of the Website $scope.navigation
     $scope.navigation = NavigationService.getNavigation(); // This is the Title of the Website $scope.navigation= NavigationService.getNavigation();
-    $scope.walletAddress= $.jStorage.get('walletAddress');
-    $scope.QRcode="https://chart.googleapis.com/chart?cht=qr&chl="+$scope.walletAddress+"&chs=250x250"
+    $scope.walletAddress = $.jStorage.get('walletAddress');
+    $scope.QRcode = "https://chart.googleapis.com/chart?cht=qr&chl=" + $scope.walletAddress + "&chs=250x250"
 })
 myApp.controller('GetstartedCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
     $scope.template = TemplateService.getHTML("content/get-started.html");
@@ -77960,16 +77972,9 @@ myApp.controller('GetstartedCtrl', function ($scope, TemplateService, Navigation
     TemplateService.header1 = "";
     $scope.navigation = NavigationService.getNavigation(); // This is the Title of the Website $scope.navigation= NavigationService.getNavigation();
 })
-myApp.controller('headerCtrl', function ($scope, TemplateService) {
+myApp.controller('headerCtrl', function ($scope, apiService, $state, TemplateService) {
     $scope.template = TemplateService;
-    $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
-        $(window).scrollTop(0);
-    });
-    $.fancybox.close(true);
-});
-myApp.controller('headernewCtrl', function ($scope,$state, apiService, TemplateService) {
-    $scope.template = TemplateService;
-    TemplateService.header="";
+    $scope.working = false;
     $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
     });
@@ -77987,6 +77992,8 @@ myApp.controller('headernewCtrl', function ($scope,$state, apiService, TemplateS
                 $scope.userType = $scope.singlePlayerData.userType;
                 $scope.balance = $scope.singlePlayerData.creditLimit + $scope.singlePlayerData.balanceUp;
                 $.jStorage.set('walletAddress', $scope.singlePlayerData.walletDetails.address);
+                $.jStorage.set('username', $scope.singlePlayerData.username);
+                $.jStorage.set('accessLevel', $scope.singlePlayerData.accessLevel);
                 console.log("$scope.walletAddress", $.jStorage.get('walletAddress'));
             } else if ("No Member Found") {
                 $.jStorage.flush();
@@ -77994,7 +78001,47 @@ myApp.controller('headernewCtrl', function ($scope,$state, apiService, TemplateS
             }
         })
     };
-    $scope.playerData();
+    if (!$.jStorage.get('username')) {
+        $scope.playerData();
+    }else{
+        $scope.username = $.jStorage.get('username');
+        $scope.accessLevel = $.jStorage.get('accessLevel');
+    }
+
+    $scope.logout = function () {
+        $.jStorage.flush();
+        $state.go('login');
+    }
+    $scope.test = function () {
+        $scope.working = true;
+    }
+
+    $('html').click(function () {
+        $scope.working = false;
+        $('#subscribe-pop').css("display", "none");
+    })
+
+    $('#footleft').click(function (e) {
+        e.stopPropagation();
+    });
+
+    $('#link').click(function (e) {
+        $scope.working = true;
+        $('#subscribe-pop').toggle();
+    });
+});
+myApp.controller('headernewCtrl', function ($scope, $state, apiService, TemplateService, $timeout) {
+    $scope.template = TemplateService;
+    TemplateService.header = "";
+
+
+    $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+        $(window).scrollTop(0);
+    });
+    $.fancybox.close(true);
+
+
+
 });
 myApp.controller('languageCtrl', function ($scope, TemplateService, $translate, $rootScope) {
     $scope.changeLanguage = function () {

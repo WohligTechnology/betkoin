@@ -3,17 +3,10 @@
     <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor">{{menu.name}}</a>
     <a ui-sref="{{menu.newtab}}" ng-if="menu.newtab">{{menu.name}}</a>
     <a href="{{menu.link}}" ng-if="menu.link">{{menu.name}}</a>
-
-    <!-- <ul class="dropdown-menu" ng-if="menu.subnav!='';">
-      <li ng-repeat="submenu in menu.subnav" ui-sref-active="active">
-        <a ui-serf="{{submenu.anchor}}" ng-if="submenu.anchor">{{submenu.name}}</a>
-        <a herf="{{submenu.link}}" ng-if="submenu.link">{{submenu.name}}</a>
-      </li>
-    </ul> -->
   </li>
 </ul>
 <div class="" ng-controller="headerCtrl">
-  <ul class="nav navbar-nav navbar-right home-header">
+  <ul class="nav navbar-nav navbar-right ">
     <li class="right-nav" id="footleft">
       <div ng-if="username" class="profile-img d-flex  padd-left">
         <div class="relative profile">
@@ -44,10 +37,10 @@
       </div>
     </li>
     <li ng-if="!username">
-      <a ui-sref="login">Login</a>
+      <a ui-sref="login" class="login-btn">Login</a>
     </li>
     <li ng-if="!username">
-      <a ui-sref="signup">Signup</a>
+      <a ui-sref="signup" class="login-btn">Signup</a>
     </li>
   </ul>
 </div>

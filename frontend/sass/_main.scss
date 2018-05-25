@@ -305,9 +305,10 @@ header {
         top: 50%;
         background: rgba(0, 0, 0, 0.51);
         right: 0%;
-        transform: translate(85%, 0%);
+        transform: translate(135%, -50%);
         color: $white;
         width: 500px;
+        padding: 20px;
         .title {
             font-family: Oswald;
             h1 {
@@ -653,7 +654,7 @@ hr {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, .9) 35%, rgba(0, 0, 0, .3)), url("../img/bg1.jpg");
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         min-height: 100vh;
     }
     .faqinfo {
@@ -1241,6 +1242,20 @@ hr {
     }
 }
 
+.login-btn {
+    font-size: 15px;
+    color: black !important;
+    margin: 0 10px;
+    padding: 10px !important;
+    font-family: DroidSans;
+    background: -webkit-gradient(linear, 40% 0%, 75% 84%, from(rgb(223, 174, 86)), color-stop(0.6, rgb(252, 212, 143)), to(rgb(223, 174, 86)));
+    &:hover,
+    &:active {
+        color: black;
+        text-decoration: none;
+    }
+}
+
 .get-king {
     padding: 10px;
 }
@@ -1449,8 +1464,6 @@ hr {
         top: 45%;
         left: 0%;
         height: 5px;
-        z-index: 999999999999999999999;
-        /* color: white; */
         background-color: white;
         border-radius: 50px;
     }
@@ -1620,7 +1633,7 @@ hr {
 
 .offer-game:hover .swiper-overlay {
     display: block;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.92);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -1694,4 +1707,24 @@ hr {
     156,
     61);
     border-radius: 4px;
+}
+
+.mb-10 {
+    margin-bottom: -10px;
+}
+
+.scrolltotop {
+    background: -webkit-gradient(linear, 40% 0%, 75% 84%, from(rgb(223, 174, 86)), color-stop(0.6, rgb(252, 212, 143)), to(rgb(223, 174, 86)));
+    border: 1px solid transparent;
+    bottom: 20px;
+    color: black;
+    display: none;
+    font-size: 20px;
+    height: 40px;
+    padding-top: 5px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 40px;
+    z-index: 99;
 }
