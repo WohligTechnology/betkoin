@@ -305,7 +305,7 @@ header {
         top: 50%;
         background: rgba(0, 0, 0, 0.51);
         right: 0%;
-        transform: translate(125%, 0%);
+        transform: translate(125%, -50%);
         color: $white;
         width: 500px;
         padding: 20px;
@@ -1633,7 +1633,7 @@ hr {
 
 .offer-game:hover .swiper-overlay {
     display: block;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.92);
     height: 100%;
     width: 100%;
     position: absolute;
