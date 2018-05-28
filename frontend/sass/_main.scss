@@ -307,7 +307,7 @@ header {
         right: 0%;
         transform: translate(135%, -50%);
         color: $white;
-        width: 500px;
+        width: 520px;
         padding: 20px;
         .title {
             font-family: Oswald;
@@ -1714,7 +1714,7 @@ hr {
 }
 
 .scrolltotop {
-    background: -webkit-gradient(linear, 40% 0%, 75% 84%, from(rgb(223, 174, 86)), color-stop(0.6, rgb(252, 212, 143)), to(rgb(223, 174, 86)));
+    // background: -webkit-gradient(linear, 40% 0%, 75% 84%, from(rgb(223, 174, 86)), color-stop(0.6, rgb(252, 212, 143)), to(rgb(223, 174, 86)));
     border: 1px solid transparent;
     bottom: 20px;
     color: black;
