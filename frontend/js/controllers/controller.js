@@ -27,7 +27,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                 title: 'Live Blackjack',
                 description: "Win BIG at your next casino trip by playing this Blackjack app, with the best casino-style experience. Hey Blackjack Fans! We’ve made some updates and optimized the gameplay to make sure you have the best blackjack experience around!"
             }, {
-                img: 'img/money.png',
+                img: 'img/money.jpg',
                 title: 'Live Money Wheel',
                 description: "These wheels will definitely take casino players to where they want to go where wheels equate to a money-making scenic route. Win casino money in wheel bonus rounds in arcade games, slot games, table games and more. Watching the wheels go by is much more action packed than it used to be."
             }, {
@@ -50,12 +50,12 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                 description: "Its an exciting variation of the much-loved five-card Texas Hold’em poker game, Live Casino Hold’em. Available as standard and dedicated tables for players on desktop and tablet, it’s the perfect way to attract poker enthusiasts to your Live Casino and to keep them entertained. "
             },
             {
-                img: 'img/triplecard.png',
+                img: 'img/threecardpoker.jpg',
                 title: 'Live Three Card Poker',
                 description: "Three Card Poker is the most popular specialty table game of all times, you can experience it live too! It's one of the easiest games around, making it the absolutely perfect choice!"
             },
             {
-                img: 'img/threecardpoker.jpg',
+                img: 'img/triplecard.png',
                 title: 'Live Triple Card Poker ',
                 description: "Live Triple Card Poker offers all of the excitement of a standard poker game in a live gaming format against the dealer. If you’re interested in winning big, Live Three Card Poker is the must-play attraction. Play triple card poker head-to-head against the dealer! "
             },

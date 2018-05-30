@@ -12108,10 +12108,10 @@ header {
   top: 50%;
   background: rgba(0, 0, 0, 0.51);
   right: 0%;
-  -webkit-transform: translate(125%, 0%);
-          transform: translate(125%, 0%);
+  -webkit-transform: translate(135%, -50%);
+          transform: translate(135%, -50%);
   color: #fff;
-  width: 500px;
+  width: 520px;
   padding: 20px; }
   .home .globe-text .title {
     font-family: Oswald; }
@@ -12747,7 +12747,8 @@ header {
   height: 110vh; }
 
 .contactus .contactinfo {
-  color: #fff; }
+  color: #fff;
+  margin-top: 120px; }
 
 .contactus .contactblock {
   height: 150px;
@@ -13212,7 +13213,7 @@ header {
 
 .offer-game:hover .swiper-overlay {
   display: block;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.92);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -13272,7 +13273,6 @@ header {
   margin-bottom: -10px; }
 
 .scrolltotop {
-  background: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#dfae56), color-stop(0.6, #fcd48f), to(#dfae56));
   border: 1px solid transparent;
   bottom: 20px;
   color: black;
@@ -13347,7 +13347,7 @@ header {
     margin-left: 0;
     float: left; }
   .custom-navbar .navbar-nav li a {
-    font-size: 12px; }
+    font-size: 11px; }
   footer small {
     font-size: 11px; }
   footer .logo {
