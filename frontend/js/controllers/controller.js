@@ -104,9 +104,9 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                     nextEl: '.next',
                     prevEl: '.prev'
                 },
-                autoplay: {
-                    delay: 5500,
-                },
+                // autoplay: {
+                //     delay: 5500,
+                // },
                 keyboard: {
                     enabled: true,
                     onlyInViewport: false
@@ -147,9 +147,9 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                     nextEl: '.next2',
                     prevEl: '.prev2'
                 },
-                autoplay: {
-                    delay: 5500,
-                },
+                // autoplay: {
+                //     delay: 5500,
+                // },
                 keyboard: {
                     enabled: true,
                     onlyInViewport: false
@@ -219,9 +219,9 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                         enabled: true,
                         onlyInViewport: false
                     },
-                    autoplay: {
-                        delay: 1000,
-                    },
+                    // autoplay: {
+                    //     delay: 1000,
+                    // },
                     breakpoints: {
                         1024: {
                             slidesPerView: 4,

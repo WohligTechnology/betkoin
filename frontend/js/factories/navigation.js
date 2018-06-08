@@ -22,7 +22,7 @@ myApp.factory('NavigationService', function () {
             subnav: []
         },
         {
-            name: "Get Started",
+            name: "How To Get Started",
             classis: "active",
             anchor: "get-started",
             subnav: []
