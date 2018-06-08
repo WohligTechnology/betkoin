@@ -35,6 +35,9 @@
      .custom-navbar .navbar-nav {
          float: none;
      }
+     .custom-navbar .navbar-nav li>.login-btn {
+         margin-bottom: 5px;
+     }
      .overflow {
          overflow-x: hidden !important;
      } //scss for home page
