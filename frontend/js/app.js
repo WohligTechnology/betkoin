@@ -91,6 +91,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'ContactusCtrl'
         })
+        .state('tutorials', {
+            url: "/tutorials",
+            templateUrl: tempateURL,
+            controller: 'TutorialsCtrl'
+        })
         .state('dashboard', {
             url: "/dashboard/{page:.*}",
             templateUrl: tempateURL,

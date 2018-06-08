@@ -54,6 +54,12 @@ myApp.factory('NavigationService', function () {
             subnav: []
         },
         {
+            name: "Game Tutorials",
+            classis: "active",
+            anchor: "tutorials",
+            subnav: []
+        },
+        {
             name: "Contact Us",
             classis: "active",
             anchor: "contactus",

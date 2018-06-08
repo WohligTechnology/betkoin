@@ -23,6 +23,19 @@ $Oswald: Oswald;
     src: url("../fonts/DroidSans.ttf");
 }
 
+.padd-left0 {
+    padding-left: 0;
+}
+
+.padd-lr {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.padd-right0 {
+    padding-right: 0;
+}
+
 body {
     overflow-x: hidden;
     line-height: 24px;
@@ -810,8 +823,7 @@ hr {
         }
     }
     .navbar-nav {
-        float: left;
-        margin-left: 50px;
+        float: left; // margin-left: 50px;
     }
 }
 
@@ -1486,6 +1498,10 @@ hr {
     display: flex !important;
 }
 
+.d-flex33 {
+    width: 33.33%;
+}
+
 //scss for svg
 .st0 {
     opacity: 0.5;
@@ -1736,4 +1752,58 @@ hr {
     text-align: center;
     width: 40px;
     z-index: 99;
+}
+
+//scss for tutorials game
+.tutorials-bg {
+    background-image: url(../img/BKN_0004_1.jpg);
+    background-size: cover;
+    height: 125vh;
+    padding: 75px 0 !important
+}
+
+.tutorials {
+    margin: 50px 0;
+    h3 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    background: black;
+    color: white;
+    padding: 35px 0;
+}
+
+.episode-border {
+    border: 1px solid #e0ae57;
+    width: 380px;
+}
+
+.yellow-strip {
+    background: #e0ae57;
+    text-align: center;
+    font-size: 35px;
+    font-family: DroidSans;
+    padding: 25px 0;
+}
+
+.game-name {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game-bg {
+    background: black;
+    p {
+        padding: 25px 50px;
+        margin: 0;
+    }
+}
+
+.video-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
