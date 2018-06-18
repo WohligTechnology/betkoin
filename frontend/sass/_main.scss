@@ -1086,8 +1086,9 @@ hr {
         // border: 2.5px solid;
         // border-image: linear-gradient(90deg, #ffe088 0%, #b78a00 100%);
         // border-image-slice: 2;
-        height: 150px;
+        height: 190px;
         padding: 20px;
+        font-size: 20px;
         margin-bottom: 10px;
         color: #fff;
         a {
@@ -1099,6 +1100,9 @@ hr {
         }
         .pl-50 {
             padding-left: 58px;
+        }
+        p {
+            font-size: 17px;
         }
     }
 }
