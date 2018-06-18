@@ -42268,7 +42268,7 @@ d.parentNode.scrollTop=d.offsetTop;break;default:c&&P.$apply(function(){angular.
 }).call(this);
 
 /*!
- * angular-translate - v2.17.1 - 2018-04-16
+ * angular-translate - v2.18.1 - 2018-05-19
  * 
  * Copyright (c) 2018 The angular-translate team, Pascal Precht; Licensed MIT
  */
@@ -42741,7 +42741,7 @@ function $translate($STORAGE_KEY, $windowProvider, $translateSanitizationProvide
       }
     };
 
-  var version = '2.17.1';
+  var version = '2.18.1';
 
   // tries to determine the browsers language
   var getFirstBrowserLanguage = function () {
@@ -69175,7 +69175,7 @@ angular.module('angularPromiseButtons')
 
 
 /**
- * Swiper 4.2.6
+ * Swiper 4.3.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * http://www.idangero.us/swiper/
  *
@@ -69183,7 +69183,7 @@ angular.module('angularPromiseButtons')
  *
  * Released under the MIT License
  *
- * Released on: May 1, 2018
+ * Released on: May 27, 2018
  */
 
 (function (global, factory) {
@@ -69282,7 +69282,7 @@ angular.module('angularPromiseButtons')
   var win = w;
 
   /**
-   * Dom7 2.0.5
+   * Dom7 2.0.6
    * Minimalistic JavaScript library for DOM manipulation, with a jQuery-compatible API
    * http://framework7.io/docs/dom.html
    *
@@ -69292,7 +69292,7 @@ angular.module('angularPromiseButtons')
    *
    * Licensed under MIT
    *
-   * Released on: April 20, 2018
+   * Released on: May 27, 2018
    */
 
   var Dom7 = function Dom7(arr) {
@@ -69596,14 +69596,16 @@ angular.module('angularPromiseButtons')
         } else if (targetSelector && el.dom7LiveListeners) {
           handlers = el.dom7LiveListeners[event];
         }
-        for (var k = handlers.length - 1; k >= 0; k -= 1) {
-          var handler = handlers[k];
-          if (listener && handler.listener === listener) {
-            el.removeEventListener(event, handler.proxyListener, capture);
-            handlers.splice(k, 1);
-          } else if (!listener) {
-            el.removeEventListener(event, handler.proxyListener, capture);
-            handlers.splice(k, 1);
+        if (handlers && handlers.length) {
+          for (var k = handlers.length - 1; k >= 0; k -= 1) {
+            var handler = handlers[k];
+            if (listener && handler.listener === listener) {
+              el.removeEventListener(event, handler.proxyListener, capture);
+              handlers.splice(k, 1);
+            } else if (!listener) {
+              el.removeEventListener(event, handler.proxyListener, capture);
+              handlers.splice(k, 1);
+            }
           }
         }
       }
@@ -70556,8 +70558,12 @@ angular.module('angularPromiseButtons')
       if (params.slidesPerView === 'auto') {
         var slideStyles = win.getComputedStyle(slide[0], null);
         var currentTransform = slide[0].style.transform;
+        var currentWebKitTransform = slide[0].style.webkitTransform;
         if (currentTransform) {
           slide[0].style.transform = 'none';
+        }
+        if (currentWebKitTransform) {
+          slide[0].style.webkitTransform = 'none';
         }
         if (swiper.isHorizontal()) {
           slideSize = slide[0].getBoundingClientRect().width +
@@ -70570,6 +70576,9 @@ angular.module('angularPromiseButtons')
         }
         if (currentTransform) {
           slide[0].style.transform = currentTransform;
+        }
+        if (currentWebKitTransform) {
+          slide[0].style.webkitTransform = currentWebKitTransform;
         }
         if (params.roundLengths) { slideSize = Math.floor(slideSize); }
       } else {
@@ -71286,11 +71295,15 @@ angular.module('angularPromiseButtons')
       swiper._clientLeft = swiper.$wrapperEl[0].clientLeft;
     }
     var translate = rtlTranslate ? swiper.translate : -swiper.translate;
-    var currentSnap = snapGrid[snapGrid.indexOf(translate)];
-    var prevSnap = snapGrid[snapGrid.indexOf(translate) - 1];
-    var prevIndex;
 
-    if (prevSnap) {
+    var normalizedTranslate = translate < 0 ? -Math.floor(Math.abs(translate)) : Math.floor(translate);
+    var normalizedSnapGrid = snapGrid.map(function (val) { return Math.floor(val); });
+    var normalizedSlidesGrid = slidesGrid.map(function (val) { return Math.floor(val); });
+
+    var currentSnap = snapGrid[normalizedSnapGrid.indexOf(normalizedTranslate)];
+    var prevSnap = snapGrid[normalizedSnapGrid.indexOf(normalizedTranslate) - 1];
+    var prevIndex;
+    if (typeof prevSnap !== 'undefined') {
       prevIndex = slidesGrid.indexOf(prevSnap);
       if (prevIndex < 0) { prevIndex = swiper.activeIndex - 1; }
     }
@@ -71727,8 +71740,8 @@ angular.module('angularPromiseButtons')
       Device.ios &&
       !Device.cordova &&
       params.iOSEdgeSwipeDetection &&
-      (startX <= params.iOSEdgeSwipeThreshold) &&
-      (startX >= win.screen.width - params.iOSEdgeSwipeThreshold)
+      ((startX <= params.iOSEdgeSwipeThreshold) ||
+      (startX >= win.screen.width - params.iOSEdgeSwipeThreshold))
     ) {
       return;
     }
@@ -72343,7 +72356,7 @@ angular.module('angularPromiseButtons')
     }
 
     // Resize handler
-    swiper.on('resize observerUpdate', onResize, true);
+    swiper.on((Device.ios || Device.android ? 'resize orientationchange observerUpdate' : 'resize observerUpdate'), onResize, true);
   }
 
   function detachEvents() {
@@ -72383,7 +72396,7 @@ angular.module('angularPromiseButtons')
     }
 
     // Resize handler
-    swiper.off('resize observerUpdate', onResize);
+    swiper.off((Device.ios || Device.android ? 'resize orientationchange observerUpdate' : 'resize observerUpdate'), onResize);
   }
 
   var events = {
@@ -76985,6 +76998,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'ContactusCtrl'
         })
+        .state('tutorials', {
+            url: "/tutorials",
+            templateUrl: tempateURL,
+            controller: 'TutorialsCtrl'
+        })
         .state('dashboard', {
             url: "/dashboard/{page:.*}",
             templateUrl: tempateURL,
@@ -77230,6 +77248,12 @@ myApp.factory('NavigationService', function () {
             anchor: "faq",
             subnav: []
         },
+        // {
+        //     name: "Game Tutorials",
+        //     classis: "active",
+        //     anchor: "tutorials",
+        //     subnav: []
+        // },
         {
             name: "Contact Us",
             classis: "active",
@@ -77971,6 +77995,16 @@ myApp.controller('GetstartedCtrl', function ($scope, TemplateService, Navigation
     TemplateService.title = "Get Started"; //This is the Title of the Website $scope.navigation
     TemplateService.header1 = "";
     $scope.navigation = NavigationService.getNavigation(); // This is the Title of the Website $scope.navigation= NavigationService.getNavigation();
+})
+myApp.controller('TutorialsCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+    $scope.template = TemplateService.getHTML("content/tutorials.html");
+    TemplateService.title = "Tutorials";
+    TemplateService.header1 = ""; //This is the Title of the Website $scope.navigation
+    $scope.navigation = NavigationService.getNavigation(); // This is the Title of the Website $scope.navigation= NavigationService.getNavigation();
+    $scope.pouseVideo = function () {
+        var vid = document.getElementById("myVideo");
+        vid.onpause = function () {};
+    }
 })
 myApp.controller('headerCtrl', function ($scope, apiService, $state, TemplateService) {
     $scope.template = TemplateService;
