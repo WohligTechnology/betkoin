@@ -222,8 +222,7 @@ header {
 //Custom CSS
 .bg-image {
     background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+    background-attachment: fixed; // position: relative;
 }
 
 .pad0 {
@@ -402,7 +401,7 @@ header {
         }
     }
     .games {
-        background-image: url('../img/BKN_0001_4.jpg');
+        background-image: url('../img/home-bg4.jpg');
         padding: 50px 0 !important;
         @extend .bg-image;
         .next {
@@ -1054,7 +1053,7 @@ hr {
         background-attachment: fixed;
         background-repeat: repeat-x;
         background-size: cover;
-        height: auto;
+        height: 100vh;
         -webkit-animation: none;
         animation: none;
     }

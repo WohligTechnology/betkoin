@@ -30,7 +30,8 @@
                             <div class="row">
                                 <div class="col-md-6 col-xs-12">
                                     <div class="form-group">
-                                        <input type="text" ng-model="partnerData.firstName" class="form-control custom-input" id="firstName" placeholder="First Name" required name="firstName">
+                                        <input type="text" ng-model="partnerData.firstName" class="form-control custom-input" id="firstName" placeholder="First Name"
+                                            required name="firstName">
                                         <div class="pull-right" ng-repeat="(field,value) in formData.firstName.$error" ng-show="formData.firstName.$touched">
                                             <span class="label label-danger" ng-if="field=='required' && value">Please Enter First Name</span>
                                         </div>
@@ -38,7 +39,8 @@
                                 </div>
                                 <div class="col-md-6 col-xs-12">
                                     <div class="form-group">
-                                        <input type="text" ng-model="partnerData.lastName" class="form-control custom-input" id="lastName" placeholder="Last Name" required name="lastName">
+                                        <input type="text" ng-model="partnerData.lastName" class="form-control custom-input" id="lastName" placeholder="Last Name"
+                                            required name="lastName">
                                         <div class="pull-right" ng-repeat="(field,value) in formData.lastName.$error" ng-show="formData.lastName.$touched">
                                             <span class="label label-danger" ng-if="field=='required' && value">Please Enter Last Name</span>
                                         </div>
@@ -48,7 +50,8 @@
                             <div class="row">
                                 <div class="col-md-6 col-xs-12">
                                     <div class="form-group">
-                                        <input type="email" ng-model="partnerData.email" class="form-control custom-input" id="email" placeholder="Email" name="email" required>
+                                        <input type="email" ng-model="partnerData.email" class="form-control custom-input" id="email" placeholder="Email" name="email"
+                                            required>
                                         <div class="pull-right" ng-repeat="(field,value) in formData.email.$error" ng-show="formData.email.$touched">
                                             <span class="label label-danger" ng-if="field=='required' && value">Please Enter Email</span>
                                             <span class="label label-danger" ng-if="field=='email' && value">Please Enter Valid Email</span>
@@ -83,7 +86,7 @@
                                 <br>
                                 <br>
                             </div>
-                            <div class="text-center block-tel">
+                            <!-- <div class="text-center block-tel">
 
                                 <h3>Contact On the Following Numbers</h3>
 
@@ -102,7 +105,7 @@
                                     </div>
 
                                 </div>
-                            </div>
+                            </div> -->
                         </form>
                     </div>
                 </div>
