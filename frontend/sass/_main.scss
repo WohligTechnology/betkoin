@@ -175,14 +175,21 @@ footer {
 }
 
 .form-invalid {
-    color: $brand-danger;
+    color: white;
     .form-control {
-        border-color: $brand-danger;
-        color: $brand-danger;
+        border-color: white;
+        color: white;
         &::-webkit-input-placeholder {
-            color: $brand-danger;
+            color: white;
         }
     }
+    span {
+        color: $brand-danger;
+    }
+}
+
+.height-90 {
+    height: 90vh;
 }
 
 .form-submission {
@@ -1119,6 +1126,10 @@ hr {
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
+}
+
+.thank-padding {
+    padding: 30px 30px 80px 30px;
 }
 
 .modal-content {
