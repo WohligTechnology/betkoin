@@ -12,15 +12,7 @@ myApp.controller('LogInCtrl', function ($scope, TemplateService, NavigationServi
   $scope.closeMessageModal = function () {
     $scope.messageModal.hide();
   };
-  $scope.openThanks = function () {
-    $scope.openthank = $uibModal.open({
-      animation: true,
-      templateUrl: "views/content/modal/thanks.html",
-      scope: $scope,
-      size: 'md',
-      // backdropClass: 'back-drop'
-    });
-  }
+
   $scope.playerLogin = function (data, login) {
     $scope.loginPromise = apiService.playerLogin(data, function (data) {
       console.log("login", data);
