@@ -13,6 +13,10 @@ myApp.controller('SignupCtrl', function ($scope, TemplateService, NavigationServ
             $.jStorage.set("accessToken", $scope.data.accessToken[0]);
             $state.go('dashboard');
         }
+        else{
+            $scope.errorSignup= data.error.errors.username.message;
+            console.log("$scope.errorSignup",$scope.errorSignup);
+        }
 
     });
    }
