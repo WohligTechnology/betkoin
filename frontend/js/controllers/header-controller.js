@@ -60,6 +60,7 @@ myApp.controller('headerCtrl', function ($scope, apiService, $state, TemplateSer
             scrollTop: $('body,html').offset().top - 100
         }, 3000);
     }
+
 });
 myApp.controller('headernewCtrl', function ($scope, $state, apiService, TemplateService, $timeout) {
     $scope.template = TemplateService;

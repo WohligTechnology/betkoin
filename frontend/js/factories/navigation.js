@@ -53,12 +53,12 @@ myApp.factory('NavigationService', function () {
             anchor: "faq",
             subnav: []
         },
-        {
-            name: "Game Tutorials",
-            classis: "active",
-            anchor: "tutorials",
-            subnav: []
-        },
+        // {
+        //     name: "Game Tutorials",
+        //     classis: "active",
+        //     anchor: "tutorials",
+        //     subnav: []
+        // },
         {
             name: "Contact Us",
             classis: "active",

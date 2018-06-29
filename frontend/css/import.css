@@ -12005,12 +12005,17 @@ footer {
   display: inline-block; }
 
 .form-invalid {
-  color: #fc483f; }
+  color: white; }
   .form-invalid .form-control {
-    border-color: #fc483f;
-    color: #fc483f; }
+    border-color: white;
+    color: white; }
     .form-invalid .form-control::-webkit-input-placeholder {
-      color: #fc483f; }
+      color: white; }
+  .form-invalid span {
+    color: #fc483f; }
+
+.height-90 {
+  height: 90vh; }
 
 .form-submission {
   min-height: 300px; }
@@ -12041,8 +12046,7 @@ header {
 
 .bg-image, .home .wheretobuy, .home .why, .home .games, .home .solutions, .home .whytobuy {
   background-size: cover;
-  background-attachment: fixed;
-  position: relative; }
+  background-attachment: fixed; }
 
 .pad0 {
   padding: 0; }
@@ -12178,7 +12182,7 @@ header {
       margin-top: 20px; }
 
 .home .games, .home .solutions {
-  background-image: url("../img/BKN_0001_4.jpg");
+  background-image: url("../img/home-bg4.jpg");
   padding: 50px 0 !important;
   padding: 75px 0 !important; }
   .home .games .next, .home .solutions .next, .home .games .next2, .home .solutions .next2 {
@@ -12740,7 +12744,7 @@ header {
   background-attachment: fixed;
   background-repeat: repeat-x;
   background-size: cover;
-  height: auto;
+  height: 100vh;
   -webkit-animation: none;
   animation: none; }
 
@@ -12766,17 +12770,21 @@ header {
   margin-top: 120px; }
 
 .contactus .contactblock {
-  height: 150px;
+  height: 190px;
   padding: 20px;
   margin-bottom: 10px;
   color: #fff; }
   .contactus .contactblock a {
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 18px; }
   .contactus .contactblock h4 {
     padding: 0 10px; }
   .contactus .contactblock .pl-50 {
     padding-left: 58px; }
+  .contactus .contactblock p {
+    font-size: 17px; }
 
 .contact-img {
   width: 45px;
@@ -12788,6 +12796,9 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+
+.thank-padding {
+  padding: 30px 30px 80px 30px; }
 
 .modal-content {
   border: 2.5px solid;
@@ -13405,7 +13416,7 @@ header {
     color: #fff;
     background-color: #f2b45c; }
   .main-home-header.nav > li > a {
-    padding: 5px 10px;
+    padding: 5px 7px;
     margin-top: 10px; }
   .custom-navbar .navbar-nav {
     margin-left: 0;
@@ -13418,11 +13429,11 @@ header {
     max-width: 100px; }
   .home .globe-container {
     left: 40%;
-    top: 12%; }
+    top: 23%; }
   .home .globe {
     width: 300px; }
   .home .globe-text {
-    width: 350px; }
+    width: 330px; }
   .home .globe-text .title h1 {
     font-size: 40pt !important; }
   .home .whytobuy .spacing .graph-spacing {

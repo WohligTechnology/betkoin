@@ -1,10 +1,19 @@
-myApp.controller('SignupCtrl', function ($scope, TemplateService, NavigationService,$state, apiService, $timeout, toastr, $http) {
+myApp.controller('SignupCtrl', function ($scope, TemplateService, NavigationService, $state, apiService, $timeout, toastr, $http) {
     $scope.template = TemplateService.getHTML("content/signup.html");
     TemplateService.header1 = "";
     TemplateService.title = "Sign Up"; //This is the Title of the Website $scope.navigation
     $scope.navigation = NavigationService.getNavigation(); // This is the Title of the Website $scope.navigation= NavigationService.getNavigation();
-   $scope.signUpFun=function(userData){
-    console.log("userData data",userData);
+    // $scope.openThanks = function () {
+    //     $scope.openthank = $uibModal.open({
+    //       animation: true,
+    //       templateUrl: "views/content/modal/thanks.html",
+    //       scope: $scope,
+    //       size: 'md',
+    //       // backdropClass: 'back-drop'
+    //     });
+    //   }
+    $scope.signUpFun = function (userData) {
+        console.log("userData data", userData);
 
     apiService.signUp(userData, function (data) {
         console.log("signUp data",data);
@@ -18,7 +27,4 @@ myApp.controller('SignupCtrl', function ($scope, TemplateService, NavigationServ
             console.log("$scope.errorSignup",$scope.errorSignup);
         }
 
-    });
-   }
-   
 })
