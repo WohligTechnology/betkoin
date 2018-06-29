@@ -64,7 +64,8 @@
     "textAngular": "^1.5.16",
     "cleave.js": "^0.7.10",
     "angular-promise-buttons": "^0.1.21",
-    "angular-fullpage.js": "^0.2.1"
+    "angular-fullpage.js": "^0.2.1",
+    "wow": "https://github.com/matthieua/WOW.git#^1.1.2"
   },
   "resolutions": {
     "angular": "1.6.9",

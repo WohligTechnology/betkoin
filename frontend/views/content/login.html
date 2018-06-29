@@ -10,29 +10,28 @@
                 <form name="login">
                     <div class="form-group">
                         <label for="email"> Email Id:</label>
-                        <input type="text" class="form-control custom-input" ng-model="userData.username" id="email" placeholder="email" name="username"  required>
-                        <span class="valid" ng-show="login.username.$touched && login.username.$invalid">*Email is required.</span>
+                        <input type="email" class="form-control custom-input" ng-model="userData.username" id="email" placeholder="email*" name="email"  required>
+                        <span class="valid" ng-show="login.email.$touched && login.email.$invalid">Enter valid Email Id.</span>
                     </div>
                     <div class="form-group">
                         <label for="pwd"> Password:</label>
-                        <input type="password" class="form-control custom-input" ng-model="userData.password"  id="pwd" placeholder="password" name="password" required>
-                        <span class="valid" ng-show="login.password.$touched && login.password.$invalid">* Password is required.</span>
+                        <input type="password" class="form-control custom-input" ng-model="userData.password"  id="password" placeholder="password*" name="password" required>
+                        <span class="valid" ng-show="login.password.$touched && login.password.$invalid">Password is required.</span>
                     </div>
-                    <div class="form-group form-check">
+                    <!-- <div class="form-group form-check">
                         <label class="form-check-label">
                             <input class="form-check-input" type="checkbox" name="remember"> Remember me
                         </label>
-                    </div>
+                    </div> -->
                     <div class="text-center">
                         <button type="submit" ng-disabled="login.$invalid" ng-click="playerLogin(userData)" class="btn btn-common">Login</button>
                     </div>
-
                 </form>
             </div>
             <div>
                 <div class="signup-link">
-                    <a href="pull-left" ui-sref="signup">Create an Account</a>
-                    <a href="" class="pull-right">Forget Your Password?</a>
+                    <a ui-sref="signup">Create an Account</a>
+                    <a ui-sref="login" class="pull-right">Forgot Your Password?</a>
                 </div>
             </div>
 

@@ -10,13 +10,22 @@
                 <form name="signup">
                     <div class="form-group">
                         <label for="email"> Email Id:</label>
-                        <input type="text" class="form-control custom-input" ng-model="userData.username" id="email" placeholder="email" name="email">
-                        <span class="valid" ng-show="signup.username.$touched && signup.username.$invalid">*Email is required.</span>
+                        <input type="email" class="form-control custom-input" ng-model="userData.username" id="email*" placeholder="email*" name="email"
+                            required>
+                        <span class="valid" ng-show="signup.email.$touched && signup.email.$invalid">Enter valid Email Id.</span>
                     </div>
                     <div class="form-group">
                         <label for="pwd"> Password:</label>
-                        <input type="password" class="form-control custom-input" ng-model="userData.password" id="pwd" placeholder="password" name="pswd">
-                        <span class="valid" ng-show="signup.password.$touched && signup.password.$invalid">* Password is required.</span>
+                        <input type="password" class="form-control custom-input" ng-model="userData.password" id="password" placeholder="password*"
+                            name="password" required>
+                        <span class="valid" ng-show="signup.password.$touched && signup.password.$invalid">Password is required.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd"> Confirm Password:</label>
+                        <input type="password" class="form-control custom-input" ng-model="userData.confirmPassword" id="pwd" placeholder="confirm password*"
+                            name="confirmPassword" required>
+                        <span class="valid" ng-show="signup.confirmPassword.$touched && signup.confirmPassword.$invalid">Confirm Password is required.</span>
+                        <span class="valid" ng-show="userData.confirmPassword != userData.password">Password and Confirm Password doesn't match.</span>
                     </div>
                     <div class="form-group form-check">
                         <label class="form-check-label">
@@ -28,7 +37,7 @@
                     </div>
                     <p class="">{{errorSignup}}</p>
                     <div class="text-center">
-                        <button type="submit" ng-click="signUpFun(userData)" class="btn btn-common">Create an Account</button>
+                        <button type="submit" ng-disabled="signup.$invalid" ng-click="signUpFun(userData)" class="btn btn-common">Create an Account</button>
                     </div>
 
                 </form>

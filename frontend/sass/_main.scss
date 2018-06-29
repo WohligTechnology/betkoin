@@ -1822,3 +1822,11 @@ hr {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.form-check-label {
+    input[type="radio"],
+    input[type="checkbox"] {
+        vertical-align: middle;
+        margin: 0;
+    }
+}
