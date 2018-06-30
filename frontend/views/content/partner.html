@@ -32,7 +32,7 @@
                                     <div class="form-group">
                                         <input type="text" ng-model="partnerData.firstName" class="form-control custom-input" id="firstName" placeholder="First Name"
                                             required name="firstName">
-                                        <div class="pull-right" ng-repeat="(field,value) in formData.firstName.$error" ng-show="formData.firstName.$touched">
+                                        <div class="text-right" ng-repeat="(field,value) in formData.firstName.$error" ng-show="formData.firstName.$touched">
                                             <span class="label label-danger" ng-if="field=='required' && value">Please Enter First Name</span>
                                         </div>
                                     </div>
@@ -41,7 +41,7 @@
                                     <div class="form-group">
                                         <input type="text" ng-model="partnerData.lastName" class="form-control custom-input" id="lastName" placeholder="Last Name"
                                             required name="lastName">
-                                        <div class="pull-right" ng-repeat="(field,value) in formData.lastName.$error" ng-show="formData.lastName.$touched">
+                                        <div class="text-right" ng-repeat="(field,value) in formData.lastName.$error" ng-show="formData.lastName.$touched">
                                             <span class="label label-danger" ng-if="field=='required' && value">Please Enter Last Name</span>
                                         </div>
                                     </div>
@@ -52,7 +52,7 @@
                                     <div class="form-group">
                                         <input type="email" ng-model="partnerData.email" class="form-control custom-input" id="email" placeholder="Email" name="email"
                                             required>
-                                        <div class="pull-right" ng-repeat="(field,value) in formData.email.$error" ng-show="formData.email.$touched">
+                                        <div class="text-right" ng-repeat="(field,value) in formData.email.$error" ng-show="formData.email.$touched">
                                             <span class="label label-danger" ng-if="field=='required' && value">Please Enter Email</span>
                                             <span class="label label-danger" ng-if="field=='email' && value">Please Enter Valid Email</span>
                                         </div>
@@ -62,7 +62,7 @@
                                     <div class="form-group">
                                         <input type="number" name="mobile" ng-model="partnerData.mobile" class="form-control custom-input" id="mobile" placeholder="Mobile Number"
                                             min="10" maxlength="10" required>
-                                        <div class="pull-right" ng-repeat="(field,value) in formData.age.$error" ng-show="formData.age.$touched">
+                                        <div class="text-right" ng-repeat="(field,value) in formData.age.$error" ng-show="formData.age.$touched">
                                             <span class="label label-danger" ng-if="field=='required' && value">Please Enter Mobile Number</span>
                                             <span class="label label-danger" ng-if="field=='min' && value">Age should be greater than 18</span>
                                             <span class="label label-danger" ng-if="field=='max' && value">Age should be less than 50</span>
@@ -75,11 +75,11 @@
                                     <div class="form-group">
                                         <textarea name="message" ng-model="partnerData.message" id="message" cols="30" rows="5" class="form-control custom-input custom-tarea"
                                             required placeholder="Leave a message"></textarea>
-                                        <div class="pull-right" ng-repeat="(field,value) in formData.message.$error" ng-show="formData.message.$touched">
+                                        <div class="text-right" ng-repeat="(field,value) in formData.message.$error" ng-show="formData.message.$touched">
                                             <span class="label label-danger" ng-if="field=='required' && value">Please Leave a message</span>
                                         </div>
                                     </div>
-                                </div>
+                                </div>  
                             </div>
                             <div class="row text-center">
                                 <button ng-click="submitForm(partnerData)" class="btn submit-btn " ng-disabled="formData.$invalid" promise-btn>Submit</button>

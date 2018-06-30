@@ -18,7 +18,7 @@ myApp.controller('LogInCtrl', function ($scope, TemplateService, NavigationServi
       console.log("login", data);
       $.jStorage.set("accessToken", data.data);
       if (data && !_.isEmpty(data.data)) {
-        $scope.openThanks();
+        // $scope.openThanks();
         $state.go("dashboard");
       } else if (data.error == "Member already Logged In") {
         $scope.message = {
