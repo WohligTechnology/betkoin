@@ -10,15 +10,17 @@ myApp.factory('apiService', function ($http, $q, $timeout, $state) {
             }).success(callback);
         },
         // This is a demo Service for POST Method.
-        signUp: function (formData, callback) {
-            $http.post(adminurl + 'Cryptocurrency/signUp', formData).then(function (data) {
+        signUp: function (userData, callback) {
+            console.log(userData);
+            $http.post(adminurl + 'Cryptocurrency/signUp', userData).then(function (data) {
                 data = data.data;
                 callback(data);
+                console.log(data);
             });
-
         },
         playerLogin: function (formData, callback) {
             $http.post(adminurl + 'member/playerLogin', formData).then(function (data) {
+                console.log('login data',data);
                 data = data.data;
                 callback(data);
             });

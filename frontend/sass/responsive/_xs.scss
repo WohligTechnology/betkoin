@@ -79,11 +79,12 @@
          display: block;
      }
      .aboutinfo {
+         text-align: center;
          h3 {
              text-align: center;
          }
          img {
-             margin-left: 20%;
+             margin: 0 auto;
          }
      }
      .aboutus .about-parallax,
@@ -170,5 +171,10 @@
      }
      .login-bg {
          height: 145vh;
+     } //footer
+     .whtsup-call,
+     .phone-call {
+         width: 15px;
+         vertical-align: middle;
      }
  }

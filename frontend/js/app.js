@@ -51,10 +51,10 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
         //     templateUrl: tempateURL,
         //     controller: 'WhitepaperCtrl'
         // })
-        .state('withdrowal', {
-            url: "/withdrowal",
+        .state('withdrawal', {
+            url: "/withdrawal",
             templateUrl: tempateURL,
-            controller: 'WithdrowalCtrl'
+            controller: 'WithdrawalCtrl'
         })
         .state('get-started', {
             url: "/get-started",

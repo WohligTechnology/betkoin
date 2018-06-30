@@ -188,10 +188,9 @@ footer {
     }
 }
 
-.height-90 {
-    height: 90vh;
-}
-
+// .height-90 {
+//     height: 90vh;
+// }
 .form-submission {
     min-height: 300px;
 }
@@ -643,16 +642,14 @@ hr {
 }
 
 .tokenstructure {
-    overflow-x: hidden;
-    .token-cover {
-        background: #0a0809;
-    }
+    overflow-x: hidden; // .token-cover {
+    //     background: #0a0809;
+    // }
     .token-parallax {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.5)), url(../img/bg4.jpg);
         background-attachment: fixed;
         background-repeat: repeat-x;
-        background-size: cover;
-        height: 120vh;
+        background-size: cover; // height: 120vh;   
         -webkit-animation: slide 30s linear infinite;
         animation: slide 30s linear infinite;
     }
@@ -1059,8 +1056,7 @@ hr {
     .token-parallax {
         background-attachment: fixed;
         background-repeat: repeat-x;
-        background-size: cover;
-        height: 100vh;
+        background-size: cover; // height: 100vh;
         -webkit-animation: none;
         animation: none;
     }
@@ -1116,8 +1112,9 @@ hr {
 }
 
 .contact-img {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
 }
 
 .row-eq-height {
@@ -1337,6 +1334,9 @@ hr {
         background-color: rgba(0, 0, 0, 0.52) !important;
         padding: 5px;
         width: 90%;
+        &.withdraw-pad {
+            padding: 5px 75px 5px 5px;
+        }
     }
     .with-heading {
         color: #f2b45c;
@@ -1352,7 +1352,7 @@ hr {
 
 .withdrop-abs {
     position: absolute;
-    right: 8%;
+    right: 30px;
     top: 6px;
     color: #f2b44e;
 }
@@ -1828,5 +1828,22 @@ hr {
     input[type="checkbox"] {
         vertical-align: middle;
         margin: 0;
+    }
+}
+
+.swiper-button-disabled {
+    @include filter(grayscale(100%));
+}
+
+.whtsup-call,
+.phone-call {
+    display: inline-flex;
+    width: 22px;
+    vertical-align: unset;
+}
+
+.footer-content {
+    small {
+        line-height: 360%;
     }
 }

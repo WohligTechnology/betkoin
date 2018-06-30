@@ -9,29 +9,35 @@
             <div>
                 <form name="signup">
                     <div class="form-group">
+                        <label for="username"> User Name:</label>
+                        <input type="text" class="form-control custom-input" ng-model="userData.username" id="username*" placeholder="username*" name="username"
+                            required>
+                        <span class="label label-danger" ng-show="signup.username.$touched && signup.username.$invalid">Username is required.</span>
+                    </div>
+                    <div class="form-group">
                         <label for="email"> Email Id:</label>
                         <input type="email" class="form-control custom-input" ng-model="userData.username" id="email*" placeholder="email*" name="email"
                             required>
-                        <span class="valid" ng-show="signup.email.$touched && signup.email.$invalid">Enter valid Email Id.</span>
+                        <span class="label label-danger" ng-show="signup.email.$touched && signup.email.$invalid">Enter valid Email Id.</span>
                     </div>
                     <div class="form-group">
                         <label for="pwd"> Password:</label>
                         <input type="password" class="form-control custom-input" ng-model="userData.password" id="password" placeholder="password*"
                             name="password" required>
-                        <span class="valid" ng-show="signup.password.$touched && signup.password.$invalid">Password is required.</span>
+                        <span class="label label-danger" ng-show="signup.password.$touched && signup.password.$invalid">Password is required.</span>
                     </div>
                     <div class="form-group">
                         <label for="pwd"> Confirm Password:</label>
                         <input type="password" class="form-control custom-input" ng-model="userData.confirmPassword" id="pwd" placeholder="confirm password*"
                             name="confirmPassword" required>
-                        <span class="valid" ng-show="signup.confirmPassword.$touched && signup.confirmPassword.$invalid">Confirm Password is required.</span>
-                        <span class="valid" ng-show="userData.confirmPassword != userData.password">Password and Confirm Password doesn't match.</span>
+                        <span class="label label-danger" ng-show="signup.confirmPassword.$touched && signup.confirmPassword.$invalid">Confirm Password is required.</span>
+                        <span class="label label-danger" ng-show="userData.confirmPassword != userData.password">Password and Confirm Password doesn't match.</span>
                     </div>
-                    <div class="form-group form-check">
+                    <!-- <div class="form-group form-check">
                         <label class="form-check-label">
                             <input class="form-check-input" type="checkbox" name="remember"> Remember me
                         </label>
-                    </div>
+                    </div> -->
                     <div>
                         <p class="text-center" ui-sref="login">Already Have an Account? Sign In</p>
                     </div>

@@ -65,7 +65,8 @@
     "cleave.js": "^0.7.10",
     "angular-promise-buttons": "^0.1.21",
     "angular-fullpage.js": "^0.2.1",
-    "wow": "https://github.com/matthieua/WOW.git#^1.1.2"
+    "wow": "https://github.com/matthieua/WOW.git#^1.1.2",
+    "swiper": "https://github.com/nolimits4web/swiper.git#^4.3.3"
   },
   "resolutions": {
     "angular": "1.6.9",
