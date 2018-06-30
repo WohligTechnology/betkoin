@@ -76958,10 +76958,10 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
         //     templateUrl: tempateURL,
         //     controller: 'WhitepaperCtrl'
         // })
-        .state('withdrowal', {
-            url: "/withdrowal",
+        .state('withdrawal', {
+            url: "/withdrawal",
             templateUrl: tempateURL,
-            controller: 'WithdrowalCtrl'
+            controller: 'withdrawalCtrl'
         })
         .state('get-started', {
             url: "/get-started",
@@ -77841,10 +77841,10 @@ myApp.controller('SignupCtrl', function ($scope, TemplateService, NavigationServ
    }
    
 })
-myApp.controller('WithdrowalCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
-    $scope.template = TemplateService.getHTML("content/withdrowal.html");
+myApp.controller('withdrawalCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
+    $scope.template = TemplateService.getHTML("content/withdrawal.html");
     TemplateService.header1 = "";
-    TemplateService.title = "Withdrowal"; //This is the Title of the Website $scope.navigation
+    TemplateService.title = "withdrawal"; //This is the Title of the Website $scope.navigation
     $scope.navigation = NavigationService.getNavigation(); // This is the Title of the Website $scope.navigation= NavigationService.getNavigation();
 })
 myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationService, $stateParams, $state, apiService, $timeout, toastr, $http) {

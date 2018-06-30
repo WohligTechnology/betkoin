@@ -209,7 +209,7 @@ footer {
 }
 
 .content {
-    min-height: 450px;
+    min-height: calc(100vh  - 153px);
 }
 
 .img-full {
@@ -1079,7 +1079,7 @@ hr {
         background-size: cover;
         -webkit-animation: none;
         animation: none;
-        height: 110vh;
+        min-height: calc(100vh - 153px);
     }
     .contactinfo {
         color: #fff;
@@ -1223,6 +1223,7 @@ hr {
     background-image: url(../img/BKN_0004_1.jpg);
     background-size: cover;
     background-attachment: fixed;
+    min-height: calc(100vh - 153px)
     // height: 125vh;
 }
 
@@ -1394,14 +1395,13 @@ hr {
 .overlay-dark {
     background: rgba(0, 0, 0, 0.86);
     margin-top: 100px;
-    width: 70%;
+    // width: 70%;
     padding: 10px;
     margin: 0 auto;
 }
 
 .dashboard {
-    padding-top: 100px;
-    margin-top: 70px;
+    padding: 140px 0 50px 0;
 }
 
 .muddy-color {
@@ -1435,9 +1435,9 @@ hr {
     margin: 10px 0;
     font-size: 12px;
     color: white;
-    td,
-    th {
-        border-top: 0 !important;
+    td{
+        // border-top: 0 !important;
+        border-top: 1px solid rgba(221, 221, 221, 0.3) !important;
     }
 }
 

@@ -12018,7 +12018,7 @@ footer {
   right: 10px !important; }
 
 .content {
-  min-height: 450px; }
+  min-height: calc(100vh  - 153px); }
 
 .img-full {
   width: 100%;
@@ -12744,7 +12744,7 @@ header {
   background-size: cover;
   -webkit-animation: none;
   animation: none;
-  height: 110vh; }
+  min-height: calc(100vh - 153px); }
 
 .contactus .contactinfo {
   color: #fff;
@@ -12855,7 +12855,8 @@ header {
 .login-bg {
   background-image: url(../img/BKN_0004_1.jpg);
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  min-height: calc(100vh - 153px); }
 
 .signup-main {
   background: rgba(0, 0, 0, 0.51);
@@ -12989,13 +12990,11 @@ header {
 .overlay-dark {
   background: rgba(0, 0, 0, 0.86);
   margin-top: 100px;
-  width: 70%;
   padding: 10px;
   margin: 0 auto; }
 
 .dashboard {
-  padding-top: 100px;
-  margin-top: 70px; }
+  padding: 140px 0 50px 0; }
 
 .muddy-color {
   color: #f2b45d; }
@@ -13022,9 +13021,8 @@ header {
   margin: 10px 0;
   font-size: 12px;
   color: white; }
-  .custom-style td,
-  .custom-style th {
-    border-top: 0 !important; }
+  .custom-style td {
+    border-top: 1px solid rgba(221, 221, 221, 0.3) !important; }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: black; }

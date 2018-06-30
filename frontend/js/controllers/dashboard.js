@@ -67,6 +67,7 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
                 apiService.getCoinTx(userData, function (data) {
                     console.log("$scope.coinTxData", data.data);
                     if (data.value) {
+                        $scope.coinTxTotalData = data.data.total;
                         $scope.coinTxData = data.data.results;
                     }
                 })

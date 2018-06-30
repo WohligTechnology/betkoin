@@ -19,7 +19,7 @@ myApp.factory('apiService', function ($http, $q, $timeout, $state) {
             });
         },
         playerLogin: function (formData, callback) {
-            $http.post(adminurl + 'member/playerLogin', formData).then(function (data) {
+            $http.post(adminurl + 'Member/cryptoPlayerLogin', formData).then(function (data) {
                 console.log('login data',data);
                 data = data.data;
                 callback(data);
