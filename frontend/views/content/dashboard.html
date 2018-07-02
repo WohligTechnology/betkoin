@@ -79,7 +79,11 @@
                         <th>Transaction Date</th>
                         <th>User Name</th>
                         <th>Type</th>
-                        <th>Amount</th>
+                        <th>Quantity</th>
+                        <th>Transaction Cost</th>
+                        <th>Total Quantity</th>
+                        <th>Conversion Rate</th>
+                        <th>Total Amount</th>
                         <th>Status</th>
                     </tr>
                 </thead>
@@ -97,6 +101,9 @@
                         <td>{{data.createdAt|date}}</td>
                         <td>{{data.toUser.username}}</td>
                         <td>{{data.transactionType}}</td>
+                        <td>{{data.amount}}</td>
+                        <td>{{data.amount}}</td>
+                        <td>{{data.amount}}</td>
                         <td>{{data.amount}}</td>
                         <td>Done</td>
                     </tr>
