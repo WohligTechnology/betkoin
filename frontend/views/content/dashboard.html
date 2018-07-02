@@ -79,12 +79,12 @@
                         <th>Transaction Date</th>
                         <th>User Name</th>
                         <th>Type</th>
-                        <th>Quantity</th>
-                        <th>Transaction Cost</th>
                         <th>Total Quantity</th>
+                        <th>Transaction Cost</th>
+                        <th>Quantity</th>
                         <th>Conversion Rate</th>
                         <th>Total Amount</th>
-                        <th>Status</th>
+                        <!-- <th>Status</th> -->
                     </tr>
                 </thead>
                 <tbody>
@@ -101,11 +101,11 @@
                         <td>{{data.createdAt|date}}</td>
                         <td>{{data.toUser.username}}</td>
                         <td>{{data.transactionType}}</td>
+                        <td>{{data.originalAmt}}</td>
+                        <td>{{data.cost}}</td>
                         <td>{{data.amount}}</td>
-                        <td>{{data.amount}}</td>
-                        <td>{{data.amount}}</td>
-                        <td>{{data.amount}}</td>
-                        <td>Done</td>
+                        <td>{{data.conversionRate}}</td>
+                        <td>{{data.currencyAmount}}</td>
                     </tr>
                 </tbody>
             </table>
