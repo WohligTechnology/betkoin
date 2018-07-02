@@ -1852,3 +1852,16 @@ a.muddy-color:hover {
 .mr-10 {
     margin-right: 10px;
 }
+
+.pagination>.active>a,
+.pagination>.active>a:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span,
+.pagination>.active>span:hover,
+.pagination>.active>span:focus {
+    z-index: 3;
+    color: #fff;
+    background-color: #f2b45d;
+    border-color: #f2b45d;
+    cursor: default;
+}

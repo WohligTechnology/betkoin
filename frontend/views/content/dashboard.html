@@ -72,7 +72,7 @@
                             </div>
                         </div>
                     </form> -->
-            <table class="table table-responsive custom-style" ng-if="coinTxTotalData && coinTxTotalData != 0">
+            <table class="table table-responsive custom-style" ng-if="coinTxTotalData && coinTxTotalData > 0">
                 <thead>
                     <tr>
                         <th class="text-center">#</th>
@@ -96,20 +96,24 @@
                         <td align="center">{{$index+1}}</td>
                         <td>{{data.createdAt|date}}</td>
                         <td>{{data.toUser.username}}</td>
+                        <td>{{data.transactionType}}</td>
                         <td>{{data.amount}}</td>
                         <td>Done</td>
                     </tr>
                 </tbody>
             </table>
-            <ul ng-if="coinTxTotalData && coinTxTotalData != 0" class="pagination-style" uib-pagination total-items="totalItems" ng-model="currentPage"
+            <ul ng-if="coinTxTotalData && coinTxTotalData > 0" class="pagination-style" uib-pagination total-items="totalItems" ng-model="currentPage"
                 ng-change="pageChanged(currentPage)"></ul>
-            <h4 class="muddy-color text-center">
-                Please do some transations to see your transations.
-            </h4>
-            <h4 class="text-center">
-                <a ui-sref="deposit" class="mr-10 muddy-color">Deposit</a>
-                <a ui-sref="withdrawal" class="muddy-color">Withdraw</a>
-            </h4>
+            <div ng-if="coinTxTotalData && coinTxTotalData == 0">
+                <h4 class="muddy-color text-center">
+                    Please do some transations to see your transations.
+                </h4>
+                <h4 class="text-center">
+                    <a ui-sref="deposit" class="mr-10 muddy-color">Deposit</a>
+                    <a ui-sref="withdrawal" class="muddy-color">Withdraw</a>
+                </h4>
+            </div>
+
         </diV>
     </div>
 
