@@ -22,7 +22,7 @@ myApp.controller('SignupCtrl', function ($scope, TemplateService, NavigationServ
                 $state.go('dashboard');
             } else {
                 if (data.error.errors.username.path == 'username' && data.error.errors.username.kind == 'unique') {
-                    $scope.errorSignup = data.error.errors.username.value + "username has been taken!";
+                    $scope.errorSignup = data.error.errors.username.value + " username has been already taken!";
                 }
 
             }
