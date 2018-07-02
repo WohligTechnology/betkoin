@@ -10,7 +10,7 @@
     <li class="right-nav" id="footleft">
       <div ng-if="username" class="profile-img d-flex  padd-left">
         <div class="relative profile">
-          <div class="" id="link" ng-click="test()">
+          <div class="" id="link" ng-click="openDropdown()">
             <img src=" img/profile.jpg " class="pointer">
           </div>
           <ul class="profile-dropdown" id="subscribe-pop" ng-if="working">
@@ -30,7 +30,7 @@
 
         </div>
 
-        <div class="d-block padd-left " ng-click="test()">
+        <div class="d-block padd-left pointer" ng-click="openDropdown()">
           <div>{{username}}</div>
           <small class="desc ">{{accessLevel}}</small>
         </div>

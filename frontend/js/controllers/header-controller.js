@@ -1,4 +1,4 @@
-myApp.controller('headerCtrl', function ($scope, apiService, $state, TemplateService) {
+myApp.controller('headerCtrl', function ($scope, apiService, $state, TemplateService, $timeout) {
     $scope.template = TemplateService;
     $scope.working = false;
     $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
@@ -38,14 +38,17 @@ myApp.controller('headerCtrl', function ($scope, apiService, $state, TemplateSer
         $.jStorage.flush();
         $state.go('login');
     }
-    $scope.test = function () {
+    $scope.openDropdown = function () {
         $scope.working = true;
-    }
+        $('#subscribe-pop').css("display", "block");
+    };
+    $timeout(function () {
+        $('html').click(function () {
+            $scope.working = false;
+            $('#subscribe-pop').css("display", "none");
+        })
+    }, 300)
 
-    $('html').click(function () {
-        $scope.working = false;
-        $('#subscribe-pop').css("display", "none");
-    })
 
     $('#footleft').click(function (e) {
         e.stopPropagation();

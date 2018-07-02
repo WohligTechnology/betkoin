@@ -12018,7 +12018,7 @@ footer {
   right: 10px !important; }
 
 .content {
-  min-height: calc(100vh  - 153px); }
+  min-height: calc(100vh - 153px); }
 
 .img-full {
   width: 100%;
@@ -12861,8 +12861,7 @@ header {
 .signup-main {
   background: rgba(0, 0, 0, 0.51);
   width: 30%;
-  margin: 0 auto;
-  margin-top: 100px;
+  margin: 100px auto 50px;
   color: #ccc;
   padding: 35px 30px;
   font-family: DroidSans; }
@@ -12998,6 +12997,9 @@ header {
 
 .muddy-color {
   color: #f2b45d; }
+
+a.muddy-color:hover {
+  color: #f4bf75; }
 
 .input-box {
   background: rgba(255, 255, 255, 0.1);
@@ -13361,6 +13363,9 @@ header {
 
 .footer-content small {
   line-height: 360%; }
+
+.mr-10 {
+  margin-right: 10px; }
 
 #fancybox-loading,
 .fancybox-close,

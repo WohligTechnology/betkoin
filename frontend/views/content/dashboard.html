@@ -72,7 +72,7 @@
                             </div>
                         </div>
                     </form> -->
-            <table class="table table-responsive custom-style" ng-if="coinTxTotalData != 0">
+            <table class="table table-responsive custom-style" ng-if="coinTxTotalData && coinTxTotalData != 0">
                 <thead>
                     <tr>
                         <th class="text-center">#</th>
@@ -84,38 +84,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <td align="center">1</td>
                         <td>12 June 1990</td>
                         <td>Pappu</td>
                         <td>Withdrawal</td>
                         <td>10000</td>
                         <td>sucessful</td>
-                    </tr>
-                    <tr>
-                        <td align="center">1</td>
-                        <td>12 June 1990</td>
-                        <td>Pappu</td>
-                        <td>Withdrawal</td>
-                        <td>10000</td>
-                        <td>sucessful</td>
-                    </tr>
-                    <tr>
-                        <td align="center">1</td>
-                        <td>12 June 1990</td>
-                        <td>Pappu</td>
-                        <td>Withdrawal</td>
-                        <td>10000</td>
-                        <td>sucessful</td>
-                    </tr>
-                    <tr>
-                        <td align="center">1</td>
-                        <td>12 June 1990</td>
-                        <td>Pappu</td>
-                        <td>Withdrawal</td>
-                        <td>10000</td>
-                        <td>sucessful</td>
-                    </tr>
+                    </tr> -->
                     <tr ng-repeat="data in coinTxData track by $index">
                         <td align="center">{{$index+1}}</td>
                         <td>{{data.createdAt|date}}</td>
@@ -125,10 +101,14 @@
                     </tr>
                 </tbody>
             </table>
-            <ul ng-if="coinTxTotalData != 0" class="pagination-style" uib-pagination total-items="totalItems" ng-model="currentPage"
+            <ul ng-if="coinTxTotalData && coinTxTotalData != 0" class="pagination-style" uib-pagination total-items="totalItems" ng-model="currentPage"
                 ng-change="pageChanged(currentPage)"></ul>
             <h4 class="muddy-color text-center">
-                Please do some transations to see you transations.
+                Please do some transations to see your transations.
+            </h4>
+            <h4 class="text-center">
+                <a ui-sref="deposit" class="mr-10 muddy-color">Deposit</a>
+                <a ui-sref="withdrawal" class="muddy-color">Withdraw</a>
             </h4>
         </diV>
     </div>
