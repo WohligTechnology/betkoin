@@ -21,8 +21,10 @@ myApp.controller('SignupCtrl', function ($scope, TemplateService, NavigationServ
                 $.jStorage.set("accessToken", $scope.data.accessToken[0]);
                 $state.go('dashboard');
             } else {
-                $scope.errorSignup = data.error.errors.username.message;
-                console.log("$scope.errorSignup", $scope.errorSignup);
+                if (data.error.errors.username.path == 'username' && data.error.errors.username.type == 'unique') {
+                    $scope.errorSignup = data.error.errors.username.value + "username has been taken!";
+                }
+
             }
 
         })
