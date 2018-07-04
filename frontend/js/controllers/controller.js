@@ -390,10 +390,11 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                 animation: true,
                 templateUrl: "views/content/thanku.html",
                 scope: $scope,
-                size: 'md',
-                // backdropClass: 'back-drop'
+                size: 'md'
             });
-        }
+        };
+
+        // $scope.openThanku();
 
         $scope.checklen1 = function (data) {
             $scope.formData = {};

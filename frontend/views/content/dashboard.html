@@ -84,18 +84,9 @@
                         <th>Quantity</th>
                         <th>Conversion Rate</th>
                         <th>Total Amount</th>
-                        <!-- <th>Status</th> -->
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- <tr>
-                        <td align="center">1</td>
-                        <td>12 June 1990</td>
-                        <td>Pappu</td>
-                        <td>Withdrawal</td>
-                        <td>10000</td>
-                        <td>sucessful</td>
-                    </tr> -->
                     <tr ng-repeat="data in coinTxData track by $index">
                         <td align="center">{{$index+1}}</td>
                         <td>{{data.createdAt|date}}</td>
@@ -111,13 +102,16 @@
             </table>
             <ul ng-if="coinTxTotalData && coinTxTotalData > 0" class="pagination-style" uib-pagination total-items="totalItems" ng-model="currentPage"
                 ng-change="pageChanged(currentPage)"></ul>
-            <div ng-if="coinTxTotalData && coinTxTotalData == 0">
+            <div ng-if="coinTxTotalData == 0">
+                <p class="muddy-color text-center">
+                    No data found.
+                </p>
+                <!-- <h4 class="muddy-color text-center">
+                    Please do some transations.
+                </h4> -->
                 <h4 class="muddy-color text-center">
-                    Please do some transations to see your transations.
-                </h4>
-                <h4 class="text-center">
-                    <a ui-sref="deposit" class="mr-10 muddy-color">Deposit</a>
-                    <a ui-sref="withdrawal" class="muddy-color">Withdraw</a>
+                    For deposit
+                    <a ui-sref="deposit" class="mr-10 muddy-color">click here</a>
                 </h4>
             </div>
 

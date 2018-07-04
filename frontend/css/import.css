@@ -12763,7 +12763,7 @@ header {
   .contactus .contactblock h4 {
     padding: 0 10px; }
   .contactus .contactblock .pl-50 {
-    padding-left: 58px; }
+    padding-left: 50px; }
   .contactus .contactblock p {
     font-size: 17px; }
 
@@ -12796,8 +12796,10 @@ header {
   .custom-modal .modal-header {
     border-bottom: 0px solid #e5e5e5; }
   .custom-modal .close {
-    color: #fff;
-    opacity: 1; }
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+    text-shadow: none; }
   .custom-modal .modal-header {
     border-bottom: none; }
   .custom-modal .close {
@@ -12867,7 +12869,9 @@ header {
   font-family: DroidSans; }
   .signup-main p {
     font-size: 14px;
-    font-family: Oswald; }
+    font-family: Oswald;
+    display: block;
+    font-weight: lighter; }
   .signup-main a {
     color: #ccc;
     font-size: 12px; }
@@ -12943,7 +12947,7 @@ header {
   .withdraw-main .custom-input {
     background-color: rgba(0, 0, 0, 0.52) !important;
     padding: 5px;
-    width: 90%; }
+    width: 100%; }
     .withdraw-main .custom-input.withdraw-pad {
       padding: 5px 75px 5px 5px; }
   .withdraw-main .with-heading {
@@ -12995,10 +12999,10 @@ header {
 .dashboard {
   padding: 140px 0 50px 0; }
 
-.muddy-color {
+.muddy-color, .custom-modal .close {
   color: #f2b45d; }
 
-a.muddy-color:hover {
+a.muddy-color:hover, .custom-modal a.close:hover {
   color: #f4bf75; }
 
 .input-box {
@@ -13366,6 +13370,18 @@ a.muddy-color:hover {
 
 .mr-10 {
   margin-right: 10px; }
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  background-color: #f2b45d;
+  border-color: #f2b45d;
+  cursor: default; }
 
 #fancybox-loading,
 .fancybox-close,

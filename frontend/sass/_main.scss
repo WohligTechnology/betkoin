@@ -1103,7 +1103,7 @@ hr {
             padding: 0 10px;
         }
         .pl-50 {
-            padding-left: 58px;
+            padding-left: 50px;
         }
         p {
             font-size: 17px;
@@ -1145,8 +1145,11 @@ hr {
         border-bottom: 0px solid #e5e5e5;
     }
     .close {
-        color: #fff;
         opacity: 1;
+        position: relative;
+        z-index: 2;
+        text-shadow: none;
+        @extend .muddy-color;
     }
     .modal-header {
         border-bottom: none;
@@ -1334,7 +1337,7 @@ hr {
     .custom-input {
         background-color: rgba(0, 0, 0, 0.52) !important;
         padding: 5px;
-        width: 90%;
+        width: 100%;
         &.withdraw-pad {
             padding: 5px 75px 5px 5px;
         }
