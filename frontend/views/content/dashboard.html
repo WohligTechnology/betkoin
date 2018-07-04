@@ -102,7 +102,7 @@
             </table>
             <ul ng-if="coinTxTotalData && coinTxTotalData > 0" class="pagination-style" uib-pagination total-items="totalItems" ng-model="currentPage"
                 ng-change="pageChanged(currentPage)"></ul>
-            <div ng-if="coinTxTotalData == 0">
+            <div ng-if="coinTxTotalData == 0 || !coinTxTotalData">
                 <p class="muddy-color text-center">
                     No data found.
                 </p>
