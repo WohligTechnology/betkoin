@@ -3,15 +3,15 @@ myApp.controller('LogInCtrl', function ($scope, TemplateService, NavigationServi
   TemplateService.header1 = "";
   TemplateService.title = "Log in"; //This is the Title of the Website
   $scope.navigation = NavigationService.getNavigation(); // This is the Title of the Website $scope.navigation= NavigationService.getNavigation();
-  $scope.showMessageModal = function () {
-    $scope.messageModal.show();
-    $timeout(function () {
-      $scope.closeMessageModal();
-    }, 2000);
-  };
-  $scope.closeMessageModal = function () {
-    $scope.messageModal.hide();
-  };
+  // $scope.showMessageModal = function () {
+  //   $scope.messageModal.show();
+  //   $timeout(function () {
+  //     $scope.closeMessageModal();
+  //   }, 2000);
+  // };
+  // $scope.closeMessageModal = function () {
+  //   $scope.messageModal.hide();
+  // };
 
   $scope.playerLogin = function (data, login) {
     $scope.loginPromise = apiService.playerLogin(data, function (data) {
@@ -25,19 +25,19 @@ myApp.controller('LogInCtrl', function ($scope, TemplateService, NavigationServi
           heading: "User Already Loged In",
           content: "User already loged in another device. Logout from that device. Try Again!!!"
         };
-        $scope.showMessageModal();
+        // $scope.showMessageModal();
       } else if (data.error == "Login denied") {
         $scope.message = {
           heading: "Login denied",
           content: "Login denied"
         };
-        $scope.showMessageModal();
+        // $scope.showMessageModal();
       } else {
         $scope.message = {
           heading: "Incorrect Username Password",
           content: "Try Again!!!"
         };
-        $scope.showMessageModal();
+        // $scope.showMessageModal();
       }
     });
   };
