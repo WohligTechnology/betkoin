@@ -20,22 +20,11 @@ myApp.controller('LogInCtrl', function ($scope, TemplateService, NavigationServi
       if (data && !_.isEmpty(data.data)) {
         // $scope.openThanks();
         $state.go("dashboard");
-      } else if (data.error == "Member already Logged In") {
+      }
+      if (data.error == "Invalid credentails") {
         $scope.message = {
           heading: "User Already Loged In",
-          content: "User already loged in another device. Logout from that device. Try Again!!!"
-        };
-        // $scope.showMessageModal();
-      } else if (data.error == "Login denied") {
-        $scope.message = {
-          heading: "Login denied",
-          content: "Login denied"
-        };
-        // $scope.showMessageModal();
-      } else {
-        $scope.message = {
-          heading: "Incorrect Username Password",
-          content: "Try Again!!!"
+          content: "Invalid credentails. Try Again!!!"
         };
         // $scope.showMessageModal();
       }
