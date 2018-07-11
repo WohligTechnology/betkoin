@@ -238,7 +238,9 @@ header {
 .wdh {
     width: $wdh;
 }
-
+.logo-right{
+    margin-right:50px;
+}
 .heading-yellow {
     color: $yellow;
     &:hover {
