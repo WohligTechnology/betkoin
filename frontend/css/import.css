@@ -12042,6 +12042,9 @@ header {
 .wdh {
   width: 100%; }
 
+.logo-right {
+  margin-right: 50px; }
+
 .heading-yellow, .home .why .title {
   color: #f2b45c; }
   .heading-yellow:hover, .home .why .title:hover {
@@ -12727,7 +12730,8 @@ header {
   background-repeat: repeat-x;
   background-size: cover;
   -webkit-animation: none;
-  animation: none; }
+  animation: none;
+  overflow: hidden !important; }
 
 .partner .tokeninfo {
   color: #fff;
