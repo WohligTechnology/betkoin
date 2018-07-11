@@ -9,26 +9,26 @@
             <div>
                 <form name="signup">
                     <div class="form-group">
-                        <label for="username"> User Name:</label>
-                        <input type="text" class="form-control custom-input" ng-model="userData.username" id="username*" placeholder="username*" name="username"
+                        <label for="username"> User Name :</label>
+                        <input type="text" class="form-control custom-input" ng-model="userData.username" id="username*" placeholder="Username*" name="username"
                             required>
                         <span class="label label-danger" ng-show="signup.username.$touched && signup.username.$invalid">Username is required.</span>
                     </div>
                     <div class="form-group">
-                        <label for="email"> Email Id:</label>
-                        <input type="email" class="form-control custom-input" ng-model="userData.email" id="email*" placeholder="email*" name="email"
+                        <label for="email"> Email Id :</label>
+                        <input type="email" class="form-control custom-input" ng-model="userData.email" id="email*" placeholder="Email*" name="email"
                             required>
                         <span class="label label-danger" ng-show="signup.email.$touched && signup.email.$invalid">Enter valid Email Id.</span>
                     </div>
                     <div class="form-group">
-                        <label for="pwd"> Password:</label>
-                        <input type="password" class="form-control custom-input" ng-model="userData.password" id="password" placeholder="password*"
+                        <label for="pwd"> Password :</label>
+                        <input type="password" class="form-control custom-input" ng-model="userData.password" id="password" placeholder="Password*"
                             name="password" required>
                         <span class="label label-danger" ng-show="signup.password.$touched && signup.password.$invalid">Password is required.</span>
                     </div>
                     <div class="form-group">
-                        <label for="pwd"> Confirm Password:</label>
-                        <input type="password" class="form-control custom-input" ng-model="userData.confirmPassword" id="pwd" placeholder="confirm password*"
+                        <label for="pwd"> Confirm Password :</label>
+                        <input type="password" class="form-control custom-input" ng-model="userData.confirmPassword" id="pwd" placeholder="Confirm Password*"
                             name="confirmPassword" required>
                         <span class="label label-danger" ng-show="signup.confirmPassword.$touched && signup.confirmPassword.$invalid">Confirm Password is required.</span>
                         <span class="label label-danger" ng-show="userData.confirmPassword != userData.password">Password and Confirm Password doesn't match.</span>
