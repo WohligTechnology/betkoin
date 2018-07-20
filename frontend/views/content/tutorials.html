@@ -18,146 +18,150 @@
                             <a role="button" class="submit-btn get-king">Watch Video </a>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="yellow-strip">
                 Our Game Tutorials
             </div>
-            <div class="">
-                <div class="d-flex">
-                    <div class="d-flex33">
+            <div class="Roulette-game">
+                <div class="game-type-bg">
+                    <h3 class="text-left m-0">Roulette</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-4" ng-repeat="roulette in Roulette track by $index">
                         <div class="episode-border">
                             <div class="episodes relative">
-                                <video id="myVideo" width="100%" height="100%" controls>
-                                    <source src="img/video/Apple4.mp4" type="video/mp4">
-                                    <source src="mov_bbb.ogg" type="video/ogg"> Your browser does not support HTML5 video.
-                                </video>
-                                <div class="video-icon">
-                                    <img src="img/play.png" class="img-responsive" ng-click="pouseVideo();">
-                                </div>
-                                <div class="text-center game-name">
-                                    <a role="button" class="submit-btn get-king">Watch Video </a>
-                                </div>
-                            </div>
-                            <div class="game-bg ">
-                                <div>
-                                    <p class="text-center color-white">
-                                        in your web page. Let the src attribute point to the video URL.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex33">
-                        <div class="episode-border">
-                            <div class="episodes relative">
-                                <img src="http://img.youtube.com/vi/tgbNymZ7vqY/1.jpg" class="img-responsive img-full">
-                                <div class="video-icon">
-                                    <a class="fancybox.iframe" href="https://www.youtube.com/embed/X7ZkEQMhlek?autoplay=1" fancybox>
+                                <a class="fancybox.iframe" href="https://www.youtube.com/embed/{{roulette.videoUrl}}" fancybox>
+                                    <img ng-src="http://img.youtube.com/vi/{{roulette.imageUrl}}/hqdefault.jpg" class="img-responsive">
+                                    <div class="video-icon">
                                         <img src="img/play.png" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="text-center game-name">
-                                    <a role="button" class="submit-btn get-king">Watch Video </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="game-bg ">
-                                <div>
-                                    <p class="text-center color-white">
-                                        in your web page. Let the src attribute point to the video URL.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex33">
-                        <div class="episode-border">
-                            <div class="episodes relative">
-                                <img src="http://img.youtube.com/vi/tgbNymZ7vqY/1.jpg" class="img-responsive img-full">
-                                <div class="video-icon">
-                                    <a class="fancybox.iframe" href="https://www.youtube.com/embed/X7ZkEQMhlek?autoplay=1" fancybox>
-                                        <img src="img/play.png" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="text-center game-name">
-                                    <a role="button" class="submit-btn get-king">Watch Video </a>
-                                </div>
-                            </div>
-                            <div class="game-bg ">
-                                <div>
-                                    <p class="text-center color-white">
-                                        in your web page. Let the src attribute point to the video URL.
-                                    </p>
-                                </div>
+                                <p class="text-center color-white text-capitalize">
+                                    {{roulette.desc}}
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex">
-                    <div class="d-flex33">
+            </div>
+            <div class="Roulette-game">
+                <div class="game-type-bg">
+                    <h3 class="text-left m-0">Baccarat</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-4" ng-repeat="baccarat in Baccarat track by $index">
                         <div class="episode-border">
                             <div class="episodes relative">
-                                <img src="http://img.youtube.com/vi/tgbNymZ7vqY/1.jpg" class="img-responsive img-full">
-                                <div class="video-icon">
-                                    <a class="fancybox.iframe" href="https://www.youtube.com/embed/X7ZkEQMhlek?autoplay=1" fancybox>
+                                <a class="fancybox.iframe" href="https://www.youtube.com/embed/{{baccarat.videoUrl}}" fancybox>
+                                    <img ng-src="http://img.youtube.com/vi/{{baccarat.imageUrl}}/hqdefault.jpg" class="img-responsive">
+                                    <div class="video-icon">
                                         <img src="img/play.png" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="text-center game-name">
-                                    <a role="button" class="submit-btn get-king">Watch Video </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="game-bg ">
-                                <div>
-                                    <p class="text-center color-white">
-                                        in your web page. Let the src attribute point to the video URL.
-                                    </p>
-                                </div>
+                                <p class="text-center color-white text-capitalize">
+                                    {{baccarat.desc}}
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex33">
+                </div>
+            </div>
+            <div class="Blackjack-game">
+                <div class="game-type-bg">
+                    <h3 class="text-left m-0">BlackJack</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-4" ng-repeat="blackjack in Blackjack track by $index">
                         <div class="episode-border">
                             <div class="episodes relative">
-                                <img src="http://img.youtube.com/vi/tgbNymZ7vqY/1.jpg" class="img-responsive img-full">
-                                <div class="video-icon">
-                                    <a class="fancybox.iframe" href="https://www.youtube.com/embed/X7ZkEQMhlek?autoplay=1" fancybox>
+                                <a class="fancybox.iframe" href="https://www.youtube.com/embed/{{blackjack.videoUrl}}" fancybox>
+                                    <img ng-src="http://img.youtube.com/vi/{{blackjack.imageUrl}}/hqdefault.jpg" class="img-responsive">
+                                    <div class="video-icon">
                                         <img src="img/play.png" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="text-center game-name">
-                                    <a role="button" class="submit-btn get-king">Watch Video </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="game-bg ">
-                                <div>
-                                    <p class="text-center color-white">
-                                        in your web page. Let the src attribute point to the video URL.
-                                    </p>
-                                </div>
+                                <p class="text-center color-white text-capitalize">
+                                    {{blackjack.desc}}
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex33">
+                </div>
+            </div>
+            <div class="Dreamcatcher-game">
+                <div class="game-type-bg">
+                    <h3 class="text-left m-0">Dream Catcher</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-4" ng-repeat="dreamcatcher in Dreamcatcher track by $index">
                         <div class="episode-border">
                             <div class="episodes relative">
-                                <img src="http://img.youtube.com/vi/tgbNymZ7vqY/1.jpg" class="img-responsive img-full">
-                                <div class="video-icon">
-                                    <a class="fancybox.iframe" href="https://www.youtube.com/embed/X7ZkEQMhlek?autoplay=1" fancybox>
+                                <a class="fancybox.iframe" href="https://www.youtube.com/embed/{{dreamcatcher.videoUrl}}" fancybox>
+                                    <img ng-src="http://img.youtube.com/vi/{{dreamcatcher.imageUrl}}/hqdefault.jpg" class="img-responsive">
+                                    <div class="video-icon">
                                         <img src="img/play.png" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="text-center game-name">
-                                    <a role="button" class="submit-btn get-king">Watch Video </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="game-bg ">
-                                <div>
-                                    <p class="text-center color-white">
-                                        in your web page. Let the src attribute point to the video URL.
-                                    </p>
-                                </div>
+                                <p class="text-center color-white text-capitalize">
+                                    {{dreamcatcher.desc}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="texesholdem-game">
+                <div class="game-type-bg">
+                    <h3 class="text-left m-0">Texes Holdem</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-4" ng-repeat="texesholdem in Texesholdem track by $index">
+                        <div class="episode-border">
+                            <div class="episodes relative">
+                                <a class="fancybox.iframe" href="https://www.youtube.com/embed/{{texesholdem.videoUrl}}" fancybox>
+                                    <img ng-src="http://img.youtube.com/vi/{{texesholdem.imageUrl}}/hqdefault.jpg" class="img-responsive">
+                                    <div class="video-icon">
+                                        <img src="img/play.png" class="img-responsive">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="game-bg ">
+                                <p class="text-center color-white text-capitalize">
+                                    {{texesholdem.desc}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Threecardpoker-game">
+                <div class="game-type-bg">
+                    <h3 class="text-left m-0">Three Card Poker</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-4" ng-repeat="threecardpoker in Threecardpoker track by $index">
+                        <div class="episode-border">
+                            <div class="episodes relative">
+                                <a class="fancybox.iframe" href="https://www.youtube.com/embed/{{threecardpoker.videoUrl}}" fancybox>
+                                    <img ng-src="http://img.youtube.com/vi/{{threecardpoker.imageUrl}}/hqdefault.jpg" class="img-responsive">
+                                    <div class="video-icon">
+                                        <img src="img/play.png" class="img-responsive">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="game-bg ">
+                                <p class="text-center color-white text-capitalize">
+                                    {{threecardpoker.desc}}
+                                </p>
                             </div>
                         </div>
                     </div>
