@@ -13,55 +13,55 @@ myApp.controller('TutorialsCtrl', function ($scope, TemplateService, NavigationS
     $scope.Roulette = [{
         imageUrl: "noU2B3hw21A",
         videoUrl: "noU2B3hw21A",
-        desc: "american roulette video"
+        desc: "american roulette "
     }, {
         imageUrl: "DmtD-1j7wac",
         videoUrl: "DmtD-1j7wac",
-        desc: "grand casino bucharest video"
+        desc: "grand casino bucharest"
     }, {
         imageUrl: "rbXzGiHQOKs",
         videoUrl: "rbXzGiHQOKs",
-        desc: "immersive roulette slow motion selects video"
+        desc: "immersive roulette 1"
     }, {
         imageUrl: "Z31cnsedkXo",
         videoUrl: "Z31cnsedkXo",
-        desc: "immersive roulette video."
+        desc: "immersive roulette 2"
     }, {
         imageUrl: "hDgId_CbwBU",
         videoUrl: "hDgId_CbwBU",
-        desc: "immersive roulette slow mo drops 1 lores"
+        desc: "immersive roulette 3"
     }, {
         imageUrl: "-su9zj3ZGIY",
         videoUrl: "-su9zj3ZGIY",
-        desc: "immersive roulette slow mo drops 5 hi res"
+        desc: "immersive roulette 4"
     }, {
         imageUrl: "qkaWawt2bdQ",
         videoUrl: "qkaWawt2bdQ",
-        desc: "immersive roulette slow mo drops hi res 6"
+        desc: "immersive roulette 5"
     }, {
         imageUrl: "22uljs_ziXI",
         videoUrl: "22uljs_ziXI",
-        desc: "lightning roulette 1 video"
+        desc: "lightning roulette 1 "
     }, {
         imageUrl: "brDDkRrbOfw",
         videoUrl: "brDDkRrbOfw",
-        desc: "lightning roulette 2 video"
+        desc: "lightning roulette 2 "
     }, {
         imageUrl: "aFHteTJ7Cpc",
         videoUrl: "aFHteTJ7Cpc",
-        desc: "vip video"
+        desc: "vip "
     }, {
         imageUrl: "xmgpvDz-3FY",
         videoUrl: "xmgpvDz-3FY",
-        desc: "vip roulette video"
+        desc: "vip roulette "
     }, {
         imageUrl: "I2s64_UIKHA",
         videoUrl: "I2s64_UIKHA",
-        desc: " speed roulette video"
+        desc: " speed roulette "
     }, {
         imageUrl: "gfjrAZj_F58",
         videoUrl: "gfjrAZj_F58",
-        desc: "double ball roulette video 1"
+        desc: "double ball roulette  "
     }]
 
 
@@ -69,31 +69,31 @@ myApp.controller('TutorialsCtrl', function ($scope, TemplateService, NavigationS
     $scope.Baccarat = [{
         imageUrl: "KQXR4oUMkWs",
         videoUrl: "KQXR4oUMkWs",
-        desc: "video baccarat standard table blonde female dealer 1"
+        desc: " baccarat standard table 1"
     }, {
         imageUrl: "HRnjx911t7E",
         videoUrl: "HRnjx911t7E",
-        desc: "video baccarat standard table brunette female dealer 1"
+        desc: " baccarat standard table 2"
     }, {
         imageUrl: "MaBDbTL1Yq4",
         videoUrl: "MaBDbTL1Yq4",
-        desc: "video live baccarat squeeze blonde female dealer 1"
+        desc: " live baccarat squeeze 1"
     }, {
         imageUrl: "5JDrJVtKMAY",
         videoUrl: "5JDrJVtKMAY",
-        desc: " video live baccarat squeeze blonde female dealer 2"
+        desc: "  live baccarat squeeze 2"
     }, {
         imageUrl: "3ds90K35Jgo",
         videoUrl: "3ds90K35Jgo",
-        desc: "baccarat squeeze video"
+        desc: "baccarat squeeze "
     }, {
         imageUrl: "Ko6OS3h5hFk",
         videoUrl: "Ko6OS3h5hFk",
-        desc: "baccarat squeeze blonde female dealer 1"
+        desc: "baccarat squeeze 3"
     }, {
         imageUrl: "JmXDopwjUvg",
         videoUrl: "JmXDopwjUvg",
-        desc: "no commission baccarat video"
+        desc: "no commission baccarat "
     }]
 
 
@@ -102,27 +102,27 @@ myApp.controller('TutorialsCtrl', function ($scope, TemplateService, NavigationS
     $scope.Blackjack = [{
         imageUrl: "RMnF3WL_5jw",
         videoUrl: "RMnF3WL_5jw",
-        desc: "live blackjack generic compilation 1"
+        desc: "live blackjack generic 1"
     }, {
         imageUrl: "v3-1S5HDvY0",
         videoUrl: "v3-1S5HDvY0",
-        desc: "diamond vip blackjack video"
+        desc: "diamond vip blackjack "
     }, {
         imageUrl: "-SFQUGo0P58",
         videoUrl: "-SFQUGo0P58",
-        desc: "platinum vip blackjack video"
+        desc: "platinum vip blackjack "
     }, {
         imageUrl: "Mrcasx6UWsc",
         videoUrl: "Mrcasx6UWsc",
-        desc: "live blackjack generic video"
+        desc: "live blackjack generic 2 "
     }, {
         imageUrl: "cQLhGZlWHKk",
         videoUrl: "cQLhGZlWHKk",
-        desc: "vip blackjack video"
+        desc: "vip blackjack "
     }, {
         imageUrl: "dHvs69kaaLI",
         videoUrl: "dHvs69kaaLI",
-        desc: "vip environment video"
+        desc: "vip environment "
     }]
 
 
@@ -134,15 +134,15 @@ myApp.controller('TutorialsCtrl', function ($scope, TemplateService, NavigationS
     $scope.Dreamcatcher = [{
         imageUrl: "h59tkPqaV4Y",
         videoUrl: "h59tkPqaV4Y",
-        desc: "dreamcatcher 1 video"
+        desc: "dreamcatcher 1 "
     }, {
         imageUrl: "R7j-_bFLSO4",
         videoUrl: "R7j-_bFLSO4",
-        desc: "dream catcher 2 video"
+        desc: "dream catcher 2 "
     }, {
         imageUrl: "Fj9JjG3YOCM",
         videoUrl: "Fj9JjG3YOCM",
-        desc: "dream catcher 3 video"
+        desc: "dream catcher 3 "
     }]
 
 
@@ -150,19 +150,19 @@ myApp.controller('TutorialsCtrl', function ($scope, TemplateService, NavigationS
     $scope.Texesholdem = [{
         imageUrl: "NjnRJ1ynmS4",
         videoUrl: "NjnRJ1ynmS4",
-        desc: " texas holdem bonus poker video."
+        desc: " texas holdem bonus poker"
     }, {
         imageUrl: "MGZnU3WfLSM",
         videoUrl: "MGZnU3WfLSM",
-        desc: " texas holdem bonus video"
+        desc: " texas holdem bonus"
     }, {
         imageUrl: "VSGB_c3fVIs",
         videoUrl: "VSGB_c3fVIs",
-        desc: "ultimate texas holdem video"
+        desc: "ultimate texas holdem "
     }, {
         imageUrl: "kdr1kErjnNM",
         videoUrl: "kdr1kErjnNM",
-        desc: "video bwin poker game snippet."
+        desc: " bwin poker game snippet"
     }]
 
 
@@ -170,6 +170,6 @@ myApp.controller('TutorialsCtrl', function ($scope, TemplateService, NavigationS
     $scope.Threecardpoker = [{
         imageUrl: "lDj9yrAEoYo",
         videoUrl: "lDj9yrAEoYo",
-        desc: "poker suite video"
+        desc: "poker suite"
     }]
 })

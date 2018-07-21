@@ -1324,7 +1324,7 @@ hr {
 .bg-platform {
     background: rgba(0, 0, 0, 0.55);
     margin: -15px 0px;
-    width:100%;
+    width: 100%;
 }
 
 .bg-overlay {
@@ -1831,8 +1831,7 @@ a.muddy-color:hover {
     background: black;
     p {
         padding: 15px 25px;
-        margin: 0;
-        min-height: 102px;
+        margin: 0; // min-height: 102px;
     }
 }
 
