@@ -1,8 +1,8 @@
 <ul class="nav navbar-nav main-home-header">
   <li ng-repeat="menu in navigation" ui-sref-active="active">
-    <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor">{{menu.name}}</a>
-    <a ui-sref="{{menu.newtab}}" ng-if="menu.newtab">{{menu.name}}</a>
-    <a href="{{menu.link}}" ng-if="menu.link">{{menu.name}}</a>
+    <a ui-sref="{{ menu.anchor }}" ng-if="menu.anchor">{{ menu.name }}</a>
+    <a ui-sref="{{ menu.newtab }}" ng-if="menu.newtab">{{ menu.name }}</a>
+    <a href="{{ menu.link }}" ng-if="menu.link">{{ menu.name }}</a>
   </li>
 </ul>
 <div class="" ng-controller="headerCtrl">
@@ -11,7 +11,7 @@
       <div ng-if="username" class="profile-img d-flex  padd-left">
         <div class="relative profile">
           <div class="" id="link" ng-click="openDropdown()">
-            <img src=" img/profile-new.png " class="pointer">
+            <img src=" img/profile-new.png " class="pointer" />
           </div>
           <ul class="profile-dropdown" id="subscribe-pop" ng-if="working">
             <li>
@@ -27,20 +27,19 @@
               <a href="# " ng-click="logout()">Logout</a>
             </li>
           </ul>
-
         </div>
 
         <div class="d-block padd-left pointer" ng-click="openDropdown()">
-          <div>{{username}}</div>
-          <small class="desc ">{{accessLevel}}</small>
+          <div>{{ username }}</div>
+          <small class="desc ">{{ accessLevel }}</small>
         </div>
       </div>
     </li>
-    <li ng-if="!username">
+    <!-- <li ng-if="!username">
       <a ui-sref="login" class="login-btn">Login</a>
     </li>
     <li ng-if="!username">
       <a ui-sref="signup" class="login-btn">Signup</a>
-    </li>
+    </li> -->
   </ul>
 </div>
