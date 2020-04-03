@@ -49,7 +49,9 @@
   },
   "scripts": {
     "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "docker build -t wohlig/kings-app:latest .",
+    "serve": "docker run -p 8080:8080 wohlig/kings-app:latest"
   },
   "main": "app.js",
   "repository": {
