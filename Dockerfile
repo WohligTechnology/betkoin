@@ -1,5 +1,5 @@
 
-FROM node:apline
+FROM node:alpine
 WORKDIR /app
 RUN NODE_ENV=production
 RUN yarn global add pm2
