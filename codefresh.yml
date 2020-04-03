@@ -1,0 +1,40 @@
+version: "1.0"
+stages:
+  - "clone"
+  - "build"
+  - "push"
+  - "deploy"
+steps:
+  main_clone:
+    type: "git-clone"
+    description: "Cloning main repository..."
+    repo: "${{CF_REPO_OWNER}}/${{CF_REPO_NAME}}"
+    revision: "${{CF_REVISION}}"
+    stage: "clone"
+  build:
+    title: "Building Docker Image"
+    type: "build"
+    image_name: betkoin
+    tag: "${{CF_BRANCH}}-${{CF_REVISION}}"
+    dockerfile: "Dockerfile"
+    stage: "build"
+  push:
+    title: "Pushing image to ECR"
+    type: "push"
+    image_name: betkoin
+    registry: kings-ecr
+    candidate: "${{build}}"
+    tags:
+      - "${{CF_BRANCH}}-${{CF_REVISION}}"
+    stage: "push"
+  deploy:
+    title: Running Deploy Script
+    type: deploy
+    kind: kubernetes
+    cluster: "${{cluster}}"
+    namespace: "betkoin"
+    service: betkoin
+    candidate:
+      image: "${{build}}"
+      registry: kings-ecr
+    stage: "deploy"
