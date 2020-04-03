@@ -1,15 +1,12 @@
-FROM node:latest
+FROM node:alpine
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY package.json .
-COPY package-lock.json .
+COPY nginx.conf /etc/nginx/site-enabled
+
+COPY frontend .
 # For npm@5 or later, copy package-lock.json as well
 # COPY package.json package-lock.json ./
-
-RUN npm install
-
-COPY . .
 
 EXPOSE 8080
 

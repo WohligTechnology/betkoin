@@ -1,0 +1,8 @@
+{
+  "script": "serve",
+  "name": "Betkoin Website",
+  "env": {
+    "PM2_SERVE_PATH": "frontend",
+    "PM2_SERVE_PORT": 8080
+  }
+}
