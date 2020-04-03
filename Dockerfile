@@ -1,14 +1,8 @@
-FROM node:alpine
 
+FROM node:apline
 WORKDIR /app
-
-COPY nginx.conf /etc/nginx/site-enabled
-
+RUN NODE_ENV=production
+RUN yarn global add pm2
 COPY frontend .
-# For npm@5 or later, copy package-lock.json as well
-# COPY package.json package-lock.json ./
-
 EXPOSE 8080
-
-CMD [ "npm", "start" ]
-
+CMD ["pm2-runtime", "process.json"]
